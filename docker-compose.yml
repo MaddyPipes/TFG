@@ -11,7 +11,7 @@ services:
       - MYSQL_ROOT_PASSWORD=secret
       - MYSQL_TCP_PORT=3306
     volumes:
-      - datafiles:/TFG/TFG/mysql
+      - datafiles:/TFG/TFG/src/mysql
     restart: always
 
   website:

@@ -6,6 +6,6 @@ RUN apt-get update && apt-get install -y git
 RUN docker-php-ext-install pdo pdo_mysql mysqli
 RUN a2enmod rewrite
 
-COPY TFG /TFG
+COPY src /TFG/TFG/
 EXPOSE 80/tcp
 EXPOSE 443/tcp
