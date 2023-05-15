@@ -1,0 +1,29 @@
+.menu {
+    background-color: $indigo;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            font-size: large;
+            align-items: center;
+            padding: 10px;
+
+            &:hover{
+                background-color: $seaweed;
+            }
+
+            svg {
+                margin-right: 8px;
+            }
+        }
+    }
+}
