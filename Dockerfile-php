@@ -1,5 +1,5 @@
-FROM php:latest
+FROM php:7.4-apache
 
-COPY ./src /var/www/html
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 
-EXPOSE 80
+COPY src/ /var/www/html/

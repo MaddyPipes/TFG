@@ -4,33 +4,35 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-php
+    image: php:7.4-apache
     ports:
       - 80:80
     volumes:
       - ./src:/var/www/html
     networks:
       - app-network
-
   mysql:
     image: mysql:latest
     environment:
-      - MYSQL_ROOT_PASSWORD=toor
-      - MYSQL_DATABASE=rolcontrol
-      - MYSQL_USER=ec2-user
-      - MYSQL_PASSWORD=toor
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: rolcontrol
+      MYSQL_USER: ec2-user
+      MYSQL_PASSWORD: toor
+    ports:
+      - 3306:3306
     volumes:
-      - ./mysql:/var/lib/mysql
-      - ./db:/docker-entrypoint-initdb.d
+      - ./db:/var/lib/mysql
     networks:
       - app-network
-
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
     environment:
-      - PMA_ARBITRARY=1
-      - PMA_HOST=mysql
-      - PMA_USER=ec2-user
-      - PMA_PASSWORD=toor
+      PMA_HOST: mysql
+      PMA_USER: ec2-user
+      PMA_PASSWORD: toor
+      PMA_PORT: 3306
     ports:
       - 8080:80
     networks:
@@ -38,4 +40,4 @@ services:
 
 networks:
   app-network:
-    driver: bridge
+    driver: bridge 
