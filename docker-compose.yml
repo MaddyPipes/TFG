@@ -1,32 +1,41 @@
-version: '3.8'
-
-volumes:
-  datafiles:
-
+version: '3'
 services:
-  mysql:
-    image: mysql:8.0.0
-    container_name: mysql8
-    environment:
-      - MYSQL_ROOT_PASSWORD=secret
-      - MYSQL_TCP_PORT=3306
-    volumes:
-      - datafiles:/TFG/TFG/src/mysql
-    restart: always
-
-  website:
-    container_name: php73
+  php:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile-php
+    ports:
+      - 80:80
+    volumes:
+      - ./TFG/src:/var/www/html
+    networks:
+      - app-network
+
+  mysql:
+    image: mysql:latest
     environment:
-      - MYSQL_DBHOST=mysql
-      - MYSQL_DBPORT=3306
-      - MYSQL_DBUSER=ec2-user
-      - MYSQL_DBPASS=secret
-      #- MYSQL_DBNAME=
+      - MYSQL_ROOT_PASSWORD=toor
+      - MYSQL_DATABASE=rolcontrol
+      - MYSQL_USER=ec2-user
+      - MYSQL_PASSWORD=toor
+    volumes:
+      - ./mysql:/var/lib/mysql
+      - ./db:/docker-entrypoint-initdb.d
+    networks:
+      - app-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
+      - PMA_USER=ec2-user
+      - PMA_PASSWORD=toor
     ports:
       - 8080:80
-      - 8083:443
-    depends_on:
-      - mysql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
