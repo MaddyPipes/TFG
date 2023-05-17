@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   php:
     build:
@@ -12,33 +13,33 @@ services:
     networks:
       - app-network
     restart: always
+
   mysql:
     image: mysql:latest
-    environment:
-      MYSQL_ROOT_PASSWORD: toor
-      MYSQL_DATABASE: rolcontrol
-      MYSQL_USER: ec2-user
-      MYSQL_PASSWORD: toor
     ports:
       - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=toor
     volumes:
-      - ./db:/var/lib/mysql
+      - db_data:/var/lib/mysql
     networks:
       - app-network
+    restart: always
+
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin
-    restart: always
-    environment:
-      PMA_HOST: mysql
-      PMA_USER: ec2-user
-      PMA_PASSWORD: toor
-      PMA_PORT: 3306
     ports:
       - 8080:80
+    environment:
+      - PMA_HOST=mysql
+      - PMA_USER=ec2-user
+      - PMA_PASSWORD=toor
     networks:
       - app-network
+    restart: always
 
 networks:
   app-network:
-    driver: bridge 
+
+volumes:
+  db_data:
