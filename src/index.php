@@ -15,10 +15,10 @@ $inf_ms=null;
 $gestor = new Jugador();
 
 //Nos conectamos a la Bd
-// $conexPDO = Utils::conectar();
+$conexPDO = Utils::conectar();
 //Recolectamos los datos de los jugadores
 // $datosJugador = $gestor->getJugador($conexPDO, true, $pag);
-phpinfo();
+// phpinfo();
 
 // include("./views/main_page.php");
 
