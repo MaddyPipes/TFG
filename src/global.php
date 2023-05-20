@@ -1,8 +1,8 @@
 <?php
 
-$DB_SERVER = '127.0.0.1';
+$DB_SERVER = '3.225.229.160';
 $DB_PORT = '3306';
-$DB_USER = 'ec2-user';
+$DB_USER = 'root';
 $DB_PASSWD = 'toor';
 $DB_SCHEMA = 'gestionrol';
 $MAIL_ERROR = 0;
