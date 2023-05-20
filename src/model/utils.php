@@ -19,6 +19,7 @@ class Utils
     public static function conectar()
     {
 
+        
         require("../global.php");
 
         $conPDO = null;
