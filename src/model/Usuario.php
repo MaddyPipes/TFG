@@ -129,7 +129,7 @@ class Usuario
 
                 //Preparamos la sentencia, un insert a la base de datos
 
-                $sentencia = $conexPDO->prepare("INSERT INTO gestionrol.usuario (nombre, email, password ,salt, statusconf, codconf) VALUES ( :nombre, :email, :password, :salt, :statusconf, :codconf)");
+                $sentencia = $conexPDO->prepare("INSERT INTO gestionrol.usuario (nombre, email, password ,salt, conf, confcod) VALUES ( :nombre, :email, :password, :salt, :conf, :confcod)");
 
                 //Bindeamos los parámetros
 
@@ -137,8 +137,8 @@ class Usuario
                 $sentencia->bindParam(":email", $usuario["email"]);
                 $sentencia->bindParam(":password", $usuario["password"]);
                 $sentencia->bindParam(":salt", $usuario["salt"]);
-                $sentencia->bindParam(":statusconf", $usuario["statusconf"]);
-                $sentencia->bindParam(":codconf", $usuario["codconf"]);
+                $sentencia->bindParam(":conf", $usuario["conf"]);
+                $sentencia->bindParam(":confcod", $usuario["confcod"]);
 
                 //Ejecutamos la sentencia
 
@@ -204,13 +204,13 @@ class Usuario
 
                 //Preparamos la sentencia
 
-                $statement = $conexPDO->prepare("UPDATE gestionrol.usuario set statusconf=:statusconf where email=:email");
+                $statement = $conexPDO->prepare("UPDATE gestionrol.usuario set conf=:conf where email=:email");
 
                 //Bindeamos los parámetros, creando primero una variable que equivalga a 1 para poder pasarla como parámetro
 
                 $active = 1;
 
-                $statement->bindParam(":statusconf", $active);
+                $statement->bindParam(":conf", $active);
                 $statement->bindParam(":email", $email);
 
                 //Ejecutamos la sentencia

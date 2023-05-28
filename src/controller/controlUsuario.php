@@ -33,11 +33,11 @@ if (isset($_POST["nombre"]) && isset($_POST["email"]) && isset($_POST["password"
 
     //Fijamos el valor de activación a 0 (inactivo)
 
-    $usuario["statusconf"] = 0;
+    $usuario["conf"] = 0;
 
     //Generamos un código de activación
 
-    $usuario["codconf"] = utils::generar_codigo_activacion();
+    $usuario["confcod"] = utils::generar_codigo_activacion();
 
     //Creamos un gestor de la clase usuario
 

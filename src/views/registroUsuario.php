@@ -37,7 +37,7 @@
 
             <div class="row justify-content-center">
 
-                <div class="col-12"><img src="../rsc/whited20.png" alt=""></div>
+                <div class="col-12 d-flex justify-content-center"><img src="../rsc/whited20.png" alt=""></div>
 
                 <div class="col-lg-9 col-sm-9">
 
