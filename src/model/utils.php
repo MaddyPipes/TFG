@@ -116,7 +116,7 @@ class Utils
 
     public static function correo_registro($usuario)
     {
-        require("./global.php");
+        require("/var/www/html/model/global.php");
 
         //Creamos una url que insertar en el correo usando url encode para guardar los datos que le enviamos para su posterior revisión en el controlador
 
@@ -159,7 +159,7 @@ class Utils
 
     public static function correo_cambio_pass($email, $temp)
     {
-        require("../global.php");
+        require("./var/www/html/model/global.php");
 
         //Vamos creando el email con los parámetros necesarios
 
