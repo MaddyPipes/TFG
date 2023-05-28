@@ -4,6 +4,8 @@
 
 session_start();
 
+$_SESSION['user_id'] = "MaddyPipes";
+
 if (isset($_SESSION['user_id'])) {
     $_SESSION['isLoggedIn'] = true; // El usuario está logueado
 } else {
