@@ -17,6 +17,8 @@ services:
       - PHP_INI_SENDMAIL_PATH=sendmail -t -i
     depends_on:
       - sendmail
+    extra_hosts:
+      - "hostname:3.225.229.160"
 
   sendmail:
     image: namshi/smtp
