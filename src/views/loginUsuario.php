@@ -29,8 +29,8 @@ namespace views;
     <div class="container">
         <div class="row mt-5">
             <div class="col-12"><img src="../rsc/whited20.png" alt=""></div>
-            <div class="col-3"></div>
-            <div class="col-6">
+            <div class="d-none d-md-block col-3"></div>
+            <div class="col-12 col-md-6">
                 <form class="form-signin" action="../controller/controlLogin.php" method="POST">
 
                     <div class="form-floating mb-3 mt-3">
@@ -52,7 +52,7 @@ namespace views;
                     <a href="../controller/controlCambioPass.php"> ¿Ha olvidado su contraseña? </a>
                 </label>
             </div>
-            <div class="col-3"></div>
+            <div class="d-none d-md-block col-3"></div>
         </div>
     </div>
 
