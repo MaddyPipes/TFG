@@ -1,3 +1,16 @@
 FROM php:7.4-apache
 
+# Instala extensiones necesarias para conectar a MySQL
 RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Instala Composer (Administrador de paquetes de PHP)
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Establece el directorio de trabajo
+WORKDIR /var/www/html
+
+# Copia los archivos de configuración de la aplicación
+COPY ./src /var/www/html
+
+# Instala PHPMailer utilizando Composer
+RUN composer require phpmailer/phpmailer
