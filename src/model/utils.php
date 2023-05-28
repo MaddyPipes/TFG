@@ -28,7 +28,7 @@ class Utils
             return $conPDO;
         } catch (PDOException $e) {
             print "¡Error al conectar!: " . $e->getMessage() . "<br/>";
-            return $conPDO;
+            return  $e->getMessage();
             die();
         }
     }
