@@ -129,7 +129,7 @@ class Usuario
 
                 //Preparamos la sentencia, un insert a la base de datos
 
-                $sentencia = $conexPDO->prepare("INSERT INTO gestionRol.usuario (nombre, password ,salt, email, localidad, intereses, avatar, fechanacimiento, conf, confcod) VALUES ( :nombre, :password, :salt, :email, null, null, null, null, :conf, :confcod)");
+                $sentencia = $conexPDO->prepare("INSERT INTO gestionRol.usuario (nombre, password ,salt, email, conf, confcod) VALUES ( :nombre, :password, :salt, :email, :conf, :confcod)");
 
                 //Bindeamos los parámetros
 
