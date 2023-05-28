@@ -47,19 +47,20 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
 
         if ($usuario["password"] == crypt($checkUsuario["password"], '$2y$10$' . $usuario["salt"] . '$')) {
 
+            //Si todo sale bien, añadimos los datos del usuario a la sesión
+
+            //Iniciamos la sesión
+
+            session_start();
+
+            $_SESSION["user_id"] = $usuario["idjugador"];
+            $_SESSION["email"] = $usuario["email"];
+            $_SESSION["nombre"] = $usuario["nombre"];
+
             // //Si la contraseña es correcta, la siguiente comprobación será verificar si el usuario está verificado en la base de datos
 
             // if ($usuario["statusconf"] != 0) {
 
-            //     //Si todo sale bien, añadimos los datos del usuario a la sesión
-
-            //     //Iniciamos la sesión
-
-            //     session_start();
-
-            //     $_SESSION["idusuario"] = $usuario["idusuario"];
-            //     $_SESSION["email"] = $usuario["email"];
-            //     $_SESSION["nombre"] = $usuario["nombre"];
             // } else {
             //     //Si el estado de confirmación del usuario es 0, significará que el usuario no ha introducido su código de confirmación, en cuyo caso se le devolverá al login
             //     //con el mensaje de que el usuario no está validado
