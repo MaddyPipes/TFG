@@ -92,7 +92,7 @@ class Usuario
 
                     //Preparamos la sentencia, un select all a la BD buscando una coincidencia específica
 
-                    $sentencia = $conexPDO->prepare("SELECT * FROM gestionRol.usuario where email=?");
+                    $sentencia = $conexPDO->prepare("SELECT * FROM gestionRol.USUARIO where email=?");
 
                     //Bindeamos los parámetros
 
