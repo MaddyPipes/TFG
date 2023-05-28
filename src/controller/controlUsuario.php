@@ -69,7 +69,7 @@ if (isset($_POST["nombre"]) && isset($_POST["email"]) && isset($_POST["password"
             $inf_ms = "¡Ha habido un error en el envío del correo de confirmación!";
         
     } else
-        $inf_ms = "Ha habido un fallo al acceder a la Base de Datos: ".$resultado;
+        $inf_ms = $resultado;
 
     include("../views/loginUsuario.php");
 } else {
