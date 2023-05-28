@@ -3,98 +3,95 @@
 namespace controller;
 
 use \model\Usuario;
-use model\Jugador;
 use \model\utils;
 
 require_once("../model/Usuario.php");
-require_once("../model/Jugador.php");
 require_once("../model/utils.php");
 
 $inf_ms = null;
 
-//Comprobamos los datos que nos envía el login
+//Comprobamos los datos que nos envía el controlador principal
 
-if (isset($_POST["email"]) && isset($_POST["password"])) {
+if (isset($_POST["loginStatus"]) && $_POST["loginStatus"] == false) {
 
-    //Creamos un array con los datos introducidos en el login
+    if (isset($_POST["email"]) && isset($_POST["password"])) {
 
-    $checkUsuario = array();
+        //Creamos un array con los datos introducidos en el login
 
-    //Saneamos el código de posibles códigos maliciosos
+        $checkUsuario = array();
 
-    $checkUsuario["password"] = utils::sanear($_POST["password"]);
-    $checkUsuario["email"] = utils::sanear($_POST["email"]);
+        //Saneamos el código de posibles códigos maliciosos
 
-    //Creamos un gestor de la clase usuario
+        $checkUsuario["password"] = utils::sanear($_POST["password"]);
+        $checkUsuario["email"] = utils::sanear($_POST["email"]);
 
-    $gestorUser = new Usuario();
+        //Creamos un gestor de la clase usuario
 
-    //Conectamos
+        $gestorUser = new Usuario();
 
-    $conexPDO = utils::conectar();
+        //Conectamos
 
-    //Inicializamos el mensaje
+        $conexPDO = utils::conectar();
 
-    $inf_ms = null;
+        //Inicializamos el mensaje
 
-    //Guardamos en una variable los datos del usuario cuyo email corresponda al que nos envía el login
+        $inf_ms = null;
 
-    $usuario = $gestorUser->getUsuarioMail($checkUsuario["email"], $conexPDO);
+        //Guardamos en una variable los datos del usuario cuyo email corresponda al que nos envía el login
 
-    //Comprobamos que el usuario exista en la base de datos según la variable usuario, si es diferente a null, es que habrá encontrado una coincidencia
+        $usuario = $gestorUser->getUsuarioMail($checkUsuario["email"], $conexPDO);
 
-    if ($usuario != null) {
+        //Comprobamos que el usuario exista en la base de datos según la variable usuario, si es diferente a null, es que habrá encontrado una coincidencia
 
-        //Si ha sido encontrado, el siguiente paso será comprobar que la contraseña coincida, comparando la pass introducida, sometida a la misma encriptación, con la de la base de datos
+        if ($usuario != null) {
 
-        if ($usuario["password"] == crypt($checkUsuario["password"], '$2y$10$' . $usuario["salt"] . '$')) {
+            //Si ha sido encontrado, el siguiente paso será comprobar que la contraseña coincida, comparando la pass introducida, sometida a la misma encriptación, con la de la base de datos
 
-            //Si la contraseña es correcta, la siguiente comprobación será verificar si el usuario está verificado en la base de datos
+            if ($usuario["password"] == crypt($checkUsuario["password"], '$2y$10$' . $usuario["salt"] . '$')) {
 
-            if ($usuario["statusconf"] != 0) {
+                //Si la contraseña es correcta, la siguiente comprobación será verificar si el usuario está verificado en la base de datos
 
-                //Si todo sale bien, añadimos los datos del usuario a la sesión
+                if ($usuario["statusconf"] != 0) {
 
-                //Iniciamos la sesión
+                    //Si todo sale bien, añadimos los datos del usuario a la sesión
 
-                session_start();
+                    //Iniciamos la sesión
 
-                $_SESSION["idusuario"] = $usuario["idusuario"];
-                $_SESSION["email"] = $usuario["email"];
-                $_SESSION["nombre"] = $usuario["nombre"];
+                    session_start();
 
-                var_dump($_SESSION["idusuario"]);
+                    $_SESSION["idusuario"] = $usuario["idusuario"];
+                    $_SESSION["email"] = $usuario["email"];
+                    $_SESSION["nombre"] = $usuario["nombre"];
 
-                header('Location: http://localhost/TrabajoESObjetosYBD/controller/mainControler.php');
+                } else {
+                    //Si el estado de confirmación del usuario es 0, significará que el usuario no ha introducido su código de confirmación, en cuyo caso se le devolverá al login
+                    //con el mensaje de que el usuario no está validado
 
+                    $inf_ms = "¡El usuario no está validado!";
+
+                    include("../views/formularioActivacion.php");
+                }
             } else {
-                //Si el estado de confirmación del usuario es 0, significará que el usuario no ha introducido su código de confirmación, en cuyo caso se le devolverá al login
-                //con el mensaje de que el usuario no está validado
 
-                $inf_ms = "¡El usuario no está validado!";
+                //En caso de que no coincidan, cambiamos el mensaje y llamamos a la vista de nuevo
 
-                include("../views/formularioActivacion.php");
+                $inf_ms = "¡Contraseña incorrecta!";
+
+                include("../views/loginUsuario.php");
             }
         } else {
 
-            //En caso de que no coincidan, cambiamos el mensaje y llamamos a la vista de nuevo
+            //En caso de que no encuentre un usuario volvemos a llamar a la vista de login y cambiamos el valor del mensaje
 
-            $inf_ms = "¡Contraseña incorrecta!";
+            $inf_ms = "¡El usuario no existe!";
 
             include("../views/loginUsuario.php");
         }
     } else {
+        //Si los datos aún no han sido enviados desde la vista es que estamos entrando por primera vez al controlador e incluímos la vista del login
 
-        //En caso de que no encuentre un usuario volvemos a llamar a la vista de login y cambiamos el valor del mensaje
-
-        $inf_ms = "¡El usuario no existe!";
+        $inf_ms = null;
 
         include("../views/loginUsuario.php");
     }
-} else {
-    //Si los datos aún no han sido enviados desde la vista es que estamos entrando por primera vez al controlador e incluímos la vista del login
-
-    $inf_ms = null;
-
-    include("../views/loginUsuario.php");
 }
