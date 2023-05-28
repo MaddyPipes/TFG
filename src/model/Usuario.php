@@ -25,7 +25,7 @@ class Usuario
 
                 //Preparamos la sentencia, un select all a la BD
 
-                $sentence = $conexPDO->prepare("SELECT * FROM gestionrol.usuario");
+                $sentence = $conexPDO->prepare("SELECT * FROM gestionRol.usuario");
 
                 //Ejecutamos la sentencia
                 $sentence->execute();
@@ -56,7 +56,7 @@ class Usuario
 
                     //Preparamos la sentencia, un select all a la BD buscando una coincidencia específica
 
-                    $sentencia = $conexPDO->prepare("SELECT * FROM gestionrol.usuario where idusuario=?");
+                    $sentencia = $conexPDO->prepare("SELECT * FROM gestionRol.usuario where idusuario=?");
 
                     //Bindeamos los parámetros
 
@@ -92,7 +92,7 @@ class Usuario
 
                     //Preparamos la sentencia, un select all a la BD buscando una coincidencia específica
 
-                    $sentencia = $conexPDO->prepare("SELECT * FROM gestionrol.usuario where email=?");
+                    $sentencia = $conexPDO->prepare("SELECT * FROM gestionRol.usuario where email=?");
 
                     //Bindeamos los parámetros
 
@@ -129,7 +129,7 @@ class Usuario
 
                 //Preparamos la sentencia, un insert a la base de datos
 
-                $sentencia = $conexPDO->prepare("INSERT INTO gestionrol.usuario (nombre, email, password ,salt, conf, confcod) VALUES ( :nombre, :email, :password, :salt, :conf, :confcod)");
+                $sentencia = $conexPDO->prepare("INSERT INTO gestionRol.usuario (nombre, password ,salt, email, localidad, intereses, avatar, fechanacimiento, conf, confcod) VALUES ( :nombre, :password, :salt, :email, null, null, null, null, :conf, :confcod)");
 
                 //Bindeamos los parámetros
 
@@ -168,7 +168,7 @@ class Usuario
 
                     //Preparamos la sentencia, un select a la contraseña a la BD buscando una coincidencia específica
 
-                    $sentencia = $conexPDO->prepare("SELECT password FROM gestionrol.usuario where idusuario=?");
+                    $sentencia = $conexPDO->prepare("SELECT password FROM gestionRol.usuario where idusuario=?");
 
                     //Bindeamos los parámetros
 
@@ -204,7 +204,7 @@ class Usuario
 
                 //Preparamos la sentencia
 
-                $statement = $conexPDO->prepare("UPDATE gestionrol.usuario set conf=:conf where email=:email");
+                $statement = $conexPDO->prepare("UPDATE gestionRol.usuario set conf=:conf where email=:email");
 
                 //Bindeamos los parámetros, creando primero una variable que equivalga a 1 para poder pasarla como parámetro
 
@@ -239,7 +239,7 @@ class Usuario
 
                 //Preparamos la sentencia
 
-                $statement = $conexPDO->prepare("UPDATE gestionrol.usuario set password=:password, salt=:salt where email=:email");
+                $statement = $conexPDO->prepare("UPDATE gestionRol.usuario set password=:password, salt=:salt where email=:email");
 
                 //Bindeamos los parámetros
 
