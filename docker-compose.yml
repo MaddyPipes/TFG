@@ -13,6 +13,20 @@ services:
     networks:
       - app-network
     restart: always
+    environment:
+      - PHP_INI_SENDMAIL_PATH=sendmail -t -i
+    depends_on:
+      - sendmail
+
+  sendmail:
+    image: namshi/smtp
+    environment:
+      - "SMTP_HOST=smtp.gmail.com"
+      - "SMTP_PORT=587"
+      - "SMTP_USER=whatthedice1@gmail.com"
+      - "SMTP_PASSWORD=YMYXdt3057!"
+    networks:
+      - app-network
 
   mysql:
     image: mysql:latest

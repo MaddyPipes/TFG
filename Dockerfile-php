@@ -3,14 +3,12 @@ FROM php:7.4-apache
 # Instala extensiones necesarias para conectar a MySQL
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Instala Composer (Administrador de paquetes de PHP)
-RUN curl -sS http://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+# Instala sendmail
+RUN apt-get update && apt-get install -y sendmail
+RUN echo "hostname" > /etc/mail/local-host-names
 
-# Establece el directorio de trabajo
-WORKDIR /var/www/html
+# Configura el archivo hosts para incluir la dirección IP del servidor
+RUN echo "3.225.229.160 hostname" >> /etc/hosts
 
-# Copia el archivo composer.json y composer.lock al contenedor
-COPY composer.json composer.lock ./
-
-# Instala las dependencias utilizando Composer
-RUN composer install --no-dev --optimize-autoloader
+# Reinicia el servicio sendmail
+RUN service sendmail restart
