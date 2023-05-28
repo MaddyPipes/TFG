@@ -7,8 +7,5 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN apt-get update && apt-get install -y sendmail
 RUN echo "hostname" > /etc/mail/local-host-names
 
-# Configura el archivo hosts para incluir la dirección IP del servidor
-RUN sudo echo "3.225.229.160 hostname" >> /etc/hosts
-
 # Reinicia el servicio sendmail
 RUN service sendmail restart
