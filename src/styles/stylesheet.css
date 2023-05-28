@@ -97,10 +97,15 @@ body {
   margin-right: 8px;
 }
 
-.btn-wtd {
+button .btn-wtd {
   background-color: #284b63 !important;
 }
 
-input {
+input .input-wtd {
   color: black;
+}
+
+label .label-wtd {
+  color: black;
+  font-weight: bold;
 }/*# sourceMappingURL=stylesheet.css.map */

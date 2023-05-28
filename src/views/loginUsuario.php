@@ -34,13 +34,13 @@ namespace views;
                 <form class="form-signin" action="../controller/controlLogin.php" method="POST">
 
                     <div class="form-floating mb-3 mt-3">
-                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
-                        <label for="email">Email</label>
+                        <input type="text" class="form-control input-wtd" id="email" placeholder="Enter email" name="email">
+                        <label for="email" class="label-wtd">Email</label>
                     </div>
 
                     <div class="form-floating mt-3 mb-3">
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
-                        <label for="password">Contraseña</label>
+                        <input type="password" class="form-control input-wtd" id="pwd" placeholder="Enter password" name="password">
+                        <label for="password" class="label-wtd">Contraseña</label>
                     </div>
                     <div class="checkbox mb-3">
                     </div>
