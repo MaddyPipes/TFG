@@ -28,6 +28,7 @@ namespace views;
 
     <div class="container">
         <div class="row mt-5">
+            <div class="col-12"><img src="../rsc/whited20.png" alt=""></div>
             <div class="col-3"></div>
             <div class="col-6">
                 <form class="form-signin" action="../controller/controlLogin.php" method="POST">
