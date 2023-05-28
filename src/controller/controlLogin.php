@@ -12,86 +12,82 @@ $inf_ms = null;
 
 //Comprobamos los datos que nos envía el controlador principal
 
-if (isset($_POST["loginStatus"]) && $_POST["loginStatus"] == false) {
+if (isset($_POST["email"]) && isset($_POST["password"])) {
 
-    if (isset($_POST["email"]) && isset($_POST["password"])) {
+    //Creamos un array con los datos introducidos en el login
 
-        //Creamos un array con los datos introducidos en el login
+    $checkUsuario = array();
 
-        $checkUsuario = array();
+    //Saneamos el código de posibles códigos maliciosos
 
-        //Saneamos el código de posibles códigos maliciosos
+    $checkUsuario["password"] = utils::sanear($_POST["password"]);
+    $checkUsuario["email"] = utils::sanear($_POST["email"]);
 
-        $checkUsuario["password"] = utils::sanear($_POST["password"]);
-        $checkUsuario["email"] = utils::sanear($_POST["email"]);
+    //Creamos un gestor de la clase usuario
 
-        //Creamos un gestor de la clase usuario
+    $gestorUser = new Usuario();
 
-        $gestorUser = new Usuario();
+    //Conectamos
 
-        //Conectamos
+    $conexPDO = utils::conectar();
 
-        $conexPDO = utils::conectar();
+    //Inicializamos el mensaje
 
-        //Inicializamos el mensaje
+    $inf_ms = null;
 
-        $inf_ms = null;
+    //Guardamos en una variable los datos del usuario cuyo email corresponda al que nos envía el login
 
-        //Guardamos en una variable los datos del usuario cuyo email corresponda al que nos envía el login
+    $usuario = $gestorUser->getUsuarioMail($checkUsuario["email"], $conexPDO);
 
-        $usuario = $gestorUser->getUsuarioMail($checkUsuario["email"], $conexPDO);
+    //Comprobamos que el usuario exista en la base de datos según la variable usuario, si es diferente a null, es que habrá encontrado una coincidencia
 
-        //Comprobamos que el usuario exista en la base de datos según la variable usuario, si es diferente a null, es que habrá encontrado una coincidencia
+    if ($usuario != null) {
 
-        if ($usuario != null) {
+        //Si ha sido encontrado, el siguiente paso será comprobar que la contraseña coincida, comparando la pass introducida, sometida a la misma encriptación, con la de la base de datos
 
-            //Si ha sido encontrado, el siguiente paso será comprobar que la contraseña coincida, comparando la pass introducida, sometida a la misma encriptación, con la de la base de datos
+        if ($usuario["password"] == crypt($checkUsuario["password"], '$2y$10$' . $usuario["salt"] . '$')) {
 
-            if ($usuario["password"] == crypt($checkUsuario["password"], '$2y$10$' . $usuario["salt"] . '$')) {
+            //Si la contraseña es correcta, la siguiente comprobación será verificar si el usuario está verificado en la base de datos
 
-                //Si la contraseña es correcta, la siguiente comprobación será verificar si el usuario está verificado en la base de datos
+            if ($usuario["statusconf"] != 0) {
 
-                if ($usuario["statusconf"] != 0) {
+                //Si todo sale bien, añadimos los datos del usuario a la sesión
 
-                    //Si todo sale bien, añadimos los datos del usuario a la sesión
+                //Iniciamos la sesión
 
-                    //Iniciamos la sesión
+                session_start();
 
-                    session_start();
-
-                    $_SESSION["idusuario"] = $usuario["idusuario"];
-                    $_SESSION["email"] = $usuario["email"];
-                    $_SESSION["nombre"] = $usuario["nombre"];
-
-                } else {
-                    //Si el estado de confirmación del usuario es 0, significará que el usuario no ha introducido su código de confirmación, en cuyo caso se le devolverá al login
-                    //con el mensaje de que el usuario no está validado
-
-                    $inf_ms = "¡El usuario no está validado!";
-
-                    include("../views/formularioActivacion.php");
-                }
+                $_SESSION["idusuario"] = $usuario["idusuario"];
+                $_SESSION["email"] = $usuario["email"];
+                $_SESSION["nombre"] = $usuario["nombre"];
             } else {
+                //Si el estado de confirmación del usuario es 0, significará que el usuario no ha introducido su código de confirmación, en cuyo caso se le devolverá al login
+                //con el mensaje de que el usuario no está validado
 
-                //En caso de que no coincidan, cambiamos el mensaje y llamamos a la vista de nuevo
+                $inf_ms = "¡El usuario no está validado!";
 
-                $inf_ms = "¡Contraseña incorrecta!";
-
-                include("../views/loginUsuario.php");
+                include("../views/formularioActivacion.php");
             }
         } else {
 
-            //En caso de que no encuentre un usuario volvemos a llamar a la vista de login y cambiamos el valor del mensaje
+            //En caso de que no coincidan, cambiamos el mensaje y llamamos a la vista de nuevo
 
-            $inf_ms = "¡El usuario no existe!";
+            $inf_ms = "¡Contraseña incorrecta!";
 
             include("../views/loginUsuario.php");
         }
     } else {
-        //Si los datos aún no han sido enviados desde la vista es que estamos entrando por primera vez al controlador e incluímos la vista del login
 
-        $inf_ms = null;
+        //En caso de que no encuentre un usuario volvemos a llamar a la vista de login y cambiamos el valor del mensaje
+
+        $inf_ms = "¡El usuario no existe!";
 
         include("../views/loginUsuario.php");
     }
+} else {
+    //Si los datos aún no han sido enviados desde la vista es que estamos entrando por primera vez al controlador e incluímos la vista del login
+
+    $inf_ms = null;
+
+    include("../views/loginUsuario.php");
 }
