@@ -8,6 +8,7 @@ use model\Usuario;
 use \model\Utils;
 
 if (isset($_SESSION['user_id'])) {
+
     $_SESSION['isLoggedIn'] = true; // El usuario está logueado
     //Añadimos el código del modelo
     require_once("./model/Usuario.php");
@@ -17,6 +18,8 @@ if (isset($_SESSION['user_id'])) {
 
     include("./views/main_page.php");
 } else {
+    
     $_SESSION['isLoggedIn'] = false; // El usuario no está logueado
+
     include("./views/loginUsuario.php");
 }
