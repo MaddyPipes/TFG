@@ -49,7 +49,7 @@ namespace views;
                 <label>
                     <a href="../controller/controlUsuario.php"> Registrarse </a>
                     <br>
-                    <a href="../controller/controlCambioPass.php"> ¿Ha olvidado su contraseña? </a>
+                    <!-- <a href="../controller/controlCambioPass.php"> ¿Ha olvidado su contraseña? </a> -->
                 </label>
             </div>
             <div class="d-none d-md-block col-3"></div>

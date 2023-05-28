@@ -143,8 +143,7 @@ class Utils
 
         $retval = mail($to, $subject, $message, $header);
 
-        if (!$retval) {
-            
+        if (!$retval) {           
             return $MAIL_ERROR;
         }else{           
             return $MAIL_SUCCESS;
