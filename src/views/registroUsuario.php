@@ -35,8 +35,9 @@
 
         <div class="container">
 
-            <div class="row">
+            <div class="row justify-content-center">
 
+                <div class="col-12"><img src="../rsc/whited20.png" alt=""></div>
 
                 <div class="col-lg-9 col-sm-9">
 
