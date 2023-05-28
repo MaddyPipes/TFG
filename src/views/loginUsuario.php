@@ -44,7 +44,7 @@ namespace views;
                     </div>
                     <div class="checkbox mb-3">
                     </div>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
+                    <button class="btn btn-lg btn-block btn-wtd" type="submit">Iniciar Sesión</button>
                 </form>
                 <label>
                     <a href="../controller/controlUsuario.php"> Registrarse </a>
