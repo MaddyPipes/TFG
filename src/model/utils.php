@@ -25,10 +25,10 @@ class Utils
         try {
             
             $conPDO = new PDO("mysql:host=" . $DB_SERVER . ";dbname=" . $DB_SCHEMA, $DB_USER, $DB_PASSWD);
-            return "pues esto funcionaba bien";
+            return $conPDO;
         } catch (PDOException $e) {
             print "¡Error al conectar!: " . $e->getMessage() . "<br/>";
-            return  $e->getMessage();
+            return $conPDO;
             die();
         }
     }

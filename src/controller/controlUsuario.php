@@ -69,7 +69,7 @@ if (isset($_POST["nombre"]) && isset($_POST["email"]) && isset($_POST["password"
             $inf_ms = "¡Ha habido un error en el envío del correo de confirmación!";
         
     } else
-        $inf_ms = var_dump($conexPDO);
+        $inf_ms = "¡Ha habido un error al conectar con la base de datos!";
 
     include("../views/loginUsuario.php");
 } else {
