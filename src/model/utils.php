@@ -104,7 +104,7 @@ class Utils
         $saltedPassword = $salt . $password;
         
         // Verificar la contraseña encriptada usando el método password_verify
-        $isValid = password_verify($password, $hashedPassword);
+        $isValid = password_verify($saltedPassword, $hashedPassword);
         
         return $isValid;
     }
