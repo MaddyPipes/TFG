@@ -106,6 +106,8 @@ class Utils
         
         // Concatenar la salt al inicio de la contraseña ingresada
         $saltedPassword = $salt . $password;
+
+        var_dump($saltedPassword);
         
         // Verificar la contraseña encriptada usando el método password_verify
         $isValid = password_verify($saltedPassword, $hashedPassword);
