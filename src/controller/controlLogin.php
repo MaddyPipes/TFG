@@ -57,6 +57,8 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
             $_SESSION["email"] = $usuario["email"];
             $_SESSION["nombre"] = $usuario["nombre"];
 
+            include("../views/main_page.php");
+
             // //Si la contraseña es correcta, la siguiente comprobación será verificar si el usuario está verificado en la base de datos
 
             // if ($usuario["statusconf"] != 0) {
