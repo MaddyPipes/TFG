@@ -54,26 +54,26 @@ class Utils
      * 
      */
 
-    public static function generar_salt($cyphNum, bool $numeric)
-    {
+    // public static function generar_salt($cyphNum, bool $numeric)
+    // {
 
-        //Creamos un string de caracteres según sea sólo numérica o alfanumérica y una variable salt vacía
-        if($numeric)
-            $cyphChars= "1234567890";
-        else
-            $cyphChars = "abcdefghijklmnopqrstuvwxyz1234567890*-.,";
+    //     //Creamos un string de caracteres según sea sólo numérica o alfanumérica y una variable salt vacía
+    //     if($numeric)
+    //         $cyphChars= "1234567890";
+    //     else
+    //         $cyphChars = "abcdefghijklmnopqrstuvwxyz1234567890*-.,";
 
-        $salt = "";
+    //     $salt = "";
 
-        //Vamos concatenando a la cadena salt caracteres que se encuentren en posiciones aleatorias en la cadena un número de veces
-        //igual al valor introducido
+    //     //Vamos concatenando a la cadena salt caracteres que se encuentren en posiciones aleatorias en la cadena un número de veces
+    //     //igual al valor introducido
 
-        for ($i = 0; $i < $cyphNum; $i++) {
-            $salt .= $cyphChars[rand(0, strlen($cyphChars) - 1)];
-        }
+    //     for ($i = 0; $i < $cyphNum; $i++) {
+    //         $salt .= $cyphChars[rand(0, strlen($cyphChars) - 1)];
+    //     }
 
-        return $salt;
-    }
+    //     return $salt;
+    // }
 
     /**
      * 
@@ -81,8 +81,10 @@ class Utils
      * 
      */
 
-     public static function encryptPassword($password, $salt) {
-    
+     public static function encryptPassword($password) {
+        // Generar una salt aleatoria de 4 dígitos
+        $salt = substr(str_shuffle("0123456789"), 0, 4);
+        
         // Concatenar la salt al inicio de la contraseña
         $saltedPassword = $salt . $password;
         
@@ -98,8 +100,10 @@ class Utils
      * 
      */
 
-     public static function verifyPassword($salt, $password, $hashedPassword) {
-               
+    public static function verifyPassword($password, $hashedPassword) {
+        // Obtener la salt de los primeros 4 dígitos del hash almacenado
+        $salt = substr($hashedPassword, 0, 4);
+        
         // Concatenar la salt al inicio de la contraseña ingresada
         $saltedPassword = $salt . $password;
         

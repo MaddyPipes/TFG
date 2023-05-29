@@ -23,13 +23,13 @@ if (isset($_POST["nombre"]) && isset($_POST["email"]) && isset($_POST["password"
 
     //Generamos la salt para el usuario, con 4 caracteres para que esté en 16 bits y especificando con un boolean que sea sólo numérica
 
-    $salt = utils::generar_salt(4, true);
+    // $salt = utils::generar_salt(4, true);
 
-    $usuario["salt"] = $salt;
+    // $usuario["salt"] = $salt;
 
     //Usamos la función para encriptar los datos, usando la opción blowfish ('$2y$10$') para obtener una pass codificada en 256 bits
 
-    $usuario["password"] = utils::encryptPassword($_POST["password"], $salt);
+    $usuario["password"] = utils::encryptPassword($_POST["password"]);
 
     //Fijamos el valor de activación a 0 (inactivo)
 
