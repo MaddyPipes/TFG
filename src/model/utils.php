@@ -110,7 +110,7 @@ class Utils
         var_dump($saltedPassword);
         
         // Verificar la contraseña encriptada usando el método password_verify
-        $isValid = password_verify($saltedPassword, $hashedPassword);
+        $isValid = password_verify($password, $hashedPassword);
         
         return $isValid;
     }
