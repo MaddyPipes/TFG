@@ -29,7 +29,7 @@ if (isset($_POST["nombre"]) && isset($_POST["email"]) && isset($_POST["password"
 
     //Usamos la función para encriptar los datos, usando la opción blowfish ('$2y$10$') para obtener una pass codificada en 256 bits
 
-    $usuario["password"] = crypt($_POST["password"], '$2y$10$' . $salt . '$');
+    $usuario["password"] = utils::encryptPassword($_POST["password"], $salt);
 
     //Fijamos el valor de activación a 0 (inactivo)
 

@@ -45,7 +45,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
 
         //Si ha sido encontrado, el siguiente paso será comprobar que la contraseña coincida, comparando la pass introducida, sometida a la misma encriptación, con la de la base de datos
 
-        if ($usuario["password"] == crypt($checkUsuario["password"], '$2y$10$' . $usuario["salt"] . '$')) {
+        if (utils::verifyPassword($user["salt"], $_POST["password"], $usuario["password"])) {
 
             //Si todo sale bien, añadimos los datos del usuario a la sesión
 

@@ -77,6 +77,40 @@ class Utils
 
     /**
      * 
+     * Función para encriptar la contraseña usando hash
+     * 
+     */
+
+     public static function encryptPassword($password, $salt) {
+    
+        // Concatenar la salt al inicio de la contraseña
+        $saltedPassword = $salt . $password;
+        
+        // Encriptar la contraseña usando el algoritmo Blowfish
+        $hashedPassword = password_hash($saltedPassword, PASSWORD_BCRYPT);
+        
+        return $hashedPassword;
+    }
+    
+    /**
+     * 
+     * Función para comprobar una contraseña
+     * 
+     */
+
+     public static function verifyPassword($salt, $password, $hashedPassword) {
+               
+        // Concatenar la salt al inicio de la contraseña ingresada
+        $saltedPassword = $salt . $password;
+        
+        // Verificar la contraseña encriptada usando el método password_verify
+        $isValid = password_verify($saltedPassword, $hashedPassword);
+        
+        return $isValid;
+    }
+
+    /**
+     * 
      * Función para generar el código de activación para enviar al usuario en el registro
      * 
      */
