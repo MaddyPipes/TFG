@@ -73,7 +73,9 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
 
             //En caso de que no coincidan, cambiamos el mensaje y llamamos a la vista de nuevo
 
-            $inf_ms = var_dump(utils::verifyPassword($_POST["password"], $usuario["password"]));
+            var_dump($usuario["password"]);
+
+            $inf_ms = "¡Contraseña incorrecta!";
 
             include("../views/loginUsuario.php");
         }
