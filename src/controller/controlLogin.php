@@ -73,6 +73,8 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
 
             //En caso de que no coincidan, cambiamos el mensaje y llamamos a la vista de nuevo
 
+            var_dump(utils::encryptPassword($_POST["password"], $usuario["SALT"]));
+
             $inf_ms = "¡Contraseña incorrecta!";
 
             include("../views/loginUsuario.php");
