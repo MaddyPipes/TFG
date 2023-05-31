@@ -87,12 +87,12 @@
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-3"><b>STR:</b> 16</div>
-                            <div class="col-3"><b>CON:</b> 14</div>
-                            <div class="col-3"><b>DEX:</b> 9</div>
-                            <div class="col-3"><b>INT:</b> 12</div>
-                            <div class="col-3"><b>CHA:</b> 14</div>
-                            <div class="col-3"><b>WIS:</b> 14</div>
+                            <div class="col-4"><b>STR:</b> 16</div>
+                            <div class="col-4"><b>CON:</b> 14</div>
+                            <div class="col-4"><b>DEX:</b> 9</div>
+                            <div class="col-4"><b>INT:</b> 12</div>
+                            <div class="col-4"><b>CHA:</b> 14</div>
+                            <div class="col-4"><b>WIS:</b> 14</div>
                             <div class="col-6"><b>CA:</b> 18</div>
                             <div class="col-6"><b>PB:</b> 3</div>
                             <div class="col-12"><b>HP:</b> 3</div>
