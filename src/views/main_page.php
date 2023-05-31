@@ -97,21 +97,34 @@
                             <div class="col-6"><b>PB:</b> 3</div>
                             <div class="col-12"><b>HP:</b> 3</div>
                         </div>
-                        <p>
+                        <div>
                             <a class="btn btn-primary" data-bs-toggle="collapse" href="#competencias" role="button" aria-expanded="false" aria-controls="competencias">
                                 Competencias
                             </a>
-                        </p>
-                        <div class="collapse" id="competencias">
-                            <div class="card card-body">
-                                <ul>
-                                    <li>Atletismo</li>
-                                    <li>Religion</li>
-                                    <li>Armas marciales</li>
-                                    <li>Historia</li>
-                                    <li>Historia</li>
-                                    <li>Historia</li>
-                                </ul>
+                            <div class="collapse" id="competencias">
+                                <div class="card card-body">
+                                    <ul>
+                                        <li>Atletismo</li>
+                                        <li>Religion</li>
+                                        <li>Armas marciales</li>
+                                        <li>Historia</li>
+                                        <li>Historia</li>
+                                        <li>Historia</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#ataques" role="button" aria-expanded="false" aria-controls="ataques">
+                                Ataques
+                            </a>
+                            <div class="collapse" id="ataques">
+                                <div class="card card-body">
+                                    <ul>
+                                        <li><b>Mandoble:</b> 2d6 cortante + 3</li>
+                                        <li><b>Mandoble + Castigo:</b> 2d6 cortante + 2d6 radiante + 3</li>
+                                        <li><b>Mandoble:</b> 2d6 + 3</li>
+                                        <li><b>Mandoble:</b> 2d6 + 3</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
