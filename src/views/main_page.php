@@ -81,7 +81,7 @@
                     <img src="https://i.pinimg.com/originals/51/9b/f9/519bf955cad48f57fda9c41996a64744.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Aelrik Rounar</h5>
-                        <p class="card-text">Paladín elfo</p>
+                        <p class="card-text">Elfo Paladín lvl 5</p>
                         <a href="#" class="btn btn-primary">Editar</a>
                         <a href="#" class="btn btn-danger">Borrar</a>
                     </div>
