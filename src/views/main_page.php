@@ -95,10 +95,10 @@
                             <div class="col-4"><b>WIS:</b> 14</div>
                             <div class="col-6"><b>CA:</b> 18</div>
                             <div class="col-6"><b>PB:</b> 3</div>
-                            <div class="col-12"><b>HP:</b> 3</div>
+                            <div class="col-12"><b>HP:</b> 56</div>
                         </div>
-                        <div>
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#competencias" role="button" aria-expanded="false" aria-controls="competencias">
+                        <div class="d-flex flex-column">
+                            <a class="btn btn-primary margin-top_8 margin-bottom_8" data-bs-toggle="collapse" href="#competencias" role="button" aria-expanded="false" aria-controls="competencias">
                                 Competencias
                             </a>
                             <div class="collapse" id="competencias">
@@ -113,7 +113,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#ataques" role="button" aria-expanded="false" aria-controls="ataques">
+                            <a class="btn btn-primary margin-top_8 margin-bottom_8" data-bs-toggle="collapse" href="#ataques" role="button" aria-expanded="false" aria-controls="ataques">
                                 Ataques
                             </a>
                             <div class="collapse" id="ataques">
@@ -123,6 +123,26 @@
                                         <li><b>Mandoble + Castigo:</b> 2d6 cortante + 2d6 radiante + 3</li>
                                         <li><b>Mandoble:</b> 2d6 + 3</li>
                                         <li><b>Mandoble:</b> 2d6 + 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary margin-top_8 margin-bottom_8" data-bs-toggle="collapse" href="#conjuros" role="button" aria-expanded="false" aria-controls="conjuros">
+                                Conjuros
+                            </a>
+                            <div class="collapse" id="conjuros">
+                                <div class="card card-body">
+                                    <ul>
+                                        <li><b>Cantrips</b></li>
+                                        <ul>
+                                            <li>Luz</li>
+                                            <li>Llama sagrada</li>
+                                            <li>Guía</li>
+                                        </ul>
+                                        <li><b>Lvl 1:</b></li>
+                                        <ul>
+                                            <li>Impacto de guía</li>
+                                            <li>castigo Abrasador</li>
+                                        </ul>
                                     </ul>
                                 </div>
                             </div>
