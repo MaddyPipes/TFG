@@ -119,10 +119,10 @@
                             <div class="collapse" id="ataques">
                                 <div class="card card-body">
                                     <ul>
-                                        <li><b>Mandoble:</b> 2d6 cortante + 3</li>
-                                        <li><b>Mandoble + Castigo:</b> 2d6 cortante + 2d6 radiante + 3</li>
-                                        <li><b>Mandoble:</b> 2d6 + 3</li>
-                                        <li><b>Mandoble:</b> 2d6 + 3</li>
+                                        <li><b>Mandoble:</b><br> 2d6 cortante + 3</li>
+                                        <li><b>Mandoble + Castigo:</b><br> 2d6 cortante + 2d6 radiante + 3</li>
+                                        <li><b>Mandoble:</b><br> 2d6 + 3</li>
+                                        <li><b>Mandoble:</b><br> 2d6 + 3</li>
                                     </ul>
                                 </div>
                             </div>
