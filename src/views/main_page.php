@@ -68,7 +68,7 @@
 
     <!-- Offcanvas -->
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasPersonaje" aria-labelledby="offcanvasPersonaje">
+    <div class="offcanvas offcanvas-start text-black" tabindex="-1" id="offcanvasPersonaje" aria-labelledby="offcanvasPersonaje">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Personajes</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -82,10 +82,10 @@
                         <h5 class="card-title">Aelrik Rounar</h5>
                         <p class="card-text">Paladín elfo</p>
                         <a href="#" class="btn btn-primary">Seleccionar</a>
+                        <a href="#" class="btn btn-danger">Voler a lista</a>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-danger">Salir</button>
         </div>
     </div>
 
