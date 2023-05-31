@@ -75,7 +75,7 @@
         </div>
         <div class="offcanvas-body d-flex flex-column">
             <button class="btn btn-primary margin-bottom_32">Crear Nuevo Personaje</button>
-            <div>
+            <div class="align-self-center">
                 <div class="card" style="width: 18rem;">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <img src="https://i.pinimg.com/originals/51/9b/f9/519bf955cad48f57fda9c41996a64744.png" class="card-img-top" alt="...">
