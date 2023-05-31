@@ -86,7 +86,7 @@
                         <a href="#" class="btn btn-danger">Borrar</a>
                     </div>
                     <div class="container">
-                        <div class="row">
+                        <div class="row text-center">
                             <div class="col-4"><b>STR:</b> 16</div>
                             <div class="col-4"><b>CON:</b> 14</div>
                             <div class="col-4"><b>DEX:</b> 9</div>
@@ -96,6 +96,23 @@
                             <div class="col-6"><b>CA:</b> 18</div>
                             <div class="col-6"><b>PB:</b> 3</div>
                             <div class="col-12"><b>HP:</b> 3</div>
+                        </div>
+                        <p>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#competencias" role="button" aria-expanded="false" aria-controls="competencias">
+                                Competencias
+                            </a>
+                        </p>
+                        <div class="collapse" id="competencias">
+                            <div class="card card-body">
+                                <ul>
+                                    <li>Atletismo</li>
+                                    <li>Religion</li>
+                                    <li>Armas marciales</li>
+                                    <li>Historia</li>
+                                    <li>Historia</li>
+                                    <li>Historia</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
