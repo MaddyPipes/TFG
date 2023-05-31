@@ -53,9 +53,9 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
 
             session_start();
 
-            $_SESSION["user_id"] = $usuario["idjugador"];
-            $_SESSION["email"] = $usuario["email"];
-            $_SESSION["nombre"] = $usuario["nombre"];
+            $_SESSION["user_id"] = $usuario["idJUGADOR"];
+            $_SESSION["email"] = $usuario["EMAIL"];
+            $_SESSION["nombre"] = $usuario["NOMBRE"];
 
             include("../views/main_page.php");
 
