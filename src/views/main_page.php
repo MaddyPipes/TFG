@@ -68,21 +68,22 @@
 
     <!-- Offcanvas -->
 
-    <div class="offcanvas offcanvas-start text-black" tabindex="-1" id="offcanvasPersonaje" aria-labelledby="offcanvasPersonaje">
+    <div class="offcanvas offcanvas-start text-body" tabindex="-1" id="offcanvasPersonaje" aria-labelledby="offcanvasPersonaje">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Personajes</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body d-flex justify-content-around flex-column">
-            <button class="btn btn-primary">Crear Nuevo Personaje</button>
+        <div class="offcanvas-body d-flex flex-column">
+            <button class="btn btn-primary margin-bottom_32">Crear Nuevo Personaje</button>
             <div>
                 <div class="card" style="width: 18rem;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <img src="https://i.pinimg.com/originals/51/9b/f9/519bf955cad48f57fda9c41996a64744.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Aelrik Rounar</h5>
                         <p class="card-text">Paladín elfo</p>
-                        <a href="#" class="btn btn-primary">Seleccionar</a>
-                        <a href="#" class="btn btn-danger">Voler a lista</a>
+                        <a href="#" class="btn btn-primary">Editar</a>
+                        <a href="#" class="btn btn-danger">Borrar</a>
                     </div>
                 </div>
             </div>
