@@ -21,14 +21,7 @@
     </header>
     <nav class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-4">
-                <select class="form-select" size="4" aria-label="size 3 select example">
-                    <option value="0" selected>---</option>
-                    <option value="1">Ysystem</option>
-                    <option value="3">D&D 5th Edition</option>
-                </select>
-            </div>
-            <div class="col-12 col-md-8 menu margin-top_8--sm">
+            <div class="col-12 col-md-12 menu margin-top_8--sm">
                 <ul>
                     <li>
                         <a href="" type="button" role="button" tabindex="1" data-bs-toggle="modal" data-bs-target="#modalUsuario"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -64,7 +57,7 @@
                             </svg>Personaje</a>
                     </li>
                     <li>
-                        <a href="" role="button" tabindex="1"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+                        <a href="#offcanvaSalas" role="button" tabindex="1" data-bs-toggle="offcanvas" aria-controls="offcanvaSalas"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
                                 <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
                             </svg>Salas</a>
                     </li>
@@ -74,6 +67,7 @@
     </nav>
 
     <!-- Offcanvas -->
+
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasPersonaje" aria-labelledby="offcanvasPersonaje">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
@@ -95,6 +89,17 @@
             </div>
         </div>
     </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvaSalas" aria-labelledby="offcanvaSalasLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvaSalasLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+
     <script src="../scripts/includes.js"></script>
 
     <!-- Peticiones AJAX -->
