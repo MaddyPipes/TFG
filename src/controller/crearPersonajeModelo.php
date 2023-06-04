@@ -51,11 +51,11 @@ if (isset($_POST["crearPersonaje"])) {
     //Modificamos el registro
     $resultado = $gestor->addPersonaje($personaje, $conexPDO);
 
-    //Si ha ido bien el mensaje sera distint
-    // if ($resultado != null)
-    //     $inf_ms = "El personaje se ha insertado Correctamente";
-    // else
-    //     $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";
+    // Si ha ido bien el mensaje sera distint
+    if ($resultado != null)
+        $inf_ms = "El personaje se ha insertado Correctamente";
+    else
+        $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";
 
     include("../views/main_page.php");
 } else {
