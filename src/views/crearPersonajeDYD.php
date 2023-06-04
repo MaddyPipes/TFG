@@ -39,7 +39,7 @@
 
                 <div class="col-12 d-flex justify-content-center"><img class="img-fluid col-5" src="../rsc/DnD-Logo.png" alt=""></div>
 
-                <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column">
+                <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column" id="page1">
 
                     <!-- Margenes con mb mr ml mt -sm-distancia-->
                     <!-- Misma linea -->
@@ -292,7 +292,7 @@
 
                     <br>
 
-                    <button type="submit" name="crearPersonaje" value="true" class="btn btn-default mb-sm-2 shadow p-3 mb-5 bg-body rounded px-3 py-2">Registro</button>
+                    <a href="" class="btn" id="continuar">Continuar</a>
 
                 </div>
             </div>
