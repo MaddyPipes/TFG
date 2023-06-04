@@ -250,7 +250,7 @@
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Trato con animales" id="tratoanimal" name="competencias[]">
                                         <label class="form-check-label" for="tratoanimal">
-                                            Trato con animales
+                                            Trato animal
                                         </label>
                                     </div>
                                 </div>
