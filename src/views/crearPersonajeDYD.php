@@ -12,6 +12,7 @@
     <style>
     input:focus{
         box-shadow: none !important;
+        border-color: red !important;
     }
     input:checked{
         background-color: red !important;
