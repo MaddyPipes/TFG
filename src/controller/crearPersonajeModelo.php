@@ -25,15 +25,17 @@ if (isset($_POST["crearPersonaje"])) {
     $personaje["ilustracion"] = htmlspecialchars($_POST["picture"]);
     $personaje["stat1"] = htmlspecialchars($_POST["hp"]);
     $personaje["stat2"] = htmlspecialchars($_POST["ca"]);
-    $personaje["stat3"] = htmlspecialchars($_POST["ca"]);
-    $personaje["stat4"] = htmlspecialchars($_POST["ca"]);
-    $personaje["stat5"] = htmlspecialchars($_POST["ca"]);
-    $personaje["stat6"] = htmlspecialchars($_POST["ca"]);
-    $personaje["stat7"] = htmlspecialchars($_POST["ca"]);
-    $personaje["stat8"] = htmlspecialchars($_POST["ca"]);
-    $personaje["stat9"] = htmlspecialchars($_POST["ca"]);
-    $personaje["stat10"] = htmlspecialchars($_POST["ca"]);
+    $personaje["stat3"] = htmlspecialchars($_POST["fuerza"]);
+    $personaje["stat4"] = htmlspecialchars($_POST["constitucion"]);
+    $personaje["stat5"] = htmlspecialchars($_POST["destreza"]);
+    $personaje["stat6"] = htmlspecialchars($_POST["inteligencia"]);
+    $personaje["stat7"] = htmlspecialchars($_POST["sabiduria"]);
+    $personaje["stat8"] = htmlspecialchars($_POST["carisma"]);
+    $personaje["salvaciones"] = htmlspecialchars($_POST["salvaciones"]);
+    $personaje["competencias"] = htmlspecialchars($_POST["competencias"]);
 
+    $personaje["salvaciones"] = serialize($personaje["salvaciones"]);
+    $personaje["competencias"] = serialize($personaje["competencias"]);
 
     //Añadimos el código del modelo
     require_once("../model/Personaje.php");
