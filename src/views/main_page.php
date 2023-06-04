@@ -74,7 +74,31 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body d-flex flex-column">
-            <button class="btn btn-primary margin-bottom_32">Crear Nuevo Personaje</button>
+            <button class="btn btn-primary margin-bottom_32" tabindex="1" data-bs-toggle="modal" data-bs-target="#modalCrearPersonaje">Crear Nuevo Personaje</button>
+            <div class="modal fade" id="modalCrearPersonaje" tabindex="-1" aria-labelledby="modalCrearPersonajeLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalCrearPersonajeLabel">Elige un juego:</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex align-items-center justify-content-center">
+                            <div class="row">
+                                <form action="../controller/crearPersonajeModelo.php">
+                                    <div class="col-6">
+                                        <button class="btn btn-primary" name="juegoPersonaje" value="ysystem">Ysystem</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn btn-primary" name="juegoPersonaje" value="dyd5">D&D 5a Edición</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="align-self-center">
                 <div class="card" style="width: 18rem;">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

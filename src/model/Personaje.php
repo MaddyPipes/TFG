@@ -98,7 +98,7 @@ class Personaje {
 
                 // INSERT INTO `gestionrol`.`personaje` (`idPERSONAJE`, `JUGADOR_idJUGADOR`, `NOMBRE`, `RAZA`, `CLASE`, `NIVEL`, `ILUSTRACION`, `FICHA`, `INVENTARIO`, `DIARIO`) VALUES ('', '1', 'Aelrik Rounar', 'Semielfo', 'Paladín', '5', 'elfex1.jpg', 'cualquierurl', 'vacío', 'vacío');
 
-                $statement = $conexPDO->prepare("INSERT INTO gestionrol.personaje (idPERSONAJE, JUGADOR_idJUGADOR, NOMBRE, RAZA, CLASE, NIVEL, ILUSTRACION, FICHA, INVENTARIO, DIARIO) VALUES ('', :JUGADOR_idJUGADOR, :NOMBRE, :RAZA, :CLASE, :NIVEL, :ILUSTRACION, :FICHA, :INVENTARIO, :DIARIO)");
+                $statement = $conexPDO->prepare("INSERT INTO gestionrol.personaje (idPERSONAJE, JUGADOR_idJUGADOR, NOMBRE, RAZA, CLASE, NIVEL, ILUSTRACION, FICHA, INVENTARIO, DIARIO, STAT1, STAT2, STAT3, STAT4, STAT5, STAT6, STAT7, STAT8, STAT9, STAT10, COMPETENCIAS) VALUES ('', :JUGADOR_idJUGADOR, :NOMBRE, :RAZA, :CLASE, :NIVEL, :ILUSTRACION, :FICHA, :INVENTARIO, :DIARIO, :STAT1, :STAT2, :STAT3, :STAT4, :STAT5, :STAT6, :STAT7, :STAT8, :STAT9, :STAT10, :COMPETENCIAS)");
 
                 //Bindeamos los parámetros a la sentencia
 
@@ -111,6 +111,17 @@ class Personaje {
                 $statement->bindParam(":FICHA", $personaje["ficha"]);
                 $statement->bindParam(":INVENTARIO", $personaje["inventario"]);
                 $statement->bindParam(":DIARIO", $personaje["diario"]);
+                $statement->bindParam(":STAT1", $personaje["stat1"]);
+                $statement->bindParam(":STAT2", $personaje["stat2"]);
+                $statement->bindParam(":STAT3", $personaje["stat3"]);
+                $statement->bindParam(":STAT4", $personaje["stat4"]);
+                $statement->bindParam(":STAT5", $personaje["stat5"]);
+                $statement->bindParam(":STAT6", $personaje["stat6"]);
+                $statement->bindParam(":STAT7", $personaje["stat7"]);
+                $statement->bindParam(":STAT8", $personaje["stat8"]);
+                $statement->bindParam(":STAT9", $personaje["stat9"]);
+                $statement->bindParam(":STAT10", $personaje["stat10"]);
+                $statement->bindParam(":COMPETENCIAS", $personaje["competencias"]);
                 
                 //Una vez completada la sentencia, la ejecutamos
 
