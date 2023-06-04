@@ -292,8 +292,12 @@
 
                     <br>
 
-                    <a href="" class="btn" id="continuar">Continuar</a>
+                    <a href="" class="btn btn-danger margin-bottom_24" id="continuar">Continuar</a>
 
+                </div>
+
+                <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column d-none" id="page2">
+                    <a href="" class="btn btn-danger margin-bottom_24" id="atras">Atrás</a>
                 </div>
             </div>
         </div>
@@ -307,6 +311,25 @@
 
     <!-- jQuery Validation Additional Methods -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+            $('#continuar').click(function(event) {
+                event.preventDefault();
+                $('#page1').hide();
+                $('#page2').show();
+            });
+
+            $('#atras').click(function(event) {
+                event.preventDefault();
+                $('#page2').hide();
+                $('#page1').show();
+            });
+        });
+    </script>
+
+    </script>
 
 </body>
 
