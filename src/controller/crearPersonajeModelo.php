@@ -31,6 +31,8 @@ if (isset($_POST["crearPersonaje"])) {
     $personaje["stat6"] = htmlspecialchars($_POST["inteligencia"]);
     $personaje["stat7"] = htmlspecialchars($_POST["sabiduria"]);
     $personaje["stat8"] = htmlspecialchars($_POST["carisma"]);
+    $personaje["stat9"] = null;
+    $personaje["stat10"] = null;
     $personaje["salvaciones"] = htmlspecialchars($_POST["salvaciones"]);
     $personaje["competencias"] = htmlspecialchars($_POST["competencias"]);
 
