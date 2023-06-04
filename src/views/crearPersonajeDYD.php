@@ -10,6 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/stylesheet.css">
     <style>
+        .page {
+            display: none;
+        }
+
+        #page1 {
+            display: block;
+        }
+
         input:focus {
             box-shadow: none !important;
             border-color: red !important;
@@ -39,7 +47,7 @@
 
                 <div class="col-12 d-flex justify-content-center"><img class="img-fluid col-5" src="../rsc/DnD-Logo.png" alt=""></div>
 
-                <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column" id="page1">
+                <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column page" id="page1">
 
                     <!-- Margenes con mb mr ml mt -sm-distancia-->
                     <!-- Misma linea -->
@@ -296,7 +304,7 @@
 
                 </div>
 
-                <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column d-none" id="page2">
+                <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column page" id="page2">
                     <a href="" class="btn btn-danger margin-bottom_24" id="atras">Atrás</a>
                 </div>
             </div>
@@ -313,7 +321,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
 
     <script>
-
         $(document).ready(function() {
             $('#continuar').click(function(event) {
                 event.preventDefault();
