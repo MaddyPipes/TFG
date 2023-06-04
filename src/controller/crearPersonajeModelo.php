@@ -33,11 +33,11 @@ if (isset($_POST["crearPersonaje"])) {
     $personaje["stat8"] = htmlspecialchars($_POST["carisma"]);
     $personaje["stat9"] = null;
     $personaje["stat10"] = null;
+    $personaje["salvaciones"] = serialize($personaje["salvaciones"]);
+    $personaje["competencias"] = serialize($personaje["competencias"]);
     $personaje["salvaciones"] = htmlspecialchars($_POST["salvaciones"]);
     $personaje["competencias"] = htmlspecialchars($_POST["competencias"]);
 
-    $personaje["salvaciones"] = serialize($personaje["salvaciones"]);
-    $personaje["competencias"] = serialize($personaje["competencias"]);
 
     //Añadimos el código del modelo
     require_once("../model/Personaje.php");
