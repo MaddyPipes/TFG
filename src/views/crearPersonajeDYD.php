@@ -43,14 +43,14 @@
                     <!-- Margenes con mb mr ml mt -sm-distancia-->
                     <!-- Misma linea -->
                     <div class="row">
-                        <div class="form-group mb-sm-2 mt-sm-2 col-sm-12 col-6 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
+                        <div class="form-group mb-sm-2 mt-sm-2 col-sm-12 col-md-6 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
                             <label for="nombre" class="col-lg-1 col-form-label">Nombre:</label>
                             <div class="col-lg-6">
                                 <input type="text" class="form-control" id="nombre" name="nombre" value='<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>" />
                             </div>
                         </div>
     
-                        <div class="form-group mb-sm-2 mt-sm-2 col-sm-12 col-6 col-6 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
+                        <div class="form-group mb-sm-2 mt-sm-2 col-sm-12 col-md-6 col-6 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
                             <label for="raza" class="col-lg-1 col-form-label">Raza:</label>
                             <div class="col-lg-6">
                                 <input type="text" class="form-control" id="raza" name="raza" value='<?php echo isset($_SESSION['razaPJ']) ? $_SESSION['razaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['razaPJ']) ? $_SESSION['razaPJ'] : ''; ?>" />
