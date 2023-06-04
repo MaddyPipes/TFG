@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../styles/stylesheet.css">
 </head>
 
-<body style="background-image:url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/11/dungeons-dragons.jpg);">
+<body style="background-image:url(../rsc/wp2227193-dungeons-dragons-wallpapers.jpg); background-position:center; background-size:cover; background-repeat:no-repeat;">
 
     <?php
     //Definimos el destino de el formulario
@@ -21,7 +21,7 @@
 
     <form method="POST" action="../controller/controlUsuario.php" id="registroUsuario">
 
-        <div class="container margin-top__48 margin-bottom__48" style="background-color: #353535;">
+        <div class="container margin-top_48 margin-bottom_48" style="background-color: #353535;">
 
             <div class="row justify-content-center">
 
