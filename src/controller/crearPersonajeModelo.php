@@ -17,26 +17,26 @@ if (isset($_POST["crearPersonaje"])) {
 
     //rellenamos los datos del personaje que nos pasa la vista, stripeandolo de inyecciones de código
 
-    $personaje["idJugador"] = ($_SESSION['user_id']);
-    $personaje["nombre"] = htmlspecialchars($_POST["nombre"]);
-    $personaje["raza"] = htmlspecialchars($_POST["raza"]);
-    $personaje["clase"] = htmlspecialchars($_POST["clase"]);
-    $personaje["nivel"] = htmlspecialchars($_POST["nivel"]);
-    $personaje["ilustracion"] = htmlspecialchars($_POST["picture"]);
-    $personaje["stat1"] = htmlspecialchars($_POST["hp"]);
-    $personaje["stat2"] = htmlspecialchars($_POST["ca"]);
-    $personaje["stat3"] = htmlspecialchars($_POST["fuerza"]);
-    $personaje["stat4"] = htmlspecialchars($_POST["constitucion"]);
-    $personaje["stat5"] = htmlspecialchars($_POST["destreza"]);
-    $personaje["stat6"] = htmlspecialchars($_POST["inteligencia"]);
-    $personaje["stat7"] = htmlspecialchars($_POST["sabiduria"]);
-    $personaje["stat8"] = htmlspecialchars($_POST["carisma"]);
+    $personaje["idJugador"] = $_SESSION['user_id'];
+    $personaje["nombre"] = $_POST["nombre"];
+    $personaje["raza"] = $_POST["raza"];
+    $personaje["clase"] = $_POST["clase"];
+    $personaje["nivel"] = $_POST["nivel"];
+    $personaje["ilustracion"] = $_POST["picture"];
+    $personaje["stat1"] = $_POST["hp"];
+    $personaje["stat2"] = $_POST["ca"];
+    $personaje["stat3"] = $_POST["fuerza"];
+    $personaje["stat4"] = $_POST["constitucion"];
+    $personaje["stat5"] = $_POST["destreza"];
+    $personaje["stat6"] = $_POST["inteligencia"];
+    $personaje["stat7"] = $_POST["sabiduria"];
+    $personaje["stat8"] = $_POST["carisma"];
     $personaje["stat9"] = null;
     $personaje["stat10"] = null;
     $personaje["salvaciones"] = serialize($personaje["salvaciones"]);
     $personaje["competencias"] = serialize($personaje["competencias"]);
-    $personaje["salvaciones"] = htmlspecialchars($_POST["salvaciones"]);
-    $personaje["competencias"] = htmlspecialchars($_POST["competencias"]);
+    $personaje["salvaciones"] = $_POST["salvaciones"];
+    $personaje["competencias"] = $_POST["competencias"];
 
 
     //Añadimos el código del modelo
