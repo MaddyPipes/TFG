@@ -42,29 +42,29 @@
 
                     <!-- Margenes con mb mr ml mt -sm-distancia-->
                     <!-- Misma linea -->
-                    <div>
-                        <div class="form-group mb-sm-2 mt-sm-2 col-11 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
+                    <div class="row">
+                        <div class="form-group mb-sm-2 mt-sm-2 col-12 col-md-6 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
                             <label for="nombre" class="col-lg-1 col-form-label">Nombre:</label>
                             <div class="col-lg-6">
                                 <input type="text" class="form-control" id="nombre" name="nombre" value='<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>" />
                             </div>
                         </div>
     
-                        <div class="form-group mb-sm-2 mt-sm-2 col-11 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
+                        <div class="form-group mb-sm-2 mt-sm-2 col-12 col-md-6 col-6 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
                             <label for="raza" class="col-lg-1 col-form-label">Raza:</label>
                             <div class="col-lg-6">
                                 <input type="text" class="form-control" id="raza" name="raza" value='<?php echo isset($_SESSION['razaPJ']) ? $_SESSION['razaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['razaPJ']) ? $_SESSION['razaPJ'] : ''; ?>" />
                             </div>
                         </div>
     
-                        <div class="form-group mb-sm-2 mt-sm-2 col-11 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
+                        <div class="form-group mb-sm-2 mt-sm-2 col-6 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
                             <label for="clase" class="col-lg-1 col-form-label">Clase:</label>
                             <div class="col-lg-6">
                                 <input type="text" class="form-control" id="clase" name="clase" value='<?php echo isset($_SESSION['clasePJ']) ? $_SESSION['clasePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['clasePJ']) ? $_SESSION['clasePJ'] : ''; ?>" />
                             </div>
                         </div>
     
-                        <div class="form-group mb-sm-2 mt-sm-2 col-11 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
+                        <div class="form-group mb-sm-2 mt-sm-2 col-6 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
                             <label for="nivel" class="col-lg-1 col-form-label">Nivel:</label>
                             <div class="col-lg-6">
                                 <input type="number" class="form-control" id="nivel" name="nivel" value='<?php echo isset($_SESSION['nivel']) ? $_SESSION['nivel'] : ''; ?>' placeholder="<?php echo isset($_SESSION['nivel']) ? $_SESSION['nivel'] : ''; ?>" />
