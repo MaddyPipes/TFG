@@ -97,31 +97,24 @@
 
                     <div class="row justify-content-center margin-bottom__16">
                         <h4 class="col-12 text-center">Características</h4>
-                        <div class="col-12 d-flex">
-                            <label for="fuerza" class="col-lg-3 col-form-label">Fuerza:</label>
-                            <div class="col-lg-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="fuerza" class=" col-form-label">Fuerza:</label>
                                 <input type="number" class="form-control" id="fuerza" name="fuerza" value='<?php echo isset($_SESSION['fuerzaPJ']) ? $_SESSION['fuerzaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['fuerzaPJ']) ? $_SESSION['fuerzaPJ'] : ''; ?>" />
-                            </div>
-                            <label for="constitucion" class="col-lg-3 col-form-label">Constitución:</label>
-                            <div class="col-lg-3">
+                                <label for="constitucion" class=" col-form-label">Constitución:</label>
                                 <input type="number" class="form-control" id="constitucion" name="constitucion" value='<?php echo isset($_SESSION['constitucionPJ']) ? $_SESSION['constitucionPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['constitucionPJ']) ? $_SESSION['constitucionPJ'] : ''; ?>" />
-                            </div>
-                            <label for="destreza" class="col-lg-3 col-form-label">Destreza:</label>
-                            <div class="col-lg-3">
+                                <label for="destreza" class=" col-form-label">Destreza:</label>
                                 <input type="number" class="form-control" id="destreza" name="destreza" value='<?php echo isset($_SESSION['destrezaPJ']) ? $_SESSION['destrezaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['destrezaPJ']) ? $_SESSION['destrezaPJ'] : ''; ?>" />
                             </div>
-                            <label for="inteligencia" class="col-lg-3 col-form-label">Inteligencia:</label>
-                            <div class="col-lg-3">
+                            <div class="col-6">
+                                <label for="inteligencia" class=" col-form-label">Inteligencia:</label>
                                 <input type="number" class="form-control" id="inteligencia" name="inteligencia" value='<?php echo isset($_SESSION['inteligenciaPJ']) ? $_SESSION['inteligenciaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['inteligenciaPJ']) ? $_SESSION['inteligenciaPJ'] : ''; ?>" />
-                            </div>
-                            <label for="sabiduria" class="col-lg-3 col-form-label">Sabiduría:</label>
-                            <div class="col-lg-3">
+                                <label for="sabiduria" class=" col-form-label">Sabiduría:</label>
                                 <input type="number" class="form-control" id="sabiduria" name="sabiduria" value='<?php echo isset($_SESSION['sabiduriaPJ']) ? $_SESSION['sabiduriaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['sabiduriaPJ']) ? $_SESSION['sabiduriaPJ'] : ''; ?>" />
-                            </div>
-                            <label for="carisma" class="col-lg-3 col-form-label">Carisma:</label>
-                            <div class="col-lg-3">
+                                <label for="carisma" class=" col-form-label">Carisma:</label>
                                 <input type="number" class="form-control" id="carisma" name="carisma" value='<?php echo isset($_SESSION['carismaPJ']) ? $_SESSION['carismaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['carismaPJ']) ? $_SESSION['carismaPJ'] : ''; ?>" />
                             </div>
+
                         </div>
                     </div>
 
