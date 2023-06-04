@@ -28,7 +28,7 @@ if (isset($_POST["crearPersonaje"])) {
 
     //Añadimos el código del modelo
     require_once("../model/Personaje.php");
-    require_once("../model/Utils.php");
+    require_once("../model/utils.php");
 
     $gestor = new Personaje();
 
