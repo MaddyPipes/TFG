@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="../styles/stylesheet.css">
 </head>
 
-<body>
+<body style="background-image:url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/11/dungeons-dragons.jpg);">
 
     <?php
     //Definimos el destino de el formulario
     $url_destino = "../controller/registroUsuarioController.php";
     ?>
 
-    <form method="POST" action="../controller/controlUsuario.php" id="registroUsuario">
+    <form method="POST" action="../controller/controlUsuario.php" id="registroUsuario" style="background-color: #353535;">
 
-        <div class="container" style="background-image:url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/11/dungeons-dragons.jpg);">
+        <div class="container">
 
             <div class="row justify-content-center">
 
