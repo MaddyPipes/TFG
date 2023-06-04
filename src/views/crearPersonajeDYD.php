@@ -2,12 +2,14 @@
 <html>
 
 <head>
-    <title>Registro Usuario</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+    <title>WHAT THE DICE || Creación Personaje</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../rsc/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../rsc/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../rsc/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/stylesheet.css">
 </head>
 
 <body>
@@ -64,9 +66,13 @@
                         </div>
                     </div>
 
+                    <div>
+
+                    </div>
+
                     <div class="row justify-content-center margin-bottom__16">
                         <h4 class="col-12 text-center">Salvaciones</h4>
-                        <div class="col-12 col-md-6 d-flex flex-md-nowrap flex-wrap justify-content-around">
+                        <div class="col-12 d-flex flex-md-nowrap flex-wrap justify-content-around">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" value="Fuerza" id="fuerza" name="competencias[]">
                                 <label class="form-check-label" for="fuerza">
@@ -108,7 +114,7 @@
 
                     <div class="row justify-content-center margin-bottom__16">
                         <h4 class="col-12 text-center">Competencias</h4>
-                        <div class="col-12 col-md-6 container flex-md-nowrap flex-wrap justify-content-around">
+                        <div class="col-12 container flex-md-nowrap flex-wrap justify-content-around">
                             <div class="row">
                                 <div class="col-6 col-md-3">
                                     <div class="form-check form-check-inline">
