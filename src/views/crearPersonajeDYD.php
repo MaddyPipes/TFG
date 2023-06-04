@@ -10,14 +10,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/stylesheet.css">
     <style>
-    input:focus{
-        box-shadow: none !important;
-        border-color: red !important;
-    }
-    input:checked{
-        background-color: red !important;
-        border-color: red !important;
-    }
+        input:focus {
+            box-shadow: none !important;
+            border-color: red !important;
+        }
+
+        input:checked {
+            background-color: red !important;
+            border-color: red !important;
+        }
     </style>
 </head>
 
@@ -49,21 +50,21 @@
                                 <input type="text" class="form-control" id="nombre" name="nombre" value="" placeholder="">
                             </div>
                         </div>
-    
+
                         <div class="col-6 col-md-6 col-sm-12 d-flex form-group mb-sm-2 mt-sm-2">
                             <label for="raza" class="col-3 col-form-label">Raza:</label>
                             <div class="col-lg-6">
                                 <input type="text" class="form-control" id="raza" name="raza" value="" placeholder="">
                             </div>
                         </div>
-    
+
                         <div class="col-6 d-flex form-group justify-content-end mb-sm-2 mt-sm-2">
                             <label for="clase" class="col-3 col-form-label">Clase:</label>
                             <div class="col-lg-6">
                                 <input type="text" class="form-control" id="clase" name="clase" value="" placeholder="">
                             </div>
                         </div>
-    
+
                         <div class="col-6 d-flex form-group mb-sm-2 mt-sm-2">
                             <label for="nivel" class="col-3 col-form-label">Nivel:</label>
                             <div class="col-lg-6">
@@ -72,10 +73,10 @@
                         </div>
                     </div>
 
-                    <div class="form-group mb-sm-2 mt-sm-2 col-11 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
-                        <label for="picture" class="col-lg-1 col-form-label">URL de imagen de avatar:</label>
+                    <div class="align-items-center col-12 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
+                        <label for="picture" class="col-3 col-form-label">URL de imagen de avatar:</label>
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" id="picture" name="picture" value='<?php echo isset($_SESSION['picturePJ']) ? $_SESSION['picturePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['picturePJ']) ? $_SESSION['picturePJ'] : ''; ?>" />
+                            <input type="text" class="form-control" id="picture" name="picture" value="" placeholder="">
                         </div>
                     </div>
 
