@@ -47,28 +47,28 @@
                         <div class="col-md-6 col-sm-12 d-flex form-group justify-content-end mb-sm-2 mt-sm-2">
                             <label for="nombre" class="col-3 col-form-label">Nombre:</label>
                             <div class="col-lg-6">
-                                <input type="text" class="form-control" id="nombre" name="nombre" value="" placeholder="">
+                                <input type="text" class="form-control" id="nombre" name="nombre" value='<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>">
                             </div>
                         </div>
 
                         <div class="col-6 col-md-6 col-sm-12 d-flex form-group mb-sm-2 mt-sm-2">
                             <label for="raza" class="col-3 col-form-label">Raza:</label>
                             <div class="col-lg-6">
-                                <input type="text" class="form-control" id="raza" name="raza" value="" placeholder="">
+                                <input type="text" class="form-control" id="raza" name="raza" value='<?php echo isset($_SESSION['razaPJ']) ? $_SESSION['razaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['razaPJ']) ? $_SESSION['razaPJ'] : ''; ?>">
                             </div>
                         </div>
 
                         <div class="col-6 d-flex form-group justify-content-end mb-sm-2 mt-sm-2">
                             <label for="clase" class="col-3 col-form-label">Clase:</label>
                             <div class="col-lg-6">
-                                <input type="text" class="form-control" id="clase" name="clase" value="" placeholder="">
+                                <input type="text" class="form-control" id="clase" name="clase" value='<?php echo isset($_SESSION['clasePJ']) ? $_SESSION['clasePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['clasePJ']) ? $_SESSION['clasePJ'] : ''; ?>">
                             </div>
                         </div>
 
                         <div class="col-6 d-flex form-group mb-sm-2 mt-sm-2">
                             <label for="nivel" class="col-3 col-form-label">Nivel:</label>
                             <div class="col-lg-6">
-                                <input type="number" class="form-control" id="nivel" name="nivel" value="" placeholder="">
+                                <input type="number" class="form-control" id="nivel" name="nivel" value='<?php echo isset($_SESSION['nivelPJ']) ? $_SESSION['nivelPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['nivelPJ']) ? $_SESSION['nivelPJ'] : ''; ?>">
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                     <div class="align-items-center col-12 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
                         <label for="picture" class="col-3 col-form-label">URL de imagen de avatar:</label>
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" id="picture" name="picture" value="" placeholder="">
+                            <input type="text" class="form-control" id="picture" name="picture" value='<?php echo isset($_SESSION['hpPJ']) ? $_SESSION['hpPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['hpPJ']) ? $_SESSION['hpPJ'] : ''; ?>">
                         </div>
                     </div>
 
@@ -99,37 +99,37 @@
                         <h4 class="col-12 text-center">Salvaciones</h4>
                         <div class="col-12 d-flex flex-md-nowrap flex-wrap justify-content-around">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" value="Fuerza" id="fuerza" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['fuerzaPJ'])) echo 'checked'; ?> value="Fuerza" id="fuerza" name="competencias[]">
                                 <label class="form-check-label" for="fuerza">
                                     Fuerza
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" value="Constitución" id="constitucion" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['constitucionPJ'])) echo 'checked'; ?> value="Constitución" id="constitucion" name="competencias[]">
                                 <label class="form-check-label" for="constitucion">
                                     Constitución
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" value="Destreza" id="destreza" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['destrezaPJ'])) echo 'checked'; ?> value="Destreza" id="destreza" name="competencias[]">
                                 <label class="form-check-label" for="destreza">
                                     Destreza
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" value="Inteligencia" id="inteligencia" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['inteligenciaPJ'])) echo 'checked'; ?> value="Inteligencia" id="inteligencia" name="competencias[]">
                                 <label class="form-check-label" for="inteligencia">
                                     Inteligencia
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" value="Sabiduría" id="sabiduria" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['sabiduriaPJ'])) echo 'checked'; ?> value="Sabiduría" id="sabiduria" name="competencias[]">
                                 <label class="form-check-label" for="sabiduria">
                                     Sabiduría
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" value="Carisma" id="carisma" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['carismaPJ'])) echo 'checked'; ?> value="Carisma" id="carisma" name="competencias[]">
                                 <label class="form-check-label" for="carisma">
                                     Carisma
                                 </label>
@@ -143,7 +143,7 @@
                             <div class="row">
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Acrobacias" id="acrobacias" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['acrobaciasPJ'])) echo 'checked'; ?> value="Acrobacias" id="acrobacias" name="competencias[]">
                                         <label class="form-check-label" for="acrobacias">
                                             Acrobacias
                                         </label>
@@ -151,7 +151,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Arcanos" id="arcanos" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['arcanosPJ'])) echo 'checked'; ?> value="Arcanos" id="arcanos" name="competencias[]">
                                         <label class="form-check-label" for="arcanos">
                                             Arcanos
                                         </label>
@@ -159,7 +159,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Atletismo" id="atletismo" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['atletismoPJ'])) echo 'checked'; ?> value="Atletismo" id="atletismo" name="competencias[]">
                                         <label class="form-check-label" for="atletismo">
                                             Atletismo
                                         </label>
@@ -167,7 +167,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Engaño" id="engaño" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['engañoPJ'])) echo 'checked'; ?> value="Engaño" id="engaño" name="competencias[]">
                                         <label class="form-check-label" for="engaño">
                                             Engaño
                                         </label>
@@ -175,7 +175,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Historia" id="historia" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['historiaPJ'])) echo 'checked'; ?> value="Historia" id="historia" name="competencias[]">
                                         <label class="form-check-label" for="historia">
                                             Historia
                                         </label>
@@ -183,7 +183,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Interpretación" id="interpretacion" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['interpretacionPJ'])) echo 'checked'; ?> value="Interpretación" id="interpretacion" name="competencias[]">
                                         <label class="form-check-label" for="interpretacion">
                                             Interpretación
                                         </label>
@@ -191,7 +191,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Investigación" id="investigacion" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['investigacionPJ'])) echo 'checked'; ?> value="Investigación" id="investigacion" name="competencias[]">
                                         <label class="form-check-label" for="investigacion">
                                             Investigación
                                         </label>
@@ -199,7 +199,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Prestidigitación" id="prestidigitacion" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['prestidigitacionPJ'])) echo 'checked'; ?> value="Prestidigitación" id="prestidigitacion" name="competencias[]">
                                         <label class="form-check-label" for="prestidigitacion">
                                             Prestidigitación
                                         </label>
@@ -207,7 +207,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Medicina" id="medicina" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['medicinaPJ'])) echo 'checked'; ?> value="Medicina" id="medicina" name="competencias[]">
                                         <label class="form-check-label" for="medicina">
                                             Medicina
                                         </label>
@@ -215,15 +215,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Medicina" id="medicina" name="competencias[]">
-                                        <label class="form-check-label" for="medicina">
-                                            Medicina
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Naturaleza" id="naturaleza" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['naturalezaPJ'])) echo 'checked'; ?> value="Naturaleza" id="naturaleza" name="competencias[]">
                                         <label class="form-check-label" for="naturaleza">
                                             Naturaleza
                                         </label>
@@ -231,7 +223,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Percepción" id="percepcion" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['percepcionPJ'])) echo 'checked'; ?> value="Percepción" id="percepcion" name="competencias[]">
                                         <label class="form-check-label" for="percepcion">
                                             Percepción
                                         </label>
@@ -239,7 +231,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Perspicacia" id="perspicacia" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['perspicaciaPJ'])) echo 'checked'; ?> value="Perspicacia" id="perspicacia" name="competencias[]">
                                         <label class="form-check-label" for="perspicacia">
                                             Perspicacia
                                         </label>
@@ -247,7 +239,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Persuasión" id="persuasion" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['persuasionPJ'])) echo 'checked'; ?> value="Persuasión" id="persuasion" name="competencias[]">
                                         <label class="form-check-label" for="persuasion">
                                             Persuasión
                                         </label>
@@ -255,7 +247,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Religión" id="religion" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['religionPJ'])) echo 'checked'; ?> value="Religión" id="religion" name="competencias[]">
                                         <label class="form-check-label" for="religion">
                                             Religión
                                         </label>
@@ -263,7 +255,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Sigilo" id="sigilo" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['sigiloPJ'])) echo 'checked'; ?> value="Sigilo" id="sigilo" name="competencias[]">
                                         <label class="form-check-label" for="sigilo">
                                             Sigilo
                                         </label>
@@ -271,7 +263,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Supervivencia" id="supervivencia" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['supervivenciaPJ'])) echo 'checked'; ?> value="Supervivencia" id="supervivencia" name="competencias[]">
                                         <label class="form-check-label" for="supervivencia">
                                             Supervivencia
                                         </label>
@@ -279,7 +271,7 @@
                                 </div>
                                 <div class="col-6 col-md-4 d-flex justify-content-center row-cols-2">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="Trato con animales" id="tratoanimal" name="competencias[]">
+                                        <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['tratoanimalPJ'])) echo 'checked'; ?> value="Trato con animales" id="tratoanimal" name="competencias[]">
                                         <label class="form-check-label" for="tratoanimal">
                                             Trato animal
                                         </label>
@@ -292,13 +284,8 @@
 
                     <br>
 
-                    <a href="" class="btn btn-danger margin-bottom_24" id="continuar">Continuar</a>
-
-                </div>
-
-                <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column page d-none" id="page2">
-                    <a href="" class="btn btn-danger margin-bottom_24" id="atras">Atrás</a>
                     <button class="btn btn-danger margin-bottom_24" name="crearPersonaje">¡Crear!</button>
+                    
                 </div>
             </div>
         </div>
@@ -312,22 +299,6 @@
 
     <!-- jQuery Validation Additional Methods -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('#continuar').click(function(event) {
-                event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
-                $('#page1').addClass('d-none');
-                $('#page2').removeClass('d-none');
-            });
-
-            $('#atras').click(function(event) {
-                event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
-                $('#page2').addClass('d-none');
-                $('#page1').removeClass('d-none');
-            });
-        });
-    </script>
 
     </script>
 
