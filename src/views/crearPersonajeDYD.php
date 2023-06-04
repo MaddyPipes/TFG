@@ -33,7 +33,7 @@
 
                     <!-- Margenes con mb mr ml mt -sm-distancia-->
                     <!-- Misma linea -->
-                    <div class="form-group row mb-sm-2 mt-sm-2">
+                    <div class="form-group mb-sm-2 mt-sm-2">
                         <label for="nombre" class="col-lg-3 col-form-label">Nombre:</label>
                         <div class="col-lg-6">
                             <input type="text" class="form-control" id="nombre" name="nombre" value='<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>" />
@@ -54,14 +54,14 @@
                         </div>
                     </div>
 
-                    <div class="form-group row mb-sm-2 mt-sm-2">
+                    <div class="form-group mb-sm-2 mt-sm-2">
                         <label for="nivel" class="col-lg-3 col-form-label">Nivel:</label>
                         <div class="col-lg-6">
                             <input type="number" class="form-control" id="nivel" name="nivel" value='<?php echo isset($_SESSION['nivel']) ? $_SESSION['nivel'] : ''; ?>' placeholder="<?php echo isset($_SESSION['nivel']) ? $_SESSION['nivel'] : ''; ?>" />
                         </div>
                     </div>
 
-                    <div class="form-group row mb-sm-2 mt-sm-2">
+                    <div class="form-group mb-sm-2 mt-sm-2">
                         <label for="picture" class="col-lg-3 col-form-label">URL de imagen de avatar:</label>
                         <div class="col-lg-6">
                             <input type="text" class="form-control" id="picture" name="picture" value='<?php echo isset($_SESSION['picturePJ']) ? $_SESSION['picturePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['picturePJ']) ? $_SESSION['picturePJ'] : ''; ?>" />
@@ -69,13 +69,13 @@
                     </div>
 
                     <div class="form-group row">
-                        <div class="col-6 d-flex align-items-center">
+                        <div class="col-6 d-flex align-items-center justify-content-center">
                             <label for="picture" class="col-lg-3 col-form-label">Puntos de golpe:</label>
                             <div class="col-lg-3">
                                 <input type="number" class="form-control" id="hp" name="hp" value='<?php echo isset($_SESSION['hpPJ']) ? $_SESSION['hpPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['hpPJ']) ? $_SESSION['hpPJ'] : ''; ?>" />
                             </div>
                         </div>
-                        <div class="col-6 d-flex align-items-center">
+                        <div class="col-6 d-flex align-items-center justify-content-center">
                             <label for="picture" class="col-lg-3 col-form-label">Clase de Armadura:</label>
                             <div class="col-lg-3">
                                 <input type="number" class="form-control" id="ca" name="ca" value='<?php echo isset($_SESSION['caPJ']) ? $_SESSION['caPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['caPJ']) ? $_SESSION['caPJ'] : ''; ?>" />
