@@ -114,15 +114,15 @@
 
                             </div>
                             <div class="col-6">
-                                <div class="d-flex">
+                                <div class="d-flex row-cols-4">
                                     <label for="inteligencia" class="mx-2 col-form-label">Inteligencia:</label>
                                     <input type="number" class="form-control w-50" id="inteligencia" name="inteligencia" value='<?php echo isset($_SESSION['inteligenciaPJ']) ? $_SESSION['inteligenciaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['inteligenciaPJ']) ? $_SESSION['inteligenciaPJ'] : ''; ?>" />
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex row-cols-4">
                                     <label for="sabiduria" class="mx-2 col-form-label">Sabiduría:</label>
                                     <input type="number" class="form-control w-50" id="sabiduria" name="sabiduria" value='<?php echo isset($_SESSION['sabiduriaPJ']) ? $_SESSION['sabiduriaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['sabiduriaPJ']) ? $_SESSION['sabiduriaPJ'] : ''; ?>" />
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex row-cols-4">
                                     <label for="carisma" class="mx-2 col-form-label">Carisma:</label>
                                     <input type="number" class="form-control w-50" id="carisma" name="carisma" value='<?php echo isset($_SESSION['carismaPJ']) ? $_SESSION['carismaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['carismaPJ']) ? $_SESSION['carismaPJ'] : ''; ?>" />
                                 </div>
