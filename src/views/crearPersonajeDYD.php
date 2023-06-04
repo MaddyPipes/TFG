@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="../styles/stylesheet.css">
     <style>
     input:focus{
-        box-shadow: none;
+        box-shadow: none !important;
     }
     input:checked{
-        background-color: red;
-        border-color: red;
+        background-color: red !important;
+        border-color: red !important;
     }
     </style>
 </head>
