@@ -29,7 +29,7 @@
     $url_destino = "../controller/registroUsuarioController.php";
     ?>
 
-    <form method="POST" action="../controller/controlUsuario.php" id="registroUsuario">
+    <form method="POST" action="../controller/crearPersonajeModelo.php" id="registroUsuario">
 
         <div class="container margin-top_48 margin-bottom_48 border border-2" style="background-color: #353535;">
 
@@ -99,37 +99,37 @@
                         <h4 class="col-12 text-center">Salvaciones</h4>
                         <div class="col-12 d-flex flex-md-nowrap flex-wrap justify-content-around">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['fuerzaPJ'])) echo 'checked'; ?> value="Fuerza" id="fuerza" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['fuerzaPJ'])) echo 'checked'; ?> value="Fuerza" id="fuerza" name="salvaciones[]">
                                 <label class="form-check-label" for="fuerza">
                                     Fuerza
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['constitucionPJ'])) echo 'checked'; ?> value="Constitución" id="constitucion" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['constitucionPJ'])) echo 'checked'; ?> value="Constitución" id="constitucion" name="salvaciones[]">
                                 <label class="form-check-label" for="constitucion">
                                     Constitución
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['destrezaPJ'])) echo 'checked'; ?> value="Destreza" id="destreza" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['destrezaPJ'])) echo 'checked'; ?> value="Destreza" id="destreza" name="salvaciones[]">
                                 <label class="form-check-label" for="destreza">
                                     Destreza
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['inteligenciaPJ'])) echo 'checked'; ?> value="Inteligencia" id="inteligencia" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['inteligenciaPJ'])) echo 'checked'; ?> value="Inteligencia" id="inteligencia" name="salvaciones[]">
                                 <label class="form-check-label" for="inteligencia">
                                     Inteligencia
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['sabiduriaPJ'])) echo 'checked'; ?> value="Sabiduría" id="sabiduria" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['sabiduriaPJ'])) echo 'checked'; ?> value="Sabiduría" id="sabiduria" name="salvaciones[]">
                                 <label class="form-check-label" for="sabiduria">
                                     Sabiduría
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['carismaPJ'])) echo 'checked'; ?> value="Carisma" id="carisma" name="competencias[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['carismaPJ'])) echo 'checked'; ?> value="Carisma" id="carisma" name="salvaciones[]">
                                 <label class="form-check-label" for="carisma">
                                     Carisma
                                 </label>
@@ -284,8 +284,7 @@
 
                     <br>
 
-                    <button class="btn btn-danger margin-bottom_24" name="crearPersonaje">¡Crear!</button>
-                    
+                    <button class="btn btn-danger margin-bottom_24" name="crearPersonaje">¡Crear!</button>                   
                 </div>
             </div>
         </div>

@@ -3,53 +3,48 @@
 session_start();
 
 use \model\Jugador;
+use model\Personaje;
 use \model\Utils;
-//Creamos un array para guardar los datos del jugador
+//Creamos un array para guardar los datos del personaje
 
 
-//Si nos llegan datos de un jugador, implica que es el formulario el que llama al controlador
-if (isset($_POST["nombre"])) {
-    //rellenamos los datos del jugador que le pasaremos a la vista
+//Si nos llegan datos de un personaje, implica que es el formulario el que llama al controlador
+if (isset($_POST["crearPersonaje"])) {
+    //rellenamos los datos del personaje que le pasaremos a la vista
 
-    //Creamos un array para guardar los datos del jugador
-    $jugador = array();
+    //Creamos un array para guardar los datos del personaje
+    $personaje = array();
 
-    //rellenamos los datos del jugador que nos pasa la vista, stripeandolo de inyecciones de código
+    //rellenamos los datos del personaje que nos pasa la vista, stripeandolo de inyecciones de código
 
-    $jugador["idJugador"] = htmlspecialchars($_POST["idJugador"]);
-    $jugador["nombre"] = htmlspecialchars($_POST["nombre"]);
-    $jugador["edad"] = htmlspecialchars($_POST["edad"]);
-    $jugador["genero"] = htmlspecialchars($_POST["genero"]);
-    $jugador["localidad"] = htmlspecialchars($_POST["localidad"]);
-    $jugador["intereses"] = htmlspecialchars($_POST["intereses"]);
-    $jugador["avatar"] = htmlspecialchars($_POST["avatar"]);
+    $personaje["idJugador"] = htmlspecialchars($_POST["idJugador"]);
+    $personaje["nombre"] = htmlspecialchars($_POST["nombre"]);
+    $personaje["edad"] = htmlspecialchars($_POST["edad"]);
+    $personaje["genero"] = htmlspecialchars($_POST["genero"]);
+    $personaje["localidad"] = htmlspecialchars($_POST["localidad"]);
+    $personaje["intereses"] = htmlspecialchars($_POST["intereses"]);
+    $personaje["avatar"] = htmlspecialchars($_POST["avatar"]);
 
 
     //Añadimos el código del modelo
-    require_once("../model/Jugador.php");
+    require_once("../model/Personaje.php");
     require_once("../model/Utils.php");
 
-    $gestor = new Jugador();
+    $gestor = new Personaje();
 
     //Nos conectamos a la Bd
     $conexPDO = Utils::conectar();
 
     //Modificamos el registro
-    $resultado = $gestor->addJugador($jugador, $conexPDO);
+    $resultado = $gestor->addPersonaje($personaje, $conexPDO);
 
     //Si ha ido bien el mensaje sera distint
-    if ($resultado != null)
-        $inf_ms = "El jugador se ha insertado Correctamente";
-    else
-        $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";
+    // if ($resultado != null)
+    //     $inf_ms = "El personaje se ha insertado Correctamente";
+    // else
+    //     $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";
 
-    //Recolectamos los datos de los jugadores
-    $datosJugador = $gestor->getJugador($conexPDO, true, 1);
-    //Obtenemos el número total de jugadores de la base de datos sin importar cuantos muestre en el array
-    $numJugadores = $gestor->numeroJugadores($conexPDO);
-    $numJugadores = intval($numJugadores[0]);
-
-    include("../views/mostrarJugadores.php");
+    include("../views/main_page.php");
 } else {
     //Sin datos del personaje cargados cargamos la vista
     include("../views/crearPersonajeDYD.php");

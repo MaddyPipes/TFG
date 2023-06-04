@@ -139,39 +139,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a class="btn btn-primary margin-top_8 margin-bottom_8" data-bs-toggle="collapse" href="#ataques" role="button" aria-expanded="false" aria-controls="ataques">
-                                Ataques
-                            </a>
-                            <div class="collapse" id="ataques">
-                                <div class="card card-body">
-                                    <ul>
-                                        <li><b>Mandoble:</b><br> 2d6 cortante + 3</li>
-                                        <li><b>Mandoble + Castigo:</b><br> 2d6 cortante + 2d6 radiante + 3</li>
-                                        <li><b>Mandoble:</b><br> 2d6 + 3</li>
-                                        <li><b>Mandoble:</b><br> 2d6 + 3</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <a class="btn btn-primary margin-top_8 margin-bottom_8" data-bs-toggle="collapse" href="#conjuros" role="button" aria-expanded="false" aria-controls="conjuros">
-                                Conjuros
-                            </a>
-                            <div class="collapse" id="conjuros">
-                                <div class="card card-body">
-                                    <ul>
-                                        <li><b>Cantrips</b></li>
-                                        <ul>
-                                            <li>Luz</li>
-                                            <li>Llama sagrada</li>
-                                            <li>Guía</li>
-                                        </ul>
-                                        <li><b>Lvl 1:</b></li>
-                                        <ul>
-                                            <li>Impacto de guía</li>
-                                            <li>castigo Abrasador</li>
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
