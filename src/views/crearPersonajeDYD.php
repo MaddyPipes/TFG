@@ -97,7 +97,7 @@
 
                     <div class="row justify-content-center margin-bottom__16">
                         <h4 class="col-12 text-center">Características</h4>
-                        <div class="col-12 d-flex flex-md-nowrap flex-wrap justify-content-around">
+                        <div class="col-12 d-flex">
                             <label for="fuerza" class="col-lg-3 col-form-label">Fuerza:</label>
                             <div class="col-lg-3">
                                 <input type="number" class="form-control" id="fuerza" name="fuerza" value='<?php echo isset($_SESSION['fuerzaPJ']) ? $_SESSION['fuerzaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['fuerzaPJ']) ? $_SESSION['fuerzaPJ'] : ''; ?>" />
