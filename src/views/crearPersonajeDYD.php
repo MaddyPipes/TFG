@@ -10,14 +10,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/stylesheet.css">
     <style>
-        .page {
-            display: none;
-        }
-
-        #page1 {
-            display: block;
-        }
-
         input:focus {
             box-shadow: none !important;
             border-color: red !important;
@@ -304,7 +296,7 @@
 
                 </div>
 
-                <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column page" id="page2">
+                <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column page d-none" id="page2">
                     <a href="" class="btn btn-danger margin-bottom_24" id="atras">Atrás</a>
                 </div>
             </div>
@@ -323,15 +315,15 @@
     <script>
         $(document).ready(function() {
             $('#continuar').click(function(event) {
-                event.preventDefault();
-                $('#page1').hide();
-                $('#page2').show();
+                event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+                $('#page1').addClass('d-none');
+                $('#page2').removeClass('d-none');
             });
 
             $('#atras').click(function(event) {
-                event.preventDefault();
-                $('#page2').hide();
-                $('#page1').show();
+                event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+                $('#page2').addClass('d-none');
+                $('#page1').removeClass('d-none');
             });
         });
     </script>
