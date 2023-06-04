@@ -116,7 +116,7 @@
                         <h4 class="col-12 text-center">Competencias</h4>
                         <div class="col-12 container flex-md-nowrap flex-wrap justify-content-around">
                             <div class="row">
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Acrobacias" id="acrobacias" name="competencias[]">
                                         <label class="form-check-label" for="acrobacias">
@@ -124,7 +124,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Arcanos" id="arcanos" name="competencias[]">
                                         <label class="form-check-label" for="arcanos">
@@ -132,7 +132,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Atletismo" id="atletismo" name="competencias[]">
                                         <label class="form-check-label" for="atletismo">
@@ -140,7 +140,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Engaño" id="engaño" name="competencias[]">
                                         <label class="form-check-label" for="engaño">
@@ -148,7 +148,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Historia" id="historia" name="competencias[]">
                                         <label class="form-check-label" for="historia">
@@ -156,7 +156,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Interpretación" id="interpretacion" name="competencias[]">
                                         <label class="form-check-label" for="interpretacion">
@@ -164,7 +164,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Investigación" id="investigacion" name="competencias[]">
                                         <label class="form-check-label" for="investigacion">
@@ -172,7 +172,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Prestidigitación" id="prestidigitacion" name="competencias[]">
                                         <label class="form-check-label" for="prestidigitacion">
@@ -180,7 +180,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Medicina" id="medicina" name="competencias[]">
                                         <label class="form-check-label" for="medicina">
@@ -188,7 +188,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Medicina" id="medicina" name="competencias[]">
                                         <label class="form-check-label" for="medicina">
@@ -196,7 +196,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Naturaleza" id="naturaleza" name="competencias[]">
                                         <label class="form-check-label" for="naturaleza">
@@ -204,7 +204,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Percepción" id="percepcion" name="competencias[]">
                                         <label class="form-check-label" for="percepcion">
@@ -212,7 +212,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Perspicacia" id="perspicacia" name="competencias[]">
                                         <label class="form-check-label" for="perspicacia">
@@ -220,7 +220,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Persuasión" id="persuasion" name="competencias[]">
                                         <label class="form-check-label" for="persuasion">
@@ -228,7 +228,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Religión" id="religion" name="competencias[]">
                                         <label class="form-check-label" for="religion">
@@ -236,7 +236,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Sigilo" id="sigilo" name="competencias[]">
                                         <label class="form-check-label" for="sigilo">
@@ -244,7 +244,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Supervivencia" id="supervivencia" name="competencias[]">
                                         <label class="form-check-label" for="supervivencia">
@@ -252,7 +252,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3">
+                                <div class="col-6 col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" value="Trato con animales" id="tratoanimal" name="competencias[]">
                                         <label class="form-check-label" for="tratoanimal">
