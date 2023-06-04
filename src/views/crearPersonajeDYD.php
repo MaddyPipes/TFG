@@ -25,9 +25,9 @@
 
             <div class="row justify-content-center">
 
-                <div class="col-12 d-flex justify-content-center"><img class="img-fluid col-5" src="../rsc/whited20.png" alt=""></div>
+                <div class="col-12 d-flex justify-content-center"><img src="../rsc/whited20.png" alt=""></div>
                 
-                <div class="col-12 d-flex justify-content-center"><img src="../rsc/DnD-Logo.png" alt=""></div>
+                <div class="col-12 d-flex justify-content-center"><img class="img-fluid col-5" src="../rsc/DnD-Logo.png" alt=""></div>
 
                 <div class="col-lg-9 col-sm-9">
 
