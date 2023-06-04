@@ -82,15 +82,45 @@
 
                     <div class="form-group row">
                         <div class="col-6 d-flex align-items-center justify-content-center">
-                            <label for="picture" class="col-lg-3 col-form-label">Puntos de golpe:</label>
+                            <label for="hp" class="col-lg-3 col-form-label">Puntos de golpe:</label>
                             <div class="col-lg-3">
                                 <input type="number" class="form-control" id="hp" name="hp" value='<?php echo isset($_SESSION['hpPJ']) ? $_SESSION['hpPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['hpPJ']) ? $_SESSION['hpPJ'] : ''; ?>" />
                             </div>
                         </div>
                         <div class="col-6 d-flex align-items-center justify-content-center">
-                            <label for="picture" class="col-lg-3 col-form-label">Clase de Armadura:</label>
+                            <label for="ca" class="col-lg-3 col-form-label">Clase de Armadura:</label>
                             <div class="col-lg-3">
                                 <input type="number" class="form-control" id="ca" name="ca" value='<?php echo isset($_SESSION['caPJ']) ? $_SESSION['caPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['caPJ']) ? $_SESSION['caPJ'] : ''; ?>" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center margin-bottom__16">
+                        <h4 class="col-12 text-center">Características</h4>
+                        <div class="col-12 d-flex flex-md-nowrap flex-wrap justify-content-around">
+                            <label for="fuerza" class="col-lg-3 col-form-label">Fuerza:</label>
+                            <div class="col-lg-3">
+                                <input type="number" class="form-control" id="fuerza" name="fuerza" value='<?php echo isset($_SESSION['fuerzaPJ']) ? $_SESSION['fuerzaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['fuerzaPJ']) ? $_SESSION['fuerzaPJ'] : ''; ?>" />
+                            </div>
+                            <label for="constitucion" class="col-lg-3 col-form-label">Constitución:</label>
+                            <div class="col-lg-3">
+                                <input type="number" class="form-control" id="constitucion" name="constitucion" value='<?php echo isset($_SESSION['constitucionPJ']) ? $_SESSION['constitucionPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['constitucionPJ']) ? $_SESSION['constitucionPJ'] : ''; ?>" />
+                            </div>
+                            <label for="destreza" class="col-lg-3 col-form-label">Destreza:</label>
+                            <div class="col-lg-3">
+                                <input type="number" class="form-control" id="destreza" name="destreza" value='<?php echo isset($_SESSION['destrezaPJ']) ? $_SESSION['destrezaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['destrezaPJ']) ? $_SESSION['destrezaPJ'] : ''; ?>" />
+                            </div>
+                            <label for="inteligencia" class="col-lg-3 col-form-label">Inteligencia:</label>
+                            <div class="col-lg-3">
+                                <input type="number" class="form-control" id="inteligencia" name="inteligencia" value='<?php echo isset($_SESSION['inteligenciaPJ']) ? $_SESSION['inteligenciaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['inteligenciaPJ']) ? $_SESSION['inteligenciaPJ'] : ''; ?>" />
+                            </div>
+                            <label for="sabiduria" class="col-lg-3 col-form-label">Sabiduría:</label>
+                            <div class="col-lg-3">
+                                <input type="number" class="form-control" id="sabiduria" name="sabiduria" value='<?php echo isset($_SESSION['sabiduriaPJ']) ? $_SESSION['sabiduriaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['sabiduriaPJ']) ? $_SESSION['sabiduriaPJ'] : ''; ?>" />
+                            </div>
+                            <label for="carisma" class="col-lg-3 col-form-label">Carisma:</label>
+                            <div class="col-lg-3">
+                                <input type="number" class="form-control" id="carisma" name="carisma" value='<?php echo isset($_SESSION['carismaPJ']) ? $_SESSION['carismaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['carismaPJ']) ? $_SESSION['carismaPJ'] : ''; ?>" />
                             </div>
                         </div>
                     </div>
@@ -99,37 +129,37 @@
                         <h4 class="col-12 text-center">Salvaciones</h4>
                         <div class="col-12 d-flex flex-md-nowrap flex-wrap justify-content-around">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['fuerzaPJ'])) echo 'checked'; ?> value="Fuerza" id="fuerza" name="salvaciones[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['fuerzaSalvacionPJ'])) echo 'checked'; ?> value="Fuerza" id="fuerza" name="salvaciones[]">
                                 <label class="form-check-label" for="fuerza">
                                     Fuerza
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['constitucionPJ'])) echo 'checked'; ?> value="Constitución" id="constitucion" name="salvaciones[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['constitucionSalvacionPJ'])) echo 'checked'; ?> value="Constitución" id="constitucion" name="salvaciones[]">
                                 <label class="form-check-label" for="constitucion">
                                     Constitución
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['destrezaPJ'])) echo 'checked'; ?> value="Destreza" id="destreza" name="salvaciones[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['destrezaSalvacionPJ'])) echo 'checked'; ?> value="Destreza" id="destreza" name="salvaciones[]">
                                 <label class="form-check-label" for="destreza">
                                     Destreza
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['inteligenciaPJ'])) echo 'checked'; ?> value="Inteligencia" id="inteligencia" name="salvaciones[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['inteligenciaSalvacionPJ'])) echo 'checked'; ?> value="Inteligencia" id="inteligencia" name="salvaciones[]">
                                 <label class="form-check-label" for="inteligencia">
                                     Inteligencia
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['sabiduriaPJ'])) echo 'checked'; ?> value="Sabiduría" id="sabiduria" name="salvaciones[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['sabiduriaSalvacionPJ'])) echo 'checked'; ?> value="Sabiduría" id="sabiduria" name="salvaciones[]">
                                 <label class="form-check-label" for="sabiduria">
                                     Sabiduría
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['carismaPJ'])) echo 'checked'; ?> value="Carisma" id="carisma" name="salvaciones[]">
+                                <input class="form-check-input" type="checkbox" <?php if (isset($_SESSION['carismaSalvacionPJ'])) echo 'checked'; ?> value="Carisma" id="carisma" name="salvaciones[]">
                                 <label class="form-check-label" for="carisma">
                                     Carisma
                                 </label>
@@ -284,7 +314,7 @@
 
                     <br>
 
-                    <button class="btn btn-danger margin-bottom_24" name="crearPersonaje">¡Crear!</button>                   
+                    <button class="btn btn-danger margin-bottom_24" name="crearPersonaje">¡Crear!</button>
                 </div>
             </div>
         </div>

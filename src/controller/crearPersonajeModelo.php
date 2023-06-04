@@ -17,13 +17,22 @@ if (isset($_POST["crearPersonaje"])) {
 
     //rellenamos los datos del personaje que nos pasa la vista, stripeandolo de inyecciones de código
 
-    $personaje["idJugador"] = htmlspecialchars($_POST["idJugador"]);
+    $personaje["idJugador"] = htmlspecialchars($_SESSION['user_id']);
     $personaje["nombre"] = htmlspecialchars($_POST["nombre"]);
-    $personaje["edad"] = htmlspecialchars($_POST["edad"]);
-    $personaje["genero"] = htmlspecialchars($_POST["genero"]);
-    $personaje["localidad"] = htmlspecialchars($_POST["localidad"]);
-    $personaje["intereses"] = htmlspecialchars($_POST["intereses"]);
-    $personaje["avatar"] = htmlspecialchars($_POST["avatar"]);
+    $personaje["raza"] = htmlspecialchars($_POST["raza"]);
+    $personaje["clase"] = htmlspecialchars($_POST["clase"]);
+    $personaje["nivel"] = htmlspecialchars($_POST["nivel"]);
+    $personaje["ilustracion"] = htmlspecialchars($_POST["picture"]);
+    $personaje["stat1"] = htmlspecialchars($_POST["hp"]);
+    $personaje["stat2"] = htmlspecialchars($_POST["ca"]);
+    $personaje["stat3"] = htmlspecialchars($_POST["ca"]);
+    $personaje["stat4"] = htmlspecialchars($_POST["ca"]);
+    $personaje["stat5"] = htmlspecialchars($_POST["ca"]);
+    $personaje["stat6"] = htmlspecialchars($_POST["ca"]);
+    $personaje["stat7"] = htmlspecialchars($_POST["ca"]);
+    $personaje["stat8"] = htmlspecialchars($_POST["ca"]);
+    $personaje["stat9"] = htmlspecialchars($_POST["ca"]);
+    $personaje["stat10"] = htmlspecialchars($_POST["ca"]);
 
 
     //Añadimos el código del modelo

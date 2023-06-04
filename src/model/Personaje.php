@@ -98,7 +98,7 @@ class Personaje {
 
                 // INSERT INTO `gestionrol`.`personaje` (`idPERSONAJE`, `JUGADOR_idJUGADOR`, `NOMBRE`, `RAZA`, `CLASE`, `NIVEL`, `ILUSTRACION`, `FICHA`, `INVENTARIO`, `DIARIO`) VALUES ('', '1', 'Aelrik Rounar', 'Semielfo', 'Paladín', '5', 'elfex1.jpg', 'cualquierurl', 'vacío', 'vacío');
 
-                $statement = $conexPDO->prepare("INSERT INTO gestionrol.personaje (idPERSONAJE, JUGADOR_idJUGADOR, NOMBRE, RAZA, CLASE, NIVEL, ILUSTRACION, FICHA, INVENTARIO, DIARIO, STAT1, STAT2, STAT3, STAT4, STAT5, STAT6, STAT7, STAT8, STAT9, STAT10, COMPETENCIAS) VALUES ('', :JUGADOR_idJUGADOR, :NOMBRE, :RAZA, :CLASE, :NIVEL, :ILUSTRACION, :FICHA, :INVENTARIO, :DIARIO, :STAT1, :STAT2, :STAT3, :STAT4, :STAT5, :STAT6, :STAT7, :STAT8, :STAT9, :STAT10, :COMPETENCIAS)");
+                $statement = $conexPDO->prepare("INSERT INTO gestionrol.personaje (idPERSONAJE, JUGADOR_idJUGADOR, NOMBRE, RAZA, CLASE, NIVEL, ILUSTRACION, FICHA, INVENTARIO, DIARIO, STAT1, STAT2, STAT3, STAT4, STAT5, STAT6, STAT7, STAT8, STAT9, STAT10, COMPETENCIAS, SALVACIONES) VALUES ('', :JUGADOR_idJUGADOR, :NOMBRE, :RAZA, :CLASE, :NIVEL, :ILUSTRACION, :FICHA, :INVENTARIO, :DIARIO, :STAT1, :STAT2, :STAT3, :STAT4, :STAT5, :STAT6, :STAT7, :STAT8, :STAT9, :STAT10, :COMPETENCIAS, :SALVACIONES)");
 
                 //Bindeamos los parámetros a la sentencia
 
@@ -122,6 +122,7 @@ class Personaje {
                 $statement->bindParam(":STAT9", $personaje["stat9"]);
                 $statement->bindParam(":STAT10", $personaje["stat10"]);
                 $statement->bindParam(":COMPETENCIAS", $personaje["competencias"]);
+                $statement->bindParam(":SALVACIONES", $personaje["salvaciones"]);
                 
                 //Una vez completada la sentencia, la ejecutamos
 
