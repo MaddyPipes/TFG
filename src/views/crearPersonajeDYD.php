@@ -32,39 +32,73 @@
                     <div class="form-group row mb-sm-2 mt-sm-2">
                         <label for="nombre" class="col-lg-3 col-form-label">Nombre:</label>
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" id="nombre" name="nombre" value='<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>"/>
+                            <input type="text" class="form-control" id="nombre" name="nombre" value='<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['nombrePJ']) ? $_SESSION['nombrePJ'] : ''; ?>" />
                         </div>
                     </div>
 
-                    <div class="form-group row mb-sm-2 mt-sm-2">
+                    <div class="form-group mb-sm-2 mt-sm-2">
                         <label for="raza" class="col-lg-3 col-form-label">Raza:</label>
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" id="raza" name="raza" value='<?php echo isset($_SESSION['razaPJ']) ? $_SESSION['razaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['razaPJ']) ? $_SESSION['razaPJ'] : ''; ?>"/>
+                            <input type="text" class="form-control" id="raza" name="raza" value='<?php echo isset($_SESSION['razaPJ']) ? $_SESSION['razaPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['razaPJ']) ? $_SESSION['razaPJ'] : ''; ?>" />
                         </div>
                     </div>
 
-                    <div class="form-group row mb-sm-2 mt-sm-2">
+                    <div class="form-group mb-sm-2 mt-sm-2">
                         <label for="clase" class="col-lg-3 col-form-label">Clase:</label>
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" id="clase" name="clase" value='<?php echo isset($_SESSION['clasePJ']) ? $_SESSION['clasePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['clasePJ']) ? $_SESSION['clasePJ'] : ''; ?>"/>
+                            <input type="text" class="form-control" id="clase" name="clase" value='<?php echo isset($_SESSION['clasePJ']) ? $_SESSION['clasePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['clasePJ']) ? $_SESSION['clasePJ'] : ''; ?>" />
                         </div>
                     </div>
 
                     <div class="form-group row mb-sm-2 mt-sm-2">
                         <label for="nivel" class="col-lg-3 col-form-label">Nivel:</label>
                         <div class="col-lg-6">
-                            <input type="number" class="form-control" id="nivel" name="nivel" value='<?php echo isset($_SESSION['nivel']) ? $_SESSION['nivel'] : ''; ?>' placeholder="<?php echo isset($_SESSION['nivel']) ? $_SESSION['nivel'] : ''; ?>"/>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group row mb-sm-2 mt-sm-2">
-                        <label for="picture" class="col-lg-3 col-form-label">URL de imagen de avatar:</label>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control" id="picture" name="picture" value='<?php echo isset($_SESSION['picturePJ']) ? $_SESSION['picturePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['picturePJ']) ? $_SESSION['picturePJ'] : ''; ?>"/>
+                            <input type="number" class="form-control" id="nivel" name="nivel" value='<?php echo isset($_SESSION['nivel']) ? $_SESSION['nivel'] : ''; ?>' placeholder="<?php echo isset($_SESSION['nivel']) ? $_SESSION['nivel'] : ''; ?>" />
                         </div>
                     </div>
 
-                    
+                    <div class="form-group row mb-sm-2 mt-sm-2">
+                        <label for="picture" class="col-lg-3 col-form-label">URL de imagen de avatar:</label>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="picture" name="picture" value='<?php echo isset($_SESSION['picturePJ']) ? $_SESSION['picturePJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['picturePJ']) ? $_SESSION['picturePJ'] : ''; ?>" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h4 class="col-12 text-center">Competencias</h4>
+                        <div class="col-12 d-flex justify-content-around"></div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="acrobacias" name="competencias[]">
+                            <label class="form-check-label" for="acrobacias">
+                                Acrobacias
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="arcanos" name="competencias[]">
+                            <label class="form-check-label" for="arcanos">
+                                Arcanos
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="atletismo" name="competencias[]">
+                            <label class="form-check-label" for="atletismo">
+                                Atletismo
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="engaño" name="competencias[]">
+                            <label class="form-check-label" for="engaño">
+                                Engaño
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="Historia" name="competencias[]">
+                            <label class="form-check-label" for="Historia">
+                                Engaño
+                            </label>
+                        </div>
+                    </div>
+
 
                     <br>
 
