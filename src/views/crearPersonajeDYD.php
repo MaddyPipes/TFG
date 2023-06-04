@@ -21,11 +21,13 @@
 
     <form method="POST" action="../controller/controlUsuario.php" id="registroUsuario">
 
-        <div class="container">
+        <div class="container" style="background-image:url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/11/dungeons-dragons.jpg);">
 
             <div class="row justify-content-center">
 
                 <div class="col-12 d-flex justify-content-center"><img src="../rsc/whited20.png" alt=""></div>
+                
+                <div class="col-12 d-flex justify-content-center"><img src="../rsc/DnD-Logo.png" alt=""></div>
 
                 <div class="col-lg-9 col-sm-9">
 
@@ -267,7 +269,7 @@
 
                     <br>
 
-                    <button type="submit" name="registro" value="true" class="btn btn-default mb-sm-2 shadow p-3 mb-5 bg-body rounded px-3 py-2">Registro</button>
+                    <button type="submit" name="crearPersonaje" value="true" class="btn btn-default mb-sm-2 shadow p-3 mb-5 bg-body rounded px-3 py-2">Registro</button>
 
                 </div>
             </div>
