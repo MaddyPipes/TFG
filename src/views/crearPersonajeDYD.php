@@ -26,7 +26,7 @@
             <div class="row justify-content-center">
 
                 <div class="col-12 d-flex justify-content-center"><img src="../rsc/whited20.png" alt=""></div>
-                
+
                 <div class="col-12 d-flex justify-content-center"><img class="img-fluid col-5" src="../rsc/DnD-Logo.png" alt=""></div>
 
                 <div class="col-lg-9 col-sm-9">
@@ -68,8 +68,19 @@
                         </div>
                     </div>
 
-                    <div>
-
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="picture" class="col-lg-3 col-form-label">Puntos de golpe:</label>
+                            <div class="col-lg-9">
+                                <input type="number" class="form-control" id="hp" name="hp" value='<?php echo isset($_SESSION['hpPJ']) ? $_SESSION['hpPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['hpPJ']) ? $_SESSION['hpPJ'] : ''; ?>" />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="picture" class="col-lg-3 col-form-label">Clase de Armadura:</label>
+                            <div class="col-lg-9">
+                                <input type="number" class="form-control" id="ca" name="ca" value='<?php echo isset($_SESSION['caPJ']) ? $_SESSION['caPJ'] : ''; ?>' placeholder="<?php echo isset($_SESSION['caPJ']) ? $_SESSION['caPJ'] : ''; ?>" />
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row justify-content-center margin-bottom__16">
