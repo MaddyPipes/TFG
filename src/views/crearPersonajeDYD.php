@@ -298,6 +298,7 @@
 
                 <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column page d-none" id="page2">
                     <a href="" class="btn btn-danger margin-bottom_24" id="atras">Atrás</a>
+                    <button class="btn btn-danger margin-bottom_24" name="crearPersonaje">¡Crear!</button>
                 </div>
             </div>
         </div>
