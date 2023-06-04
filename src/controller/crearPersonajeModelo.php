@@ -17,7 +17,7 @@ if (isset($_POST["crearPersonaje"])) {
 
     //rellenamos los datos del personaje que nos pasa la vista, stripeandolo de inyecciones de código
 
-    $personaje["idJugador"] = htmlspecialchars($_SESSION['user_id']);
+    $personaje["idJugador"] = ($_SESSION['user_id']);
     $personaje["nombre"] = htmlspecialchars($_POST["nombre"]);
     $personaje["raza"] = htmlspecialchars($_POST["raza"]);
     $personaje["clase"] = htmlspecialchars($_POST["clase"]);
