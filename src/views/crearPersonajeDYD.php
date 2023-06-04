@@ -12,22 +12,22 @@
     <link rel="stylesheet" href="../styles/stylesheet.css">
 </head>
 
-<body style="background-image:url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/11/dungeons-dragons.jpg);">
+<body>
 
     <?php
     //Definimos el destino de el formulario
     $url_destino = "../controller/registroUsuarioController.php";
     ?>
 
-    <form method="POST" action="../controller/controlUsuario.php" id="registroUsuario" style="background-color: #353535;">
+    <form method="POST" action="../controller/controlUsuario.php" id="registroUsuario" style="background-image:url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/11/dungeons-dragons.jpg);">
 
-        <div class="container">
+        <div class="container" style="background-color: #353535;">
 
             <div class="row justify-content-center">
 
-                <div class="col-12 d-flex justify-content-center"><img src="../rsc/whited20.png" alt=""></div>
+                <div class="col-12 d-flex justify-content-center"><img class="img-fluid col-5" src="../rsc/whited20.png" alt=""></div>
                 
-                <div class="col-12 d-flex justify-content-center img-fluid"><img src="../rsc/DnD-Logo.png" alt=""></div>
+                <div class="col-12 d-flex justify-content-center"><img src="../rsc/DnD-Logo.png" alt=""></div>
 
                 <div class="col-lg-9 col-sm-9">
 
