@@ -66,36 +66,37 @@
 
                     <div class="row">
                         <h4 class="col-12 text-center">Competencias</h4>
-                        <div class="col-12 d-flex justify-content-around"></div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" value="" id="acrobacias" name="competencias[]">
-                            <label class="form-check-label" for="acrobacias">
-                                Acrobacias
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" value="" id="arcanos" name="competencias[]">
-                            <label class="form-check-label" for="arcanos">
-                                Arcanos
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" value="" id="atletismo" name="competencias[]">
-                            <label class="form-check-label" for="atletismo">
-                                Atletismo
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" value="" id="engaño" name="competencias[]">
-                            <label class="form-check-label" for="engaño">
-                                Engaño
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" value="" id="Historia" name="competencias[]">
-                            <label class="form-check-label" for="Historia">
-                                Engaño
-                            </label>
+                        <div class="col-12 d-flex justify-content-around">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="" id="acrobacias" name="competencias[]">
+                                <label class="form-check-label" for="acrobacias">
+                                    Acrobacias
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="" id="arcanos" name="competencias[]">
+                                <label class="form-check-label" for="arcanos">
+                                    Arcanos
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="" id="atletismo" name="competencias[]">
+                                <label class="form-check-label" for="atletismo">
+                                    Atletismo
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="" id="engaño" name="competencias[]">
+                                <label class="form-check-label" for="engaño">
+                                    Engaño
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="" id="Historia" name="competencias[]">
+                                <label class="form-check-label" for="Historia">
+                                    Engaño
+                                </label>
+                            </div>
                         </div>
                     </div>
 
