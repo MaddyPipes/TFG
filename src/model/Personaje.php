@@ -108,9 +108,9 @@ class Personaje {
                 $statement->bindParam(":CLASE", $personaje["clase"]);
                 $statement->bindParam(":NIVEL", $personaje["nivel"]);
                 $statement->bindParam(":ILUSTRACION", $personaje["ilustracion"]);
-                $statement->bindParam(":FICHA", $personaje["ficha"]);
-                $statement->bindParam(":INVENTARIO", $personaje["inventario"]);
-                $statement->bindParam(":DIARIO", $personaje["diario"]);
+                $statement->bindParam(":FICHA", null);
+                $statement->bindParam(":INVENTARIO", null);
+                $statement->bindParam(":DIARIO", null);
                 $statement->bindParam(":STAT1", $personaje["stat1"]);
                 $statement->bindParam(":STAT2", $personaje["stat2"]);
                 $statement->bindParam(":STAT3", $personaje["stat3"]);

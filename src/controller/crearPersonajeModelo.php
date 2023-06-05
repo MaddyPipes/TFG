@@ -57,6 +57,8 @@ if (isset($_POST["crearPersonaje"])) {
     else
         $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";
 
+        var_dump($personaje);
+
     include("../views/main_page.php");
 } else {
     //Sin datos del personaje cargados cargamos la vista

@@ -62,7 +62,7 @@ if (isset($_POST["nombre"]) && isset($_POST["email"]) && isset($_POST["password"
 
         //Mandamos un mail al usuario con el código de activación
 
-        $resultadoMail = utils::correo_registro($usuario);
+        // $resultadoMail = utils::correo_registro($usuario);
 
         //Cambiamos el valor del mensaje para que aparezca un mensaje en caso de fallar al mandar el mail, siendo el return de la función 0 (Valor de la constante $MAIL_ERROR)
         if($resultadoMail == 0)

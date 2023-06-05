@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <?= var_dump($personaje); ?>
     <?= $inf_ms ?>
     <header class="container">
         <div class="row justify-content-center margin-bottom_16 margin-top_16">
@@ -88,14 +89,14 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body d-flex align-items-center">
-                                <form class="col-12 d-flex justify-content-evenly" action="../controller/crearPersonajeModelo.php">
-                                    <div>
-                                        <button class="btn btn-primary" name="juegoPersonaje" value="ysystem">Ysystem</button>
-                                    </div>
-                                    <div class="margin-top__8">
-                                        <button class="btn btn-primary" name="juegoPersonaje" value="dyd5">D&D 5a Edición</button>
-                                    </div>
-                                </form>
+                            <form class="col-12 d-flex justify-content-evenly" action="../controller/crearPersonajeModelo.php">
+                                <div>
+                                    <button class="btn btn-primary" name="juegoPersonaje" value="ysystem">Ysystem</button>
+                                </div>
+                                <div class="margin-top__8">
+                                    <button class="btn btn-primary" name="juegoPersonaje" value="dyd5">D&D 5a Edición</button>
+                                </div>
+                            </form>
                         </div>
                         <div class="modal-footer">
                         </div>
