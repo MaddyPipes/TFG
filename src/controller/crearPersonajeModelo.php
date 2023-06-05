@@ -33,10 +33,10 @@ if (isset($_POST["crearPersonaje"])) {
     $personaje["stat8"] = $_POST["carisma"];
     $personaje["stat9"] = null;
     $personaje["stat10"] = null;
-    $personaje["salvaciones"] = serialize($personaje["salvaciones"]);
-    $personaje["competencias"] = serialize($personaje["competencias"]);
-    $personaje["salvaciones"] = $_POST["salvaciones"];
-    $personaje["competencias"] = $_POST["competencias"];
+    $personaje["salvaciones"] = serialize($_POST["salvaciones"]);
+    $personaje["competencias"] = serialize($_POST["competencias"]);
+    $personaje["salvaciones"] = $personaje["salvaciones"];
+    $personaje["competencias"] = $personaje["competencias"];
 
 
     //Añadimos el código del modelo
@@ -57,7 +57,7 @@ if (isset($_POST["crearPersonaje"])) {
     else
         $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";
 
-        var_dump($personaje);
+        
 
     include("../views/main_page.php");
 } else {
