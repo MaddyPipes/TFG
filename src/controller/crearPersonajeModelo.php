@@ -31,8 +31,6 @@ if (isset($_POST["crearPersonaje"])) {
     $personaje["stat6"] = $_POST["inteligencia"];
     $personaje["stat7"] = $_POST["sabiduria"];
     $personaje["stat8"] = $_POST["carisma"];
-    $personaje["stat9"] = null;
-    $personaje["stat10"] = null;
     $personaje["salvaciones"] = serialize($_POST["salvaciones"]);
     $personaje["competencias"] = serialize($_POST["competencias"]);
 
@@ -53,7 +51,7 @@ if (isset($_POST["crearPersonaje"])) {
     if ($resultado != null)
         $inf_ms = "El personaje se ha insertado Correctamente";
     else
-        $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";
+        $inf_ms = "Ha habido un fallo al acceder a la Base de Datos".$resultado;
 
         
 
