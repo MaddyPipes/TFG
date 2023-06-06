@@ -51,8 +51,7 @@ if (isset($_POST["crearPersonaje"])) {
     if ($resultado != null)
         $inf_ms = "El personaje se ha insertado Correctamente";
     else{
-        $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";
-        echo var_dump($resultado);
+        $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";      
     }
 
         

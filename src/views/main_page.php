@@ -17,6 +17,7 @@
 
 <body>
     <?= var_dump($personaje); ?>
+    <?= var_dump($resultado); ?>
     <?= $inf_ms ?>
     <header class="container">
         <div class="row justify-content-center margin-bottom_16 margin-top_16">
