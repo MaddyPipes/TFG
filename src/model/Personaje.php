@@ -128,7 +128,7 @@ class Personaje {
             }
         }
 
-        return $result;
+        return $statement->errorInfo();
 
     }
 
