@@ -46,49 +46,87 @@ namespace views;
             outline: none;
         }
 
-        .btn-5 {
+        .btn-3 {
+            background: rgb(0, 172, 238);
+            background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
             width: 130px;
             height: 40px;
             line-height: 42px;
             padding: 0;
             border: none;
-            background: rgb(255, 27, 0);
-            background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+
         }
 
-        .btn-5:hover {
-            color: #f0094a;
+        .btn-3 span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn-3:before,
+        .btn-3:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            background: rgba(2, 126, 251, 1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-3:before {
+            height: 0%;
+            width: 2px;
+        }
+
+        .btn-3:after {
+            width: 0%;
+            height: 2px;
+        }
+
+        .btn-3:hover {
             background: transparent;
             box-shadow: none;
         }
 
-        .btn-5:before,
-        .btn-5:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 2px;
-            width: 0;
-            background: #f0094a;
-            box-shadow:
-                -1px -1px 5px 0px #fff,
-                7px 7px 20px 0px #0003,
-                4px 4px 5px 0px #0002;
-            transition: 400ms ease all;
+        .btn-3:hover:before {
+            height: 100%;
         }
 
-        .btn-5:after {
-            right: inherit;
-            top: inherit;
+        .btn-3:hover:after {
+            width: 100%;
+        }
+
+        .btn-3 span:hover {
+            color: rgba(2, 126, 251, 1);
+        }
+
+        .btn-3 span:before,
+        .btn-3 span:after {
+            position: absolute;
+            content: "";
             left: 0;
             bottom: 0;
+            background: rgba(2, 126, 251, 1);
+            transition: all 0.3s ease;
         }
 
-        .btn-5:hover:before,
-        .btn-5:hover:after {
+        .btn-3 span:before {
+            width: 2px;
+            height: 0%;
+        }
+
+        .btn-3 span:after {
+            width: 0%;
+            height: 2px;
+        }
+
+        .btn-3 span:hover:before {
+            height: 100%;
+        }
+
+        .btn-3 span:hover:after {
             width: 100%;
-            transition: 800ms ease all;
         }
     </style>
 </head>
@@ -112,7 +150,7 @@ namespace views;
                     </div>
                     <div class="checkbox mb-3">
                     </div>
-                    <button class="custom-btn btn-5" type="submit">Iniciar Sesión</button>
+                    <button class="custom-btn btn-3" type="submit">Iniciar Sesión</button>
                 </form>
                 <label>
                     <a href="../controller/controlUsuario.php"> Registrarse </a>
