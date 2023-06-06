@@ -122,13 +122,15 @@ class Personaje {
                 //Una vez completada la sentencia, la ejecutamos
 
                 $result = $statement->execute();
-
+                if(!$result){
+                    $result = $statement->errorInfo();
+                }
             }catch(PDOException $e){
                 print("Error al acceder a la BD".$e->getMessage());
             }
         }
 
-        return $statement->errorInfo();
+        return $result;
 
     }
 
