@@ -105,11 +105,11 @@ button .btn-wtd {
   background-color: #284b63 !important;
 }
 
-input.input-wtd {
-  color: black;
+.input-wtd {
+  color: black !important;
 }
 
-label.label-wtd {
-  color: black;
+.label-wtd {
+  color: black !important;
   font-weight: bold;
 }/*# sourceMappingURL=stylesheet.css.map */
