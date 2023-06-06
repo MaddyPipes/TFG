@@ -106,6 +106,7 @@ class Personaje {
                 $statement->bindParam(":NOMBRE", $personaje["nombre"]);
                 $statement->bindParam(":RAZA", $personaje["raza"]);
                 $statement->bindParam(":CLASE", $personaje["clase"]);
+                $statement->bindParam(":NIVEL", $personaje["nivel"]);
                 $statement->bindParam(":STAT1", $personaje["stat1"]);
                 $statement->bindParam(":STAT2", $personaje["stat2"]);
                 $statement->bindParam(":STAT3", $personaje["stat3"]);
