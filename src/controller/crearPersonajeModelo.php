@@ -35,8 +35,6 @@ if (isset($_POST["crearPersonaje"])) {
     $personaje["stat10"] = null;
     $personaje["salvaciones"] = serialize($_POST["salvaciones"]);
     $personaje["competencias"] = serialize($_POST["competencias"]);
-    $personaje["salvaciones"] = $personaje["salvaciones"];
-    $personaje["competencias"] = $personaje["competencias"];
 
 
     //Añadimos el código del modelo
