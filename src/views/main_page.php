@@ -72,7 +72,7 @@
 
     <!-- Offcanvas -->
 
-    <div class="offcanvas offcanvas-start text-body col-6" tabindex="-1" id="offcanvasPersonaje" aria-labelledby="offcanvasPersonaje">
+    <div class="offcanvas offcanvas-start text-body" tabindex="-1" id="offcanvasPersonaje" aria-labelledby="offcanvasPersonaje">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Personajes</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -104,7 +104,7 @@
             <div class="container mx-auto mt-4">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -141,7 +141,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
