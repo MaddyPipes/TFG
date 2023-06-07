@@ -105,7 +105,7 @@
                 <div class="row">
                     <div class="col-md-6 margin-bottom_16">
                         <div class="card">
-                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <img src="https://pbs.twimg.com/media/EZoEODyXsAUFEiN?format=png&name=900x900" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Aelrik Rounar</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Semielfo Paladín</h6>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="col-md-6 margin-bottom_16">
                         <div class="card">
-                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <img src="https://pbs.twimg.com/media/EZoEODyXsAUFEiN?format=png&name=900x900" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Aelrik Rounar</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Semielfo Paladín</h6>
@@ -129,7 +129,7 @@
                     </div>
                     <div class="col-md-6 margin-bottom_16">
                         <div class="card">
-                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <img src="https://pbs.twimg.com/media/EZoEODyXsAUFEiN?format=png&name=900x900" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Aelrik Rounar</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Semielfo Paladín</h6>
@@ -142,7 +142,7 @@
 
                     <div class="col-md-6 margin-bottom_16">
                         <div class="card">
-                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <img src="https://pbs.twimg.com/media/EZoEODyXsAUFEiN?format=png&name=900x900" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Aelrik Rounar</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Semielfo Paladín</h6>
