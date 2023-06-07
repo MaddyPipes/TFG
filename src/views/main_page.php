@@ -101,48 +101,158 @@
                     </div>
                 </div>
             </div>
-            <div class="align-self-center">
-                <div class="card" style="width: 18rem;">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <img src="https://i.pinimg.com/originals/51/9b/f9/519bf955cad48f57fda9c41996a64744.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Aelrik Rounar</h5>
-                        <p class="card-text">Elfo Paladín lvl 5</p>
-                        <a href="#" class="btn btn-primary">Editar</a>
-                        <a href="#" class="btn btn-danger">Borrar</a>
-                    </div>
-                    <div class="container">
-                        <div class="row text-center">
-                            <div class="col-4"><b>STR:</b> 16</div>
-                            <div class="col-4"><b>CON:</b> 14</div>
-                            <div class="col-4"><b>DEX:</b> 9</div>
-                            <div class="col-4"><b>INT:</b> 12</div>
-                            <div class="col-4"><b>CHA:</b> 14</div>
-                            <div class="col-4"><b>WIS:</b> 14</div>
-                            <div class="col-6"><b>CA:</b> 18</div>
-                            <div class="col-6"><b>PB:</b> 3</div>
-                            <div class="col-12"><b>HP:</b> 56</div>
+            <div class="container mx-auto mt-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn "><i class="fab fa-github"></i> Github</a>
+                            </div>
                         </div>
-                        <div class="d-flex flex-column">
-                            <a class="btn btn-primary margin-top_8 margin-bottom_8" data-bs-toggle="collapse" href="#competencias" role="button" aria-expanded="false" aria-controls="competencias">
-                                Competencias
-                            </a>
-                            <div class="collapse" id="competencias">
-                                <div class="card card-body">
-                                    <ul>
-                                        <li>Atletismo</li>
-                                        <li>Religion</li>
-                                        <li>Armas marciales</li>
-                                        <li>Historia</li>
-                                        <li>Historia</li>
-                                        <li>Historia</li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn  mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn "><i class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -183,3 +293,46 @@
 </body>
 
 </html>
+
+<!-- <div class="align-self-center">
+    <div class="card" style="width: 18rem;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <img src="https://i.pinimg.com/originals/51/9b/f9/519bf955cad48f57fda9c41996a64744.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Aelrik Rounar</h5>
+            <p class="card-text">Elfo Paladín lvl 5</p>
+            <a href="#" class="btn btn-primary">Editar</a>
+            <a href="#" class="btn btn-danger">Borrar</a>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-4"><b>STR:</b> 16</div>
+                <div class="col-4"><b>CON:</b> 14</div>
+                <div class="col-4"><b>DEX:</b> 9</div>
+                <div class="col-4"><b>INT:</b> 12</div>
+                <div class="col-4"><b>CHA:</b> 14</div>
+                <div class="col-4"><b>WIS:</b> 14</div>
+                <div class="col-6"><b>CA:</b> 18</div>
+                <div class="col-6"><b>PB:</b> 3</div>
+                <div class="col-12"><b>HP:</b> 56</div>
+            </div>
+            <div class="d-flex flex-column">
+                <a class="btn btn-primary margin-top_8 margin-bottom_8" data-bs-toggle="collapse" href="#competencias" role="button" aria-expanded="false" aria-controls="competencias">
+                    Competencias
+                </a>
+                <div class="collapse" id="competencias">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Atletismo</li>
+                            <li>Religion</li>
+                            <li>Armas marciales</li>
+                            <li>Historia</li>
+                            <li>Historia</li>
+                            <li>Historia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

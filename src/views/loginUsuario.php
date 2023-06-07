@@ -47,7 +47,7 @@ namespace views;
         }
 
         .btn-3 {
-            background: rgb(0, 172, 238);
+            background: white;
             background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
             width: 130px;
             height: 40px;
