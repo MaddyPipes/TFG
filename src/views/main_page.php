@@ -103,7 +103,7 @@
             </div>
             <div class="container mx-auto mt-4">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 margin-bottom_16">
                         <div class="card">
                             <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 margin-bottom_16">
                         <div class="card">
                             <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -127,7 +127,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 margin-bottom_16">
                         <div class="card">
                             <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -140,7 +140,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 margin-bottom_16">
                         <div class="card">
                             <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
