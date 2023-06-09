@@ -103,55 +103,20 @@
             </div>
             <div class="container mx-auto mt-4">
                 <div class="row">
+                    <?php for($i = 0; $i < count($personajes); $i++): ?>
                     <div class="col-md-6 margin-bottom_16">
                         <div class="card">
-                            <img src="https://pbs.twimg.com/media/EZoEODyXsAUFEiN?format=png&name=900x900" class="card-img-top" alt="...">
+                            <img src="<?= $personajes[$i]["ILUSTRACION"] ?>" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Aelrik Rounar</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Semielfo Paladín</h6>
+                                <h5 class="card-title"><?= $personajes[$i]["NOMBRE"] ?></h5>
+                                <h6 class="card-subtitle mb-2 text-muted"><?= $personajes[$i]["RAZA"] ?> <?= $personajes[$i]["CLASE"] ?></h6>
                                 <div class="row justify-content-center">
                                     <div class="col-6"><img src="../rsc/DnD-Logo.png" alt="" class="img-fluid"></div>
                                 </div>                              
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 margin-bottom_16">
-                        <div class="card">
-                            <img src="https://pbs.twimg.com/media/EZoEODyXsAUFEiN?format=png&name=900x900" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Aelrik Rounar</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Semielfo Paladín</h6>
-                                <div class="row justify-content-center">
-                                    <div class="col-6"><img src="../rsc/DnD-Logo.png" alt="" class="img-fluid"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 margin-bottom_16">
-                        <div class="card">
-                            <img src="https://pbs.twimg.com/media/EZoEODyXsAUFEiN?format=png&name=900x900" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Aelrik Rounar</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Semielfo Paladín</h6>
-                                <div class="row justify-content-center">
-                                    <div class="col-6"><img src="../rsc/DnD-Logo.png" alt="" class="img-fluid"></div>
-                                </div>                             
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 margin-bottom_16">
-                        <div class="card">
-                            <img src="https://pbs.twimg.com/media/EZoEODyXsAUFEiN?format=png&name=900x900" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Aelrik Rounar</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Semielfo Paladín</h6>
-                                <div class="row justify-content-center">
-                                    <div class="col-6"><img src="../rsc/DnD-Logo.png" alt="" class="img-fluid"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endfor; ?>
                 </div>
             </div>
 

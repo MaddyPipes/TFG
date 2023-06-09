@@ -14,40 +14,23 @@ class Personaje {
      * Función para obtener todos los personajes de la base de datos 
     */
 
-    public function getPersonaje($conexPDO, $ordAsc, int $numPag)
+    public function getPersonaje($conexPDO)
     {
 
         if ($conexPDO != null) {
             try {
-                //Primero introducimos la sentencia a ejecutar con prepare
-                //Ponemos en lugar de valores directamente, interrogaciones
 
                 //Query inicial
-                $statement = "SELECT * FROM gestionrol.personaje ORDER BY NOMBRE ";
-
-                //si esta ordenada descentemente añadimos DESC
-
-                if (!$ordAsc) $statement = $statement . "DESC ";
-
-                //Añadimos a la query la cantidad de elementos por página con LIMIT
-                //Y desde que página empieza con OFFSET
-                $statement = $statement . "LIMIT 10 OFFSET ?";
+                $statement = "SELECT * FROM gestionrol.PERSONAJE ORDER BY idPERSONAJE";
 
                 $preparedStatement = $conexPDO->prepare($statement);
 
-                //El tercer parametro es desde que registro empieza a partir de la
-                //pagina actual
-                $offset = ($numPag - 1) * 10;
-                if ($numPag != 1)
-                    $offset++;
-
-                $preparedStatement->bindParam(1, $offset, PDO::PARAM_INT);
-
-                //Ejecutamos la sentencia
                 $preparedStatement->execute();
 
-                //Devolvemos los datos del jugador
+                //Devolvemos los datos del personaje
+
                 return $preparedStatement->fetchAll();
+                
             } catch (PDOException $e) {
                 print("Error al acceder a BD" . $e->getMessage());
             }

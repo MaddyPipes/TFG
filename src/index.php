@@ -12,9 +12,14 @@ if (isset($_SESSION['user_id'])) {
     $_SESSION['isLoggedIn'] = true; // El usuario está logueado
     //Añadimos el código del modelo
     require_once("./model/Usuario.php");
+    require_once("./model/Personaje.php");
     require_once("./model/utils.php");
     $inf_ms = null;
-    $gestor = new Usuario();
+    $gestorUsuario = new Usuario();
+    $gestorPersonaje = new Personaje();
+    $conexPDO = utils::conectar();
+
+    $personajes = $gestorPersonaje->getPersonaje($conexPDO);
 
     include("./views/main_page.php");
 } else {
