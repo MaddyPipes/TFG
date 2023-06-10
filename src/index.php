@@ -20,7 +20,7 @@ if (isset($_SESSION['user_id'])) {
     $gestorPersonaje = new Personaje();
     $conexPDO = utils::conectar();
 
-    $personajes = $gestorPersonaje->getPersonaje($conexPDO);
+    $personajes = $gestorPersonaje->getPersonajeID($_SESSION['user_id'], $conexPDO);
 
     include("./views/main_page.php");
 } else {

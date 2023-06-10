@@ -1,6 +1,7 @@
 <?php
 
 namespace model;
+
 use \PDO;
 use \PDOException;
 
@@ -8,11 +9,12 @@ require_once("utils.php");
 
 
 
-class Personaje {
+class Personaje
+{
 
     /** 
      * Función para obtener todos los personajes de la base de datos 
-    */
+     */
 
     public function getPersonaje($conexPDO)
     {
@@ -30,7 +32,6 @@ class Personaje {
                 //Devolvemos los datos del personaje
 
                 return $preparedStatement->fetchAll();
-                
             } catch (PDOException $e) {
                 print("Error al acceder a BD" . $e->getMessage());
             }
@@ -41,41 +42,41 @@ class Personaje {
      * Función que obteiene todos los personajes a partir de la ID del jugador
      */
 
-     public function getPersonajeID($idJugador, $conexPDO)
-     {
-         if (isset($idJugador) && is_numeric($idJugador)) {
- 
- 
-             if ($conexPDO != null) {
-                 try {
-                     //Primero introducimos la sentencia a ejecutar con prepare
-                     //Ponemos en lugar de valores directamente, interrogaciones
-                     $sentencia = $conexPDO->prepare("SELECT * FROM gestionrol.personaje WHERE JUGADOR_idJUGADOR = ? ORDER BY NOMBRE");
-                     //Asociamos a cada interrogacion el valor que queremos en su lugar
-                     $sentencia->bindParam(1, $idJugador, PDO::PARAM_INT);
-                     //Ejecutamos la sentencia
-                     $sentencia->execute();
- 
-                     //Devolvemos los datos de los perspnajes
-                     return $sentencia->fetchAll();
-                 } catch (PDOException $e) {
-                     print("Error al acceder a BD" . $e->getMessage());
-                 }
-             }
-             
-         }
-     }
+    public function getPersonajeID($idJugador, $conexPDO)
+    {
+        $idJugador = intval($idJugador); 
+
+        if ($conexPDO != null) {
+            try {
+                //Primero introducimos la sentencia a ejecutar con prepare
+                //Ponemos en lugar de valores directamente, interrogaciones
+                $sentencia = $conexPDO->prepare("SELECT * FROM gestionRol.PERSONAJE WHERE JUGADOR_idJUGADOR = ? ORDER BY NOMBRE");
+                //Asociamos a cada interrogacion el valor que queremos en su lugar
+                $sentencia->bindParam(1, $idJugador, PDO::PARAM_INT);
+                
+                //Ejecutamos la sentencia
+                $sentencia->execute();
+
+                //Devolvemos los datos de los perspnajes
+                return $sentencia->fetchAll();
+            } catch (PDOException $e) {
+                print("Error al acceder a BD" . $e->getMessage());
+            }
+        }
+    }
+
 
     /**
      * Función que añade un personaje a la base de datos a partir de un array asociativo con los campos
      */
 
-    function addPersonaje($personaje, $conexPDO){
-    
+    function addPersonaje($personaje, $conexPDO)
+    {
+
         $result = null;
-        
-        if(isset($personaje) && $conexPDO != null){
-            try{
+
+        if (isset($personaje) && $conexPDO != null) {
+            try {
 
                 //Sentencia preparada
 
@@ -101,20 +102,19 @@ class Personaje {
                 $statement->bindParam(":STAT8", $personaje["stat8"]);
                 $statement->bindParam(":COMPETENCIAS", $personaje["competencias"]);
                 $statement->bindParam(":SALVACIONES", $personaje["salvaciones"]);
-                
+
                 //Una vez completada la sentencia, la ejecutamos
 
                 $result = $statement->execute();
-                if(!$result){
+                if (!$result) {
                     $result = $statement->errorInfo();
                 }
-            }catch(PDOException $e){
-                print("Error al acceder a la BD".$e->getMessage());
+            } catch (PDOException $e) {
+                print("Error al acceder a la BD" . $e->getMessage());
             }
         }
 
         return $result;
-
     }
 
     /**
@@ -134,7 +134,7 @@ class Personaje {
                     //Preparamos la sentencia para borrar un personaje
 
                     $statement = $conexPDO->prepare("DELETE  FROM gestionrol.personaje where idPERSONAJE=?");
-                    
+
                     //Bindeamos el parámetro para insertar la ID
 
                     $statement->bindParam(1, $idPersonaje);
@@ -142,7 +142,6 @@ class Personaje {
                     //Ejecutamos la sentencia
 
                     $result = $statement->execute();
-
                 } catch (PDOException $e) {
                     print("Error al borrar" . $e->getMessage());
                 }
@@ -160,7 +159,7 @@ class Personaje {
     function updatePersonaje($personaje, $conexPDO)
     {
 
-       
+
         $result = null;
         if (isset($personaje) && isset($personaje["idPersonaje"]) && is_numeric($personaje["idPersonaje"])  && $conexPDO != null) {
 
@@ -170,7 +169,7 @@ class Personaje {
 
                 $statement = $conexPDO->prepare("UPDATE gestionrol.personaje set JUGADOR_idJUGADOR=:JUGADOR_idJUGADOR, NOMBRE=:NOMBRE, RAZA=:RAZA, CLASE=:CLASE, NIVEL=:NIVEL, ILUSTRACION=:ILUSTRACION, FICHA=:FICHA, INVENTARIO=:INVENTARIO, DIARIO=:DIARIO where idPERSONAJE=:idPERSONAJE");
 
-                
+
 
                 //Asociamos los valores a los parametros de la sentencia sql
 
@@ -188,7 +187,6 @@ class Personaje {
                 //Ejecutamos la sentencia
 
                 $result = $statement->execute();
-
             } catch (PDOException $e) {
                 print("Error al acceder a BD" . $e->getMessage());
             }
@@ -196,7 +194,4 @@ class Personaje {
 
         return $result;
     }
-
-    
 }
-
