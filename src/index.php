@@ -5,6 +5,7 @@
 session_start();
 
 use model\Usuario;
+use model\Personaje;
 use \model\Utils;
 
 if (isset($_SESSION['user_id'])) {

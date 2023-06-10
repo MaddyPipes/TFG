@@ -3,6 +3,7 @@
 namespace controller;
 
 use \model\Usuario;
+use \model\Personaje;
 use \model\utils;
 
 require_once("../model/Usuario.php");
@@ -52,6 +53,16 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
             //Iniciamos la sesión
 
             session_start();
+
+            $_SESSION['isLoggedIn'] = true; // El usuario está logueado
+            //Añadimos el código del modelo
+            require_once("./model/Usuario.php");
+            require_once("./model/Personaje.php");
+            require_once("./model/utils.php");
+            $inf_ms = null;
+            $gestorUsuario = new Usuario();
+            $gestorPersonaje = new Personaje();
+            $conexPDO = utils::conectar();
 
             $_SESSION["user_id"] = $usuario["idJUGADOR"];
             $_SESSION["email"] = $usuario["EMAIL"];
