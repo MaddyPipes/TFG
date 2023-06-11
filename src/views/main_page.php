@@ -131,7 +131,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title"><?= $personajes[$i]["NOMBRE"] ?></h5>
                                     <p class="card-text"><?= $personajes[$i]["RAZA"] ?> <?= $personajes[$i]["CLASE"] ?> lvl <?= $personajes[$i]["NIVEL"] ?></p>
-                                    <a href="#" class="btn btn-primary">Editar</a>
+                                    <a href="#" class="btn btn-primary botonBorrar" id="borrarPJ<?= $personajes[$i]["idPERSONAJE"] ?>">Editar</a>
                                     <a href="#" class="btn btn-danger">Borrar</a>
                                 </div>
                                 <div class="container">

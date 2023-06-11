@@ -133,7 +133,7 @@ class Personaje
 
                     //Preparamos la sentencia para borrar un personaje
 
-                    $statement = $conexPDO->prepare("DELETE  FROM gestionrol.personaje where idPERSONAJE=?");
+                    $statement = $conexPDO->prepare("DELETE FROM gestionRol.PERSONAJE where idPERSONAJE=?");
 
                     //Bindeamos el parámetro para insertar la ID
 
