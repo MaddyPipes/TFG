@@ -45,7 +45,7 @@ if (isset($_POST["crearPersonaje"])) {
     $conexPDO = Utils::conectar();
 
     //Modificamos el registro
-    $resultado = $gestor->addPersonaje($personaje, $conexPDO);
+    $resultado = $gestorPersonaje->addPersonaje($personaje, $conexPDO);
 
     // Si ha ido bien el mensaje sera distint
     if ($resultado != null)
