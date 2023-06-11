@@ -31,7 +31,7 @@ class Personaje
 
                 //Devolvemos los datos del personaje
 
-                return $sentencia->fetchAll();
+                return $sentencia->fetch();
             } catch (PDOException $e) {
                 print("Error al acceder a BD" . $e->getMessage());
             }
