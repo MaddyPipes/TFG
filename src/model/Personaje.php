@@ -157,7 +157,7 @@ class Personaje
      * obteniendo los datos de un array asociativo del personaje.
      */
 
-    function updatePersonaje($personaje, $conexPDO)
+    function updatePersonaje($idPersonaje, $personaje, $conexPDO)
     {
 
 
@@ -173,7 +173,7 @@ class Personaje
 
             //Asociamos los valores a los parametros de la sentencia sql
 
-            $statement->bindParam(":idPERSONAJE", intval($personaje["idPersonaje"]));
+            $statement->bindParam(":idPERSONAJE", intval($idPersonaje));
             $statement->bindParam(":NOMBRE", $personaje["nombre"]);
             $statement->bindParam(":RAZA", $personaje["raza"]);
             $statement->bindParam(":CLASE", $personaje["clase"]);

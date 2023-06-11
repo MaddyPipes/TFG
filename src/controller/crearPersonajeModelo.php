@@ -97,7 +97,7 @@ if (isset($_POST["editarPersonaje"])) {
     $conexPDO = Utils::conectar();
 
     //Modificamos el registro
-    $resultado = $gestorPersonaje->updatePersonaje($personaje, $conexPDO);
+    $resultado = $gestorPersonaje->updatePersonaje($_SESSION["user_id"], $personaje, $conexPDO);
 
     // Si ha ido bien el mensaje sera distint
     if ($resultado != null)
