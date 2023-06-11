@@ -132,7 +132,24 @@
                                     <h5 class="card-title"><?= $personajes[$i]["NOMBRE"] ?></h5>
                                     <p class="card-text"><?= $personajes[$i]["RAZA"] ?> <?= $personajes[$i]["CLASE"] ?> lvl <?= $personajes[$i]["NIVEL"] ?></p>
                                     <a href="#" class="btn btn-">Editar</a>
-                                    <a href="#" class="btn btn-danger botonBorrar" id="borrarPJ<?= $personajes[$i]["idPERSONAJE"] ?>">Borrar</a>
+                                    <a href="#" class="btn btn-danger" tabindex="1" data-bs-toggle="modal" data-bs-target="#modalUsuario">Borrar</a>
+                                    <div class="modal fade" id="modalBorrar" tabindex="-1" aria-labelledby="modalBorrarLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalBorrarLabel"></h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ¿Estás seguro de querer borrar a <?= $personajes[$i]["NOMBRE"] ?>?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
+                                                    <button type="button" class="btn btn-primary botonBorrar" id="borrarPJ<?= $personajes[$i]["idPERSONAJE"] ?>">Sí</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="container">
                                     <div class="row text-center">
