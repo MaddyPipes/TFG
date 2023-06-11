@@ -76,7 +76,7 @@
                     <div class="align-items-center col-12 d-flex form-group justify-content-center mb-sm-2 mt-sm-2">
                         <label for="picture" class="col-3 col-form-label">URL de imagen de avatar:</label>
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" id="picture" name="picture" value='<?php echo isset($personaje["NIVEL"]) ? $personaje["NIVEL"] : ''; ?>' placeholder="<?php echo isset($personaje["NIVEL"]) ? $personaje["NIVEL"] : ''; ?>">
+                            <input type="text" class="form-control" id="picture" name="picture" value='<?php echo isset($personaje["ILUSTRACION"]) ? $personaje["ILUSTRACION"] : ''; ?>' placeholder="<?php echo isset($personaje["ILUSTRACION"]) ? $personaje["ILUSTRACION"] : ''; ?>">
                         </div>
                     </div>
 
