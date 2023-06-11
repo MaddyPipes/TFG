@@ -19,7 +19,7 @@ $conexPDO = Utils::conectar();
 
 if(isset($_POST["id"])){
 
-    $result = $gestorPersonaje->delPersonaje($_POST["id"], $_SESSION['user_id'], $conexPDO);
+    $result = $gestorPersonaje->delPersonaje(intval($_POST["id"]), intval($_SESSION['user_id']), $conexPDO);
 
 }
 ?>
