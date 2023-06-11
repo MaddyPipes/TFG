@@ -169,7 +169,7 @@
                                         <div class="collapse" id="salvaciones">
                                             <div class="card card-body">
                                                 <ul>
-                                                    <?php for ($j = 0; $j < count($personajes[$i]["SALVACIONES"]); $i++) {
+                                                    <?php for ($j = 0; $j < count($personajes[$i]["SALVACIONES"]); $j++) {
                                                         echo "<li>" . $personajes[$i]["SALVACIONES"][$j] . "</i>";
                                                     } ?>
                                                 </ul>
@@ -183,7 +183,7 @@
                                         <div class="collapse" id="competencias">
                                             <div class="card card-body">
                                                 <ul>
-                                                    <?php for ($j = 0; $j < count($personajes[$i]["COMPETENCIAS"]); $i++) {
+                                                    <?php for ($j = 0; $j < count($personajes[$i]["COMPETENCIAS"]); $j++) {
                                                         echo "<li>" . $personajes[$i]["COMPETENCIAS"][$j] . "</i>";
                                                     } ?>
                                                 </ul>
