@@ -102,7 +102,7 @@
                 </div>
             </div>
             <div class="container mx-auto mt-4">
-                <?= var_dump(($personajes["COMPETENCIAS"])) ?>
+                <?= var_dump(unserialize($personajes[0]["COMPETENCIAS"])) ?>
                 <div class="row" id="listaPJ">
                     <?php for ($i = 0; $i < count($personajes); $i++) : ?>
                         <div class="col-md-6 margin-bottom_16">
