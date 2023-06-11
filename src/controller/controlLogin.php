@@ -7,7 +7,7 @@ use \model\Personaje;
 use \model\utils;
 
 require_once("../model/Usuario.php");
-require_once("./model/Personaje.php");
+require_once("../model/Personaje.php");
 require_once("../model/utils.php");
 
 $inf_ms = null;
