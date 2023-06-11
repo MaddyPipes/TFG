@@ -22,10 +22,10 @@ class Personaje
         if ($conexPDO != null) {
             try {
 
-                $sentencia = $conexPDO->prepare("SELECT * FROM gestionRol.PERSONAJE WHERE idPERSONAJE = :idPERSONAJE");
+                $sentencia = $conexPDO->prepare("SELECT * FROM gestionRol.PERSONAJE WHERE idPERSONAJE = ?");
 
                 //Asociamos a cada interrogacion el valor que queremos en su lugar
-                $sentencia->bindParam(":idPERSONAJE", $idPersonaje);
+                $sentencia->bindParam(1, $idPersonaje, PDO::PARAM_INT);
 
                 $sentencia->execute();
 
