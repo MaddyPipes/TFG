@@ -22,8 +22,6 @@ $(document).ready(function () {
             data: { id: personajeID },
             success: function (response) {
                 if (response === "success") {
-                    let personajeID = $(".deseleccionar").attr("id");
-                    personajeID = personajeID.substring(15);
                     $("#listaPJ").removeClass("d-none");
                     $("#cartaPJ" + personajeID).addClass("d-none");
                     $("#recuadroPJ"+personajeID).addClass("d-none");
