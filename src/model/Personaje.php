@@ -22,19 +22,16 @@ class Personaje
         if ($conexPDO != null) {
             try {
 
-                //Query inicial
-                $statement = "SELECT * FROM gestionRol.PERSONAJE WHERE idPERSONAJE = :idPERSONAJE";
-
-                $preparedStatement = $conexPDO->prepare($statement);
+                $sentencia = $conexPDO->prepare("SELECT * FROM gestionRol.PERSONAJE WHERE idPERSONAJE = :idPERSONAJE");
 
                 //Asociamos a cada interrogacion el valor que queremos en su lugar
-                $preparedStatement->bindParam(":idPERSONAJE", $idPersonaje);
+                $sentencia->bindParam(":idPERSONAJE", $idPersonaje);
 
-                $preparedStatement->execute();
+                $sentencia->execute();
 
                 //Devolvemos los datos del personaje
 
-                return $preparedStatement->fetch();
+                return $sentencia->fetch();
             } catch (PDOException $e) {
                 print("Error al acceder a BD" . $e->getMessage());
             }
