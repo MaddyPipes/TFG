@@ -132,7 +132,7 @@
                                     <h5 class="card-title"><?= $personajes[$i]["NOMBRE"] ?></h5>
                                     <p class="card-text"><?= $personajes[$i]["RAZA"] ?> <?= $personajes[$i]["CLASE"] ?> lvl <?= $personajes[$i]["NIVEL"] ?></p>
                                     <a href="#" class="btn btn-">Editar</a>
-                                    <a href="#" class="btn btn-danger" tabindex="1" data-bs-toggle="modal" data-bs-target="#modalUsuario">Borrar</a>
+                                    <a href="#" class="btn btn-danger" tabindex="1" data-bs-toggle="modal" data-bs-target="#modalBorrar">Borrar</a>
                                     <div class="modal fade" id="modalBorrar" tabindex="-1" aria-labelledby="modalBorrarLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
