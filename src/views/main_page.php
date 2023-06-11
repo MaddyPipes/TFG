@@ -133,7 +133,7 @@
                                     <p class="card-text"><?= $personajes[$i]["RAZA"] ?> <?= $personajes[$i]["CLASE"] ?> lvl <?= $personajes[$i]["NIVEL"] ?></p>
                                     <form action="../controller/crearPersonajeModelo.php" method="POST">
                                         <input type="hidden" name="idPJ" value="<?= $personajes[$i]["idPERSONAJE"] ?>">
-                                        <button class="btn btn-primary" name="editarPJ">Editar</button>
+                                        <button class="btn btn-primary" name="editarPJ" value="editarPJ">Editar</button>
                                     </form>
                                     <a href="#" class="btn btn-danger" tabindex="1" data-bs-toggle="modal" data-bs-target="#modalBorrar">Borrar</a>
                                     <div class="modal fade" id="modalBorrar" tabindex="-1" aria-labelledby="modalBorrarLabel" aria-hidden="true">

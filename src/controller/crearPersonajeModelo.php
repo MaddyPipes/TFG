@@ -61,7 +61,7 @@ if (isset($_POST["crearPersonaje"])) {
     }
     include("../views/main_page.php");
 } 
-if($_POST["editarPJ"]){
+if(isset($_POST["editarPJ"])){
     require_once("../model/Personaje.php");
     require_once("../model/utils.php");
 
