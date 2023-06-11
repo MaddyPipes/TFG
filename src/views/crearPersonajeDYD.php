@@ -246,7 +246,7 @@
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" <?php if (isset($personaje["COMPETENCIAS"]) && in_array("Intimidación", $personaje["COMPETENCIAS"])) echo 'checked'; ?> value="Intimidación" id="intimidacion" name="competencias[]">
                                         <label class="form-check-label" for="prestidigitacion">
-                                            Prestidigitación
+                                            Intimidación
                                         </label>
                                     </div>
                                 </div>
