@@ -105,7 +105,7 @@
                 <div class="row" id="listaPJ">
                     <?php for ($i = 0; $i < count($personajes); $i++) : ?>
                         <div class="col-md-6 margin-bottom_16">
-                            <button>
+                            <button class="btn p-0">
                                 <div class="card">
                                     <img src="<?= $personajes[$i]["ILUSTRACION"] ?>" class="card-img-top" alt="...">
                                     <div class="card-body">
