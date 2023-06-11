@@ -23,12 +23,12 @@ class Personaje
             try {
 
                 //Query inicial
-                $statement = "SELECT * FROM gestionRol.PERSONAJE WHERE idPERSONAJE = ?";
+                $statement = "SELECT * FROM gestionRol.PERSONAJE WHERE idPERSONAJE = :idPERSONAJE";
 
                 $preparedStatement = $conexPDO->prepare($statement);
 
                 //Asociamos a cada interrogacion el valor que queremos en su lugar
-                $preparedStatement->bindParam(1, $idPersonaje, PDO::PARAM_INT);
+                $preparedStatement->bindParam(":idPERSONAJE", $idPersonaje);
 
                 $preparedStatement->execute();
 
