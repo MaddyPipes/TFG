@@ -113,7 +113,7 @@ if (isset($_POST["editarPersonaje"])) {
     }
     include("../views/main_page.php");
 }
-if (isset($_POST["editarPJ"]) && !(isset($_POST["editarPersonaje"]) && !isset($_POST["crearPersonaje"]))) {
+if (isset($_POST["editarPJ"])) {
     require_once("../model/Personaje.php");
     require_once("../model/utils.php");
 
@@ -129,7 +129,8 @@ if (isset($_POST["editarPJ"]) && !(isset($_POST["editarPersonaje"]) && !isset($_
     $personaje["COMPETENCIAS"] = unserialize($personaje["COMPETENCIAS"]);
 
     include("../views/crearPersonajeDYD.php");
-} else {
+}
+if(!(isset($_POST["editarPersonaje"]) || isset($_POST["crearPersonaje"]))) {
     //Sin datos del personaje cargados cargamos la vista
     include("../views/crearPersonajeDYD.php");
 }
