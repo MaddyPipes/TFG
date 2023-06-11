@@ -55,7 +55,10 @@ if (isset($_POST["crearPersonaje"])) {
     }
 
     $personajes = $gestorPersonaje->getPersonajeID($_SESSION["user_id"], $conexPDO);
-
+    for($i = 0; $i < count($personajes); $i++){
+        $personajes[$i]["COMPETENCIAS"] = unserialize($personajes[$i]["COMPETENCIAS"]);
+        $personajes[$i]["SALVACIONES"] = unserialize($personajes[$i]["SALVACIONES"]);
+    }
     include("../views/main_page.php");
 } else {
     //Sin datos del personaje cargados cargamos la vista

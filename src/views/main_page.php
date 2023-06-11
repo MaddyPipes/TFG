@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -102,11 +103,10 @@
                 </div>
             </div>
             <div class="container mx-auto mt-4">
-                <?= var_dump(unserialize($personajes[0]["COMPETENCIAS"])) ?>
                 <div class="row" id="listaPJ">
                     <?php for ($i = 0; $i < count($personajes); $i++) : ?>
                         <div class="col-md-6 margin-bottom_16">
-                            <button class="btn p-0 seleccionarPJ">
+                            <button class="btn p-0 seleccionarPJ" id="<?= $personajes[$i]["idPERSONAJE"] ?>">
                                 <div class="card">
                                     <img src="<?= $personajes[$i]["ILUSTRACION"] ?>" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -123,7 +123,7 @@
                 </div>
                 <?php for ($i = 0; $i < count($personajes); $i++) : ?>
 
-                    <div class="row d-none cartaPJ<?= $i ?>">
+                    <div class="row d-none cartaPJ" id="<?= $personajes[$i]["idPERSONAJE"] ?>">
                         <div class="align-self-center">
                             <div class="card" style="width: 18rem;">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -169,12 +169,9 @@
                                         <div class="collapse" id="salvaciones">
                                             <div class="card card-body">
                                                 <ul>
-                                                    <li>Atletismo</li>
-                                                    <li>Religion</li>
-                                                    <li>Armas marciales</li>
-                                                    <li>Historia</li>
-                                                    <li>Historia</li>
-                                                    <li>Historia</li>
+                                                    <?php for ($j = 0; $j < count($personajes[$i]["SALVACIONES"]); $i++) {
+                                                        echo "<li>" . $personajes[$i]["SALVACIONES"][$j] . "</i>";
+                                                    } ?>
                                                 </ul>
                                             </div>
                                         </div>
@@ -186,12 +183,9 @@
                                         <div class="collapse" id="competencias">
                                             <div class="card card-body">
                                                 <ul>
-                                                    <li>Atletismo</li>
-                                                    <li>Religion</li>
-                                                    <li>Armas marciales</li>
-                                                    <li>Historia</li>
-                                                    <li>Historia</li>
-                                                    <li>Historia</li>
+                                                    <?php for ($j = 0; $j < count($personajes[$i]["COMPETENCIAS"]); $i++) {
+                                                        echo "<li>" . $personajes[$i]["COMPETENCIAS"][$j] . "</i>";
+                                                    } ?>
                                                 </ul>
                                             </div>
                                         </div>
@@ -217,7 +211,7 @@
         </div>
     </div>
 
-    <script src="../scripts/includes.js"></script>
+    <script src="../scripts/controlPJ.js"></script>
 
     <!-- Peticiones AJAX -->
     <!-- <script>

@@ -66,6 +66,10 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
             
             $_SESSION["user_id"] = $usuario["idJUGADOR"];
             $personaje = $gestorPersonaje->getPersonajeID($_SESSION["user_id"], $conexPDO);
+            for($i = 0; $i < count($personajes); $i++){
+                $personajes[$i]["COMPETENCIAS"] = unserialize($personajes[$i]["COMPETENCIAS"]);
+                $personajes[$i]["SALVACIONES"] = unserialize($personajes[$i]["SALVACIONES"]);
+            }
             $_SESSION["email"] = $usuario["EMAIL"];
             $_SESSION["nombre"] = $usuario["NOMBRE"];
 
