@@ -9,7 +9,7 @@ use \model\Utils;
 
 
 //Si nos llegan datos de un personaje, implica que es el formulario el que llama al controlador
-if (isset($_POST["juegoPersonaje"])) {
+if (isset($_POST["crearPersonaje"])) {
     //rellenamos los datos del personaje que le pasaremos a la vista
 
     //Creamos un array para guardar los datos del personaje
@@ -130,7 +130,7 @@ if (isset($_POST["editarPJ"])) {
 
     include("../views/crearPersonajeDYD.php");
 }
-if(!isset($_POST["editarPersonaje"]) && isset($_POST["crearPersonaje"])) {
+if(isset($_POST["juegoPersonaje"])) {
     //Sin datos del personaje cargados cargamos la vista
     include("../views/crearPersonajeDYD.php");
 }
