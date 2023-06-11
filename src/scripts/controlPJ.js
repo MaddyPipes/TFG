@@ -45,11 +45,11 @@ $(document).ready(function () {
             type: "POST",
             data: { id: personajeID },
             success: function (response) {
-                let statsPJ = JSON.parse(response);
+                console.log(response);
+                // let statsPJ = JSON.parse(response);
 
                 // $.sessionStorage.set("nombre", statsPJ.parametro1);
 
-                console.log(statsPJ);
             },
             error: function () {
 
