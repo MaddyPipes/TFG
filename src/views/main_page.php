@@ -127,7 +127,7 @@
                         <div class="align-self-center d-none cartaPJ" id="cartaPJ<?= $personajes[$i]["idPERSONAJE"] ?>">
                             <div class="card" style="width: 18rem;">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                <img src="https://i.pinimg.com/originals/51/9b/f9/519bf955cad48f57fda9c41996a64744.png" class="card-img-top" alt="...">
+                                <img src="<?= $personajes[$i]["ILUSTRACION"] ?>" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><?= $personajes[$i]["NOMBRE"] ?></h5>
                                     <p class="card-text"><?= $personajes[$i]["RAZA"] ?> <?= $personajes[$i]["CLASE"] ?> lvl <?= $personajes[$i]["NIVEL"] ?></p>
