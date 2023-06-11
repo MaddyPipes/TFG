@@ -143,6 +143,7 @@ class Personaje
                     //Ejecutamos la sentencia
 
                     $result = $statement->execute();
+                    
                 } catch (PDOException $e) {
                     print("Error al borrar" . $e->getMessage());
                 }
