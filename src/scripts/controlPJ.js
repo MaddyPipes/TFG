@@ -22,9 +22,12 @@ $(document).ready(function () {
             data: { id: personajeID },
             success: function (response) {
                 if (response === "success") {
-                    alert("El elemento se ha eliminado correctamente.");
+                    let personajeID = $(".deseleccionar").attr("id");
+                    personajeID = personajeID.substring(15);
+                    $("#listaPJ").removeClass("d-none");
+                    $("#cartaPJ" + personajeID).addClass("d-none");
                 } else {
-                    alert("Hubo un error al eliminar el elemento."+personajeID+response);
+                    alert("Hubo un error al eliminar el elemento." + personajeID + response);
                 }
             },
             error: function () {
