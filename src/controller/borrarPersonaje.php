@@ -8,6 +8,7 @@ session_start();
 
 //Añadimos el código del modelo
 require_once("../model/Jugador.php");
+require_once("../model/Personaje.php");
 require_once("../model/utils.php");
 $inf_ms=null;
 $gestorPersonaje = new Personaje();
