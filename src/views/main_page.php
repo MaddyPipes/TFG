@@ -121,10 +121,10 @@
                         </div>
                     <?php endfor; ?>
                 </div>
-                <?php for ($i = 0; $i < count($personajes); $i++) : ?>
 
-                    <div class="row d-none cartaPJ" id="cartaPJ<?=$personajes[$i]["idPERSONAJE"]?>">
-                        <div class="align-self-center">
+                <div class="row">
+                    <?php for ($i = 0; $i < count($personajes); $i++) : ?>
+                        <div class="align-self-center d-none cartaPJ" id="cartaPJ<?= $personajes[$i]["idPERSONAJE"] ?>">
                             <div class="card" style="width: 18rem;">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 <img src="https://i.pinimg.com/originals/51/9b/f9/519bf955cad48f57fda9c41996a64744.png" class="card-img-top" alt="...">
@@ -193,9 +193,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <?php endfor; ?>
+                </div>
 
-                <?php endfor; ?>
             </div>
 
         </div>
