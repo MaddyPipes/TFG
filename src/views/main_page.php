@@ -123,7 +123,7 @@
                 </div>
                 <?php for ($i = 0; $i < count($personajes); $i++) : ?>
 
-                    <div class="row d-none cartaPJ" id="<?= $personajes[$i]["idPERSONAJE"] ?>">
+                    <div class="row d-none cartaPJ" id="cartaPJ<?=$personajes[$i]["idPERSONAJE"]?>">
                         <div class="align-self-center">
                             <div class="card" style="width: 18rem;">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
