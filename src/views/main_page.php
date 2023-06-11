@@ -102,10 +102,11 @@
                 </div>
             </div>
             <div class="container mx-auto mt-4">
+                <?= var_dump(unserialize($personajes["COMPETENCIAS"])) ?>
                 <div class="row" id="listaPJ">
                     <?php for ($i = 0; $i < count($personajes); $i++) : ?>
                         <div class="col-md-6 margin-bottom_16">
-                            <button class="btn p-0">
+                            <button class="btn p-0 seleccionarPJ">
                                 <div class="card">
                                     <img src="<?= $personajes[$i]["ILUSTRACION"] ?>" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -120,6 +121,87 @@
                         </div>
                     <?php endfor; ?>
                 </div>
+                <?php for ($i = 0; $i < count($personajes); $i++) : ?>
+
+                    <div class="row d-none cartaPJ<?= $i ?>">
+                        <div class="align-self-center">
+                            <div class="card" style="width: 18rem;">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <img src="https://i.pinimg.com/originals/51/9b/f9/519bf955cad48f57fda9c41996a64744.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><?= $personajes[$i]["NOMBRE"] ?></h5>
+                                    <p class="card-text"><?= $personajes[$i]["RAZA"] ?> <?= $personajes[$i]["CLASE"] ?> lvl <?= $personajes[$i]["NIVEL"] ?></p>
+                                    <a href="#" class="btn btn-primary">Editar</a>
+                                    <a href="#" class="btn btn-danger">Borrar</a>
+                                </div>
+                                <div class="container">
+                                    <div class="row text-center">
+                                        <div class="col-4"><b>STR:</b> <?= $personajes[$i]["STAT3"] ?></div>
+                                        <div class="col-4"><b>CON:</b> <?= $personajes[$i]["STAT4"] ?></div>
+                                        <div class="col-4"><b>DEX:</b> <?= $personajes[$i]["STAT5"] ?></div>
+                                        <div class="col-4"><b>INT:</b> <?= $personajes[$i]["STAT6"] ?></div>
+                                        <div class="col-4"><b>CHA:</b> <?= $personajes[$i]["STAT8"] ?></div>
+                                        <div class="col-4"><b>WIS:</b> <?= $personajes[$i]["STAT7"] ?></div>
+                                        <div class="col-6"><b>CA:</b> <?= $personajes[$i]["STAT2"] ?></div>
+                                        <div class="col-6"><b>PB:</b> <?php switch (true) {
+                                                                            case (intval($personajes[$i]["NIVEL"]) < 5):
+                                                                                echo "2";
+                                                                                break;
+                                                                            case (intval($personajes[$i]["NIVEL"]) >= 5 &&  intval($personajes[$i]["NIVEL"] < 9)):
+                                                                                echo "3";
+                                                                                break;
+                                                                            case (intval($personajes[$i]["NIVEL"]) >= 9 &&  intval($personajes[$i]["NIVEL"] < 13)):
+                                                                                echo "4";
+                                                                                break;
+                                                                            case (intval($personajes[$i]["NIVEL"]) >= 13 &&  intval($personajes[$i]["NIVEL"] < 17)):
+                                                                                echo "5";
+                                                                                break;
+                                                                            default:
+                                                                                echo "6";
+                                                                                break;
+                                                                        } ?></div>
+                                        <div class="col-12"><b>HP:</b> <?= $personajes[$i]["STAT1"] ?></div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <a class="btn btn-primary margin-top_8 margin-bottom_8" data-bs-toggle="collapse" href="#salvaciones" role="button" aria-expanded="false" aria-controls="salvaciones">
+                                            Salvaciones
+                                        </a>
+                                        <div class="collapse" id="salvaciones">
+                                            <div class="card card-body">
+                                                <ul>
+                                                    <li>Atletismo</li>
+                                                    <li>Religion</li>
+                                                    <li>Armas marciales</li>
+                                                    <li>Historia</li>
+                                                    <li>Historia</li>
+                                                    <li>Historia</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <a class="btn btn-primary margin-top_8 margin-bottom_8" data-bs-toggle="collapse" href="#competencias" role="button" aria-expanded="false" aria-controls="competencias">
+                                            Competencias
+                                        </a>
+                                        <div class="collapse" id="competencias">
+                                            <div class="card card-body">
+                                                <ul>
+                                                    <li>Atletismo</li>
+                                                    <li>Religion</li>
+                                                    <li>Armas marciales</li>
+                                                    <li>Historia</li>
+                                                    <li>Historia</li>
+                                                    <li>Historia</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php endfor; ?>
             </div>
 
         </div>
@@ -162,46 +244,3 @@
 </body>
 
 </html>
-
-<!-- <div class="align-self-center">
-    <div class="card" style="width: 18rem;">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        <img src="https://i.pinimg.com/originals/51/9b/f9/519bf955cad48f57fda9c41996a64744.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Aelrik Rounar</h5>
-            <p class="card-text">Elfo Paladín lvl 5</p>
-            <a href="#" class="btn btn-primary">Editar</a>
-            <a href="#" class="btn btn-danger">Borrar</a>
-        </div>
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-4"><b>STR:</b> 16</div>
-                <div class="col-4"><b>CON:</b> 14</div>
-                <div class="col-4"><b>DEX:</b> 9</div>
-                <div class="col-4"><b>INT:</b> 12</div>
-                <div class="col-4"><b>CHA:</b> 14</div>
-                <div class="col-4"><b>WIS:</b> 14</div>
-                <div class="col-6"><b>CA:</b> 18</div>
-                <div class="col-6"><b>PB:</b> 3</div>
-                <div class="col-12"><b>HP:</b> 56</div>
-            </div>
-            <div class="d-flex flex-column">
-                <a class="btn btn-primary margin-top_8 margin-bottom_8" data-bs-toggle="collapse" href="#competencias" role="button" aria-expanded="false" aria-controls="competencias">
-                    Competencias
-                </a>
-                <div class="collapse" id="competencias">
-                    <div class="card card-body">
-                        <ul>
-                            <li>Atletismo</li>
-                            <li>Religion</li>
-                            <li>Armas marciales</li>
-                            <li>Historia</li>
-                            <li>Historia</li>
-                            <li>Historia</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
