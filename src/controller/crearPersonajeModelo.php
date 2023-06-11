@@ -9,7 +9,7 @@ use \model\Utils;
 
 
 //Si nos llegan datos de un personaje, implica que es el formulario el que llama al controlador
-if (isset($_POST["crearPersonaje"])) {
+if (isset($_POST["juegoPersonaje"])) {
     //rellenamos los datos del personaje que le pasaremos a la vista
 
     //Creamos un array para guardar los datos del personaje
