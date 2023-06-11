@@ -88,7 +88,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body d-flex align-items-center">
-                            <form class="col-12 d-flex justify-content-evenly" action="../controller/crearPersonajeModelo.php">
+                            <form class="col-12 d-flex justify-content-evenly" action="../controller/crearPersonajeModelo.php" method="POST">
                                 <div>
                                     <button class="btn btn-primary" name="juegoPersonaje" value="ysystem">Ysystem</button>
                                 </div>
