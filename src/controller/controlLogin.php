@@ -63,7 +63,9 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
             $gestorPersonaje = new Personaje();
             $conexPDO = utils::conectar();
 
+            
             $_SESSION["user_id"] = $usuario["idJUGADOR"];
+            $personaje = $gestorPersonaje->getPersonajeID($_SESSION["user_id"], $conexPDO);
             $_SESSION["email"] = $usuario["EMAIL"];
             $_SESSION["nombre"] = $usuario["NOMBRE"];
 

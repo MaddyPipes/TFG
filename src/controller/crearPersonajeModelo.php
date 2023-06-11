@@ -39,7 +39,7 @@ if (isset($_POST["crearPersonaje"])) {
     require_once("../model/Personaje.php");
     require_once("../model/utils.php");
 
-    $gestor = new Personaje();
+    $gestorPersonaje = new Personaje();
 
     //Nos conectamos a la Bd
     $conexPDO = Utils::conectar();
@@ -54,7 +54,7 @@ if (isset($_POST["crearPersonaje"])) {
         $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";      
     }
 
-        
+    $personaje = $gestorPersonaje->getPersonajeID($_SESSION["user_id"], $conexPDO);
 
     include("../views/main_page.php");
 } else {
