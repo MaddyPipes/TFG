@@ -105,7 +105,7 @@
             <div class="container mx-auto mt-4">
                 <div class="row" id="listaPJ">
                     <?php for ($i = 0; $i < count($personajes); $i++) : ?>
-                        <div class="col-md-6 margin-bottom_16">
+                        <div class="col-md-6 margin-bottom_16" id="recuadroPJ<?= $personajes[$i]["idPERSONAJE"] ?>">
                             <button class="btn p-0 seleccionarPJ" id="<?= $personajes[$i]["idPERSONAJE"] ?>">
                                 <div class="card">
                                     <img src="<?= $personajes[$i]["ILUSTRACION"] ?>" class="card-img-top" alt="...">

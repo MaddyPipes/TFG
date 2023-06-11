@@ -26,6 +26,7 @@ $(document).ready(function () {
                     personajeID = personajeID.substring(15);
                     $("#listaPJ").removeClass("d-none");
                     $("#cartaPJ" + personajeID).addClass("d-none");
+                    $("#recuadroPJ"+personajeID).addClass("d-none");
                 } else {
                     alert("Hubo un error al eliminar el elemento." + personajeID + response);
                 }
