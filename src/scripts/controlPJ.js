@@ -45,10 +45,7 @@ $(document).ready(function () {
             type: "POST",
             data: { id: personajeID },
             success: function (response) {
-                let statsPJ = JSON.parse(response);
-                console.log(statsPJ);
-
-                // $.sessionStorage.set("nombre", statsPJ.parametro1);
+                console.log(response);
 
             },
             error: function () {
