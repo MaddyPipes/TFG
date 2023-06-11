@@ -33,6 +33,8 @@
 
         <div class="container margin-top_48 margin-bottom_48 border border-2" style="background-color: #353535;">
 
+        <?= var_dump($personaje) ?>
+
             <div class="row justify-content-center">
 
                 <div class="col-12 d-flex justify-content-center"><img src="../rsc/whited20.png" alt=""></div>
