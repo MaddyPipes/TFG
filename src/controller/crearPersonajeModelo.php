@@ -130,7 +130,7 @@ if (isset($_POST["editarPJ"])) {
 
     include("../views/crearPersonajeDYD.php");
 }
-if(!(isset($_POST["editarPersonaje"]) || isset($_POST["crearPersonaje"]))) {
+if(!isset($_POST["editarPersonaje"]) && !isset($_POST["crearPersonaje"])) {
     //Sin datos del personaje cargados cargamos la vista
     include("../views/crearPersonajeDYD.php");
 }
