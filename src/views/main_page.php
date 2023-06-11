@@ -262,29 +262,6 @@
   });
 }); -->
 
-<!-- <?php
-// Realizar la conexión a la base de datos y otras configuraciones necesarias
 
-// Obtener los parámetros desde la base de datos
-$parametro1 = obtenerParametro1();
-$parametro2 = obtenerParametro2();
-// ... Obtener más parámetros según sea necesario
-
-// Crear un array asociativo con los parámetros
-$parametros = array(
-  "parametro1" => $parametro1,
-  "parametro2" => $parametro2,
-  // ... Agregar más parámetros según sea necesario
-);
-
-// Convertir el array a formato JSON
-$respuesta = json_encode($parametros);
-
-// Configurar las cabeceras de la respuesta como JSON
-header("Content-Type: application/json");
-
-// Emitir la respuesta JSON
-echo $respuesta;
-// ?> -->
 
 </html>
