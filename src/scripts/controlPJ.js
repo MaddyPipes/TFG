@@ -24,7 +24,7 @@ $(document).ready(function () {
                 if (response === "success") {
                     alert("El elemento se ha eliminado correctamente.");
                 } else {
-                    alert("Hubo un error al eliminar el elemento."+personajeID);
+                    alert("Hubo un error al eliminar el elemento."+personajeID+response);
                 }
             },
             error: function () {
