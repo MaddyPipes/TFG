@@ -103,7 +103,6 @@
             </div>
             <div class="container mx-auto mt-4">
                 <div class="row">
-                    <?= var_dump($personaje) ?>
                     <?php for($i = 0; $i < count($personajes); $i++): ?>
                     <div class="col-md-6 margin-bottom_16">
                         <div class="card">
