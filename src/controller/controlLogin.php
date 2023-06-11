@@ -7,6 +7,7 @@ use \model\Personaje;
 use \model\utils;
 
 require_once("../model/Usuario.php");
+require_once("./model/Personaje.php");
 require_once("../model/utils.php");
 
 $inf_ms = null;
@@ -56,9 +57,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
 
             $_SESSION['isLoggedIn'] = true; // El usuario está logueado
             //Añadimos el código del modelo
-            require_once("./model/Usuario.php");
-            require_once("./model/Personaje.php");
-            require_once("./model/utils.php");
+
             $inf_ms = null;
             $gestorUsuario = new Usuario();
             $gestorPersonaje = new Personaje();
