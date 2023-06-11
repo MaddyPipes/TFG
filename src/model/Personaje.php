@@ -16,7 +16,7 @@ class Personaje
      * Función para obtener todos los personajes de la base de datos 
      */
 
-    public function getPersonaje($idPersonaje ,$conexPDO)
+    public function getPersonaje($idPersonaje, $conexPDO)
     {
 
         if ($conexPDO != null) {
@@ -44,7 +44,7 @@ class Personaje
 
     public function getPersonajeID($idJugador, $conexPDO)
     {
-        $idJugador = intval($idJugador); 
+        $idJugador = intval($idJugador);
 
         if ($conexPDO != null) {
             try {
@@ -53,7 +53,7 @@ class Personaje
                 $sentencia = $conexPDO->prepare("SELECT * FROM gestionRol.PERSONAJE WHERE JUGADOR_idJUGADOR = ? ORDER BY NOMBRE");
                 //Asociamos a cada interrogacion el valor que queremos en su lugar
                 $sentencia->bindParam(1, $idJugador, PDO::PARAM_INT);
-                
+
                 //Ejecutamos la sentencia
                 $sentencia->execute();
 
@@ -143,7 +143,6 @@ class Personaje
                     //Ejecutamos la sentencia
 
                     $result = $statement->execute();
-                    
                 } catch (PDOException $e) {
                     print("Error al borrar" . $e->getMessage());
                 }
@@ -163,35 +162,40 @@ class Personaje
 
 
         $result = null;
-        if (isset($personaje) && isset($personaje["idPersonaje"]) && is_numeric($personaje["idPersonaje"])  && $conexPDO != null) {
 
-            try {
+        try {
 
-                //Preparamos la sentencia
+            //Preparamos la sentencia
 
-                $statement = $conexPDO->prepare("UPDATE gestionrol.personaje set JUGADOR_idJUGADOR=:JUGADOR_idJUGADOR, NOMBRE=:NOMBRE, RAZA=:RAZA, CLASE=:CLASE, NIVEL=:NIVEL, ILUSTRACION=:ILUSTRACION, FICHA=:FICHA, INVENTARIO=:INVENTARIO, DIARIO=:DIARIO where idPERSONAJE=:idPERSONAJE");
-
+            $statement = $conexPDO->prepare("UPDATE gestionRol.PERSONAJE set NOMBRE=:NOMBRE, RAZA=:RAZA, CLASE=:CLASE, NIVEL=:NIVEL, ILUSTRACION=:ILUSTRACION, STAT1=:STAT1, STAT2=:STAT2, STAT3=:STAT3, STAT4=:STAT4, STAT5=:STAT5, STAT6=:STAT6, STAT7=:STAT7, STAT8=:STAT8, COMPETENCIAS=:COMPETENCIAS, SALVACIONES=:SALVACIONES  where idPERSONAJE=:idPERSONAJE");
 
 
-                //Asociamos los valores a los parametros de la sentencia sql
 
-                $statement->bindParam(":idPERSONAJE", $personaje["idPersonaje"]);
-                $statement->bindParam(":JUGADOR_idJUGADOR", $personaje["idJugador"]);
-                $statement->bindParam(":NOMBRE", $personaje["nombre"]);
-                $statement->bindParam(":RAZA", $personaje["raza"]);
-                $statement->bindParam(":CLASE", $personaje["clase"]);
-                $statement->bindParam(":NIVEL", $personaje["nivel"]);
-                $statement->bindParam(":ILUSTRACION", $personaje["ilustracion"]);
-                $statement->bindParam(":FICHA", $personaje["ficha"]);
-                $statement->bindParam(":INVENTARIO", $personaje["inventario"]);
-                $statement->bindParam(":DIARIO", $personaje["diario"]);
+            //Asociamos los valores a los parametros de la sentencia sql
 
-                //Ejecutamos la sentencia
+            $statement->bindParam(":idPERSONAJE", intval($personaje["idPersonaje"]));
+            $statement->bindParam(":NOMBRE", $personaje["nombre"]);
+            $statement->bindParam(":RAZA", $personaje["raza"]);
+            $statement->bindParam(":CLASE", $personaje["clase"]);
+            $statement->bindParam(":NIVEL", $personaje["nivel"]);
+            $statement->bindParam(":ILUSTRACION", $personaje["ilustracion"]);
+            $statement->bindParam(":STAT1", $personaje["stat1"]);
+            $statement->bindParam(":STAT2", $personaje["stat2"]);
+            $statement->bindParam(":STAT3", $personaje["stat3"]);
+            $statement->bindParam(":STAT4", $personaje["stat4"]);
+            $statement->bindParam(":STAT5", $personaje["stat5"]);
+            $statement->bindParam(":STAT6", $personaje["stat6"]);
+            $statement->bindParam(":STAT7", $personaje["stat7"]);
+            $statement->bindParam(":STAT8", $personaje["stat8"]);
+            $statement->bindParam(":COMPETENCIAS", $personaje["competencias"]);
+            $statement->bindParam(":SALVACIONES", $personaje["salvaciones"]);
 
-                $result = $statement->execute();
-            } catch (PDOException $e) {
-                print("Error al acceder a BD" . $e->getMessage());
-            }
+
+            //Ejecutamos la sentencia
+
+            $result = $statement->execute();
+        } catch (PDOException $e) {
+            print("Error al acceder a BD" . $e->getMessage());
         }
 
         return $result;

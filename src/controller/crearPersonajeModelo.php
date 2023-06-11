@@ -50,18 +50,70 @@ if (isset($_POST["crearPersonaje"])) {
     // Si ha ido bien el mensaje sera distint
     if ($resultado != null)
         $inf_ms = "El personaje se ha insertado Correctamente";
-    else{
-        $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";      
+    else {
+        $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";
     }
 
     $personajes = $gestorPersonaje->getPersonajeID($_SESSION["user_id"], $conexPDO);
-    for($i = 0; $i < count($personajes); $i++){
+    for ($i = 0; $i < count($personajes); $i++) {
         $personajes[$i]["COMPETENCIAS"] = unserialize($personajes[$i]["COMPETENCIAS"]);
         $personajes[$i]["SALVACIONES"] = unserialize($personajes[$i]["SALVACIONES"]);
     }
     include("../views/main_page.php");
-} 
-if(isset($_POST["editarPJ"])){
+}
+if (isset($_POST["editarPersonaje"])) {
+    //rellenamos los datos del personaje que le pasaremos a la vista
+
+    //Creamos un array para guardar los datos del personaje
+    $personaje = array();
+
+    //rellenamos los datos del personaje que nos pasa la vista, stripeandolo de inyecciones de código
+
+    $personaje["idJugador"] = intval($_SESSION['user_id']);
+    $personaje["nombre"] = $_POST["nombre"];
+    $personaje["raza"] = $_POST["raza"];
+    $personaje["clase"] = $_POST["clase"];
+    $personaje["nivel"] = $_POST["nivel"];
+    $personaje["ilustracion"] = $_POST["picture"];
+    $personaje["stat1"] = $_POST["hp"];
+    $personaje["stat2"] = $_POST["ca"];
+    $personaje["stat3"] = $_POST["fuerza"];
+    $personaje["stat4"] = $_POST["constitucion"];
+    $personaje["stat5"] = $_POST["destreza"];
+    $personaje["stat6"] = $_POST["inteligencia"];
+    $personaje["stat7"] = $_POST["sabiduria"];
+    $personaje["stat8"] = $_POST["carisma"];
+    $personaje["salvaciones"] = serialize($_POST["salvaciones"]);
+    $personaje["competencias"] = serialize($_POST["competencias"]);
+
+
+    //Añadimos el código del modelo
+    require_once("../model/Personaje.php");
+    require_once("../model/utils.php");
+
+    $gestorPersonaje = new Personaje();
+
+    //Nos conectamos a la Bd
+    $conexPDO = Utils::conectar();
+
+    //Modificamos el registro
+    $resultado = $gestorPersonaje->updatePersonaje($personaje, $conexPDO);
+
+    // Si ha ido bien el mensaje sera distint
+    if ($resultado != null)
+        $inf_ms = "El personaje se ha insertado Correctamente";
+    else {
+        $inf_ms = "Ha habido un fallo al acceder a la Base de Datos";
+    }
+
+    $personajes = $gestorPersonaje->getPersonajeID($_SESSION["user_id"], $conexPDO);
+    for ($i = 0; $i < count($personajes); $i++) {
+        $personajes[$i]["COMPETENCIAS"] = unserialize($personajes[$i]["COMPETENCIAS"]);
+        $personajes[$i]["SALVACIONES"] = unserialize($personajes[$i]["SALVACIONES"]);
+    }
+    include("../views/main_page.php");
+}
+if (isset($_POST["editarPJ"])) {
     require_once("../model/Personaje.php");
     require_once("../model/utils.php");
 
@@ -77,8 +129,7 @@ if(isset($_POST["editarPJ"])){
     $personaje["COMPETENCIAS"] = unserialize($personaje["COMPETENCIAS"]);
 
     include("../views/crearPersonajeDYD.php");
-}
-else {
+} else {
     //Sin datos del personaje cargados cargamos la vista
     include("../views/crearPersonajeDYD.php");
 }

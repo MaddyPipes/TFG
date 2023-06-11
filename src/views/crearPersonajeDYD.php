@@ -328,8 +328,13 @@
 
 
                     <br>
-
-                    <button class="btn btn-danger margin-bottom_24" name="crearPersonaje">¡Crear!</button>
+                    <?php
+                    if (isset($_POST["editarPJ"])) {
+                        echo '<button class="btn btn-danger margin-bottom_24" name="editarPersonaje">¡Modificar!</button>';
+                    } else {
+                        echo '<button class="btn btn-danger margin-bottom_24" name="crearPersonaje">¡Crear!</button>';
+                    }
+                    ?>
                 </div>
             </div>
         </div>
