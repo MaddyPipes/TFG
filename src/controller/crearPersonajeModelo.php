@@ -69,6 +69,8 @@ if($_POST["editarPJ"]){
     $conexPDO = Utils::conectar();
     $gestorPersonaje = new Personaje();
 
+    $_POST["idPJ"] = intval($_POST["idPJ"]);
+
     $personaje = $gestorPersonaje->getPersonaje($_POST["idPJ"], $conexPDO);
 
     $personaje["SALVACIONES"] = unserialize($personaje["SALVACIONES"]);
