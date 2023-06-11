@@ -33,7 +33,7 @@
 
         <div class="container margin-top_48 margin-bottom_48 border border-2" style="background-color: #353535;">
 
-        <?= var_dump($_POST["idPJ"]) ?>
+        <?= var_dump($idPJ) ?>
 
             <div class="row justify-content-center">
 
