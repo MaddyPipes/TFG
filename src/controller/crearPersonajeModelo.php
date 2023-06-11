@@ -60,7 +60,23 @@ if (isset($_POST["crearPersonaje"])) {
         $personajes[$i]["SALVACIONES"] = unserialize($personajes[$i]["SALVACIONES"]);
     }
     include("../views/main_page.php");
-} else {
+} 
+if($_POST["editarPJ"]){
+    require_once("../model/Personaje.php");
+    require_once("../model/utils.php");
+
+    //Nos conectamos a la Bd
+    $conexPDO = Utils::conectar();
+    $gestorPersonaje = new Personaje();
+
+    $personaje = $gestorPersonaje->getPersonaje($_POST["idPJ"], $conexPDO);
+
+    $personaje["SALVACIONES"] = unserialize($personaje["SALVACIONES"]);
+    $personaje["COMPETENCIAS"] = unserialize($personaje["COMPETENCIAS"]);
+
+    include("../views/crearPersonajeDYD.php");
+}
+else {
     //Sin datos del personaje cargados cargamos la vista
     include("../views/crearPersonajeDYD.php");
 }

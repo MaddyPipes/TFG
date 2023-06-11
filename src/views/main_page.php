@@ -131,7 +131,10 @@
                                 <div class="card-body">
                                     <h5 class="card-title"><?= $personajes[$i]["NOMBRE"] ?></h5>
                                     <p class="card-text"><?= $personajes[$i]["RAZA"] ?> <?= $personajes[$i]["CLASE"] ?> lvl <?= $personajes[$i]["NIVEL"] ?></p>
-                                    <a href="#" class="btn btn-">Editar</a>
+                                    <form action="../controller/crearPersonajeModelo.php" method="POST">
+                                        <input type="hidden" name="idPJ" value="<?= $personajes[$i]["idPERSONAJE"] ?>">
+                                        <button class="btn btn-primary" name="editarPJ">Editar</button>
+                                    </form>
                                     <a href="#" class="btn btn-danger" tabindex="1" data-bs-toggle="modal" data-bs-target="#modalBorrar">Borrar</a>
                                     <div class="modal fade" id="modalBorrar" tabindex="-1" aria-labelledby="modalBorrarLabel" aria-hidden="true">
                                         <div class="modal-dialog">
@@ -229,29 +232,6 @@
     </div>
 
     <script src="../scripts/controlPJ.js"></script>
-
-    <!-- Peticiones AJAX -->
-    <!-- <script>
-        //Creamos la función al que llamará el evento de cada botón, recibiendo como parámetro la id del jugador, que usaremos en el controlador
-        function login(loginStatus) {
-
-            //Iniciamos la petición al controlador
-
-            let xmlHttpDoc = new XMLHttpRequest();
-
-            xmlHttpDoc.onreadystatechange = function() {
-
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("cuerpoModalUsuario").innerHTML = this.responseText;
-                }
-
-            };
-
-            xmlHttpDoc.open("POST", `../controller/controlLogin.php?loginStatus=${loginStatus}`, true);
-
-            xmlHttpDoc.send();
-        }
-    </script> -->
 </body>
 
 </html>

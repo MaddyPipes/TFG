@@ -16,22 +16,25 @@ class Personaje
      * Función para obtener todos los personajes de la base de datos 
      */
 
-    public function getPersonaje($conexPDO)
+    public function getPersonaje($idPersonaje ,$conexPDO)
     {
 
         if ($conexPDO != null) {
             try {
 
                 //Query inicial
-                $statement = "SELECT * FROM gestionrol.PERSONAJE ORDER BY idPERSONAJE";
+                $statement = "SELECT * FROM gestionRol.PERSONAJE WHERE idPERSONAJE = ?";
 
                 $preparedStatement = $conexPDO->prepare($statement);
+
+                //Asociamos a cada interrogacion el valor que queremos en su lugar
+                $preparedStatement->bindParam(1, $idPersonaje, PDO::PARAM_INT);
 
                 $preparedStatement->execute();
 
                 //Devolvemos los datos del personaje
 
-                return $preparedStatement->fetchAll();
+                return $preparedStatement->fetch();
             } catch (PDOException $e) {
                 print("Error al acceder a BD" . $e->getMessage());
             }
