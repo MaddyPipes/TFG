@@ -4,6 +4,8 @@ use model\Jugador;
 use model\Personaje;
 use \model\Utils;
 
+session_start();
+
 //Añadimos el código del modelo
 require_once("../model/Jugador.php");
 require_once("../model/utils.php");
@@ -17,13 +19,7 @@ $conexPDO = Utils::conectar();
 
 if(isset($_POST["id"])){
 
-    $result = $gestorPersonaje->delPersonaje($_POST["id"], $conexPDO);
-
-    if($result == null || $result == 0){
-        $inf_ms = "Error con la base de datos.";
-    }else{
-        $inf_ms = "Eliminado con éxito.";
-    }
+    $result = $gestorPersonaje->delPersonaje($_POST["id"], $_SESSION['user_id'], $conexPDO);
 
 }
 ?>
