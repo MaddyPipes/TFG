@@ -126,7 +126,7 @@
                     <?php for ($i = 0; $i < count($personajes); $i++) : ?>
                         <div class="align-self-center d-none cartaPJ" id="cartaPJ<?= $personajes[$i]["idPERSONAJE"] ?>">
                             <div class="card" style="width: 18rem;">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close deseleccionar" id="deseleccionarPJ<?= $personajes[$i]["idPERSONAJE"] ?>"></button>
                                 <img src="<?= $personajes[$i]["ILUSTRACION"] ?>" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><?= $personajes[$i]["NOMBRE"] ?></h5>
