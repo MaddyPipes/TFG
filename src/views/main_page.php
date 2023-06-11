@@ -234,4 +234,57 @@
     <script src="../scripts/controlPJ.js"></script>
 </body>
 
+<!-- $(document).ready(function() {
+  // Al hacer clic en el botón
+  $("#miBoton").click(function() {
+    // Realizar una solicitud AJAX a PHP para obtener los parámetros
+    $.ajax({
+      url: "obtener_parametros.php", // Ruta al archivo PHP que obtiene los parámetros de la base de datos
+      type: "POST",
+      data: { /* Datos adicionales si es necesario */ },
+      success: function(response) {
+        // Obtener los parámetros del servidor
+        var parametros = JSON.parse(response);
+
+        // Crear las variables de sessionStorage a partir de los parámetros
+        $.sessionStorage.set("parametro1", parametros.parametro1);
+        $.sessionStorage.set("parametro2", parametros.parametro2);
+        // ... Agregar más variables según sea necesario
+
+        // Realizar cualquier otra acción después de crear las variables de sessionStorage
+        console.log("Variables de sessionStorage creadas con éxito.");
+      },
+      error: function() {
+        // Manejar errores en la solicitud AJAX
+        console.log("Error al obtener los parámetros desde el servidor.");
+      }
+    });
+  });
+}); -->
+
+<!-- <?php
+// Realizar la conexión a la base de datos y otras configuraciones necesarias
+
+// Obtener los parámetros desde la base de datos
+$parametro1 = obtenerParametro1();
+$parametro2 = obtenerParametro2();
+// ... Obtener más parámetros según sea necesario
+
+// Crear un array asociativo con los parámetros
+$parametros = array(
+  "parametro1" => $parametro1,
+  "parametro2" => $parametro2,
+  // ... Agregar más parámetros según sea necesario
+);
+
+// Convertir el array a formato JSON
+$respuesta = json_encode($parametros);
+
+// Configurar las cabeceras de la respuesta como JSON
+header("Content-Type: application/json");
+
+// Emitir la respuesta JSON
+echo $respuesta;
+// ?> -->
+
 </html>
