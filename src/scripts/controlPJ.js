@@ -32,6 +32,7 @@ $(document).ready(function () {
                 let stringPJ = JSON.stringify(jsonPJ);
 
                 localStorage.setItem(response.NOMBRE, stringPJ);
+                localStorage.setItem("selectedPJ", response.NOMBRE);
 
             },
             error: function () {
