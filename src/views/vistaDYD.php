@@ -40,7 +40,7 @@
 
                 <div class="col-7 d-flex justify-content-center"><img class="img-fluid col-5" src="../rsc/DnD-Logo.png" alt=""></div>
 
-                <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column page" id="page1">
+                <div class="align-items-center col-9">
 
                     <div class="row">
                         <div class="col-4 d-flex flex-column align-items-center justify-content-center w-50 stat" style="background-image: url(../rsc/pgIcon.png);">
