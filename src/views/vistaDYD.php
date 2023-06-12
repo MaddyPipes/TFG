@@ -9,6 +9,6 @@
 <body>
     <?php echo var_dump($personaje) ?>
     <?php echo var_dump($personaje) ?>
-    <?php echo var_dump($_SESSION['idPJ']) ?>
+    <?php echo var_dump($_SESSION[$idPersonaje]) ?>
 </body>
 </html>
