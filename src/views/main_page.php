@@ -228,16 +228,18 @@
         </div>
         <div class="align-items-center d-flex justify-content-center offcanvas-body">
             <div class="col-md-6 margin-bottom_16">
-                <a class="btn p-0 seleccionarPJ" id="botonDYD">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="card-title">Dungeon & Dragons 5a Edición</h6>
-                            <div class="row justify-content-center">
-                                <div class="col-12"><img src="../rsc/DnD-Logo.png" alt="" class="img-fluid"></div>
+                <form class="p-0" action="" method="POST">
+                    <button class="btn p-0 seleccionarPJ" id="botonDYD">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">Dungeon & Dragons 5a Edición</h6>
+                                <div class="row justify-content-center">
+                                    <div class="col-12"><img src="../rsc/DnD-Logo.png" alt="" class="img-fluid"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </button>
+                </form>
             </div>
         </div>
     </div>
