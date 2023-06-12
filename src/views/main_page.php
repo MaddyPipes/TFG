@@ -227,7 +227,20 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            
+            <div class="col-md-6 margin-bottom_16" id="recuadroPJ<?= $personajes[$i]["idPERSONAJE"] ?>">
+                <a class="btn p-0 seleccionarPJ" id="<?= $personajes[$i]["idPERSONAJE"] ?>">
+                    <div class="card">
+                        <img src="<?= $personajes[$i]["ILUSTRACION"] ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $personajes[$i]["NOMBRE"] ?></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><?= $personajes[$i]["RAZA"] ?> <?= $personajes[$i]["CLASE"] ?></h6>
+                            <div class="row justify-content-center">
+                                <div class="col-6"><img src="../rsc/DnD-Logo.png" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
