@@ -43,7 +43,8 @@
 
                     <div class="row">
                         <div class="col-4 d-flex justify-content-center" style="background-image: url(../rsc/caIcon.png);">
-                            16
+                            <div>CA</div>
+                            <div>16</div>
                         </div>
                         <div class="col-4">
 
