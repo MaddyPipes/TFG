@@ -19,7 +19,7 @@ if (isset($_POST["id"])) {
         $idPersonaje = intval($_POST["id"]);
         $personaje = $gestorPersonaje->getPersonaje($idPersonaje, $conexPDO);
         $_SESSION['selectedPJ'] = $personaje["NOMBRE"];
-        $_SESSION['idPJ'] = $personaje["idPERSONAJE"];
+        $_SESSION['idPJ'] = $idPersonaje;
         if ($personaje) {
             $personaje["SALVACIONES"] = unserialize($personaje["SALVACIONES"]);
             $personaje["COMPETENCIAS"] = unserialize($personaje["COMPETENCIAS"]);
