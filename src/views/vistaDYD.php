@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?= var_dump($personaje) ?>
-    <?= var_dump($personaje) ?>
+    <?php echo var_dump($personaje) ?>
+    <?php echo var_dump($personaje) ?>
 </body>
 </html>
