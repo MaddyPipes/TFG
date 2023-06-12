@@ -9,8 +9,8 @@ use \model\Utils;
 
 if (isset($_SESSION['idPJ'])) {
 
-    require_once("./model/Personaje.php");
-    require_once("./model/utils.php");
+    require_once("../model/Personaje.php");
+    require_once("../model/utils.php");
 
     $gestorPersonaje = new Personaje();
 
