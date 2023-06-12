@@ -5,18 +5,18 @@ $(document).ready(function () {
         $("#listaPJ").addClass("d-none");
         $("#cartaPJ" + personajeID).removeClass("d-none");
 
-        $.ajax({
-            url: "../controller/controlStats.php",
-            type: "POST",
-            data: { id: personajeID },
-            success: function (response) {
-                console.log(response.NOMBRE);
-                let personaje = response;
-            },
-            error: function () {
-                console.log("Error al obtener los parámetros desde el servidor.");
-            }
-        });
+        // $.ajax({
+        //     url: "../controller/controlStats.php",
+        //     type: "POST",
+        //     data: { id: personajeID },
+        //     success: function (response) {
+        //         console.log(response.NOMBRE);
+        //         let personaje = response;
+        //     },
+        //     error: function () {
+        //         console.log("Error al obtener los parámetros desde el servidor.");
+        //     }
+        // });
     });
 
     $(".deseleccionar").click(function () {
