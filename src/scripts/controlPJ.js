@@ -29,7 +29,7 @@ $(document).ready(function () {
                     "idPersonaje": response.idPERSONAJE
                 }
 
-                let stringPJ = JSON.parse(jsonPJ);
+                let stringPJ = JSON.stringify(jsonPJ);
 
                 localStorage.setItem(response.NOMBRE, stringPJ);
 
