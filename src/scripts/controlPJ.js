@@ -9,8 +9,9 @@ $(document).ready(function () {
             type: "POST",
             data: { id: personajeID },
             success: function (response) {
-                console.log(response);
-                let personaje = response;
+                let personaje = JSON.parse(response);
+
+                console.log(personaje);
             },
             error: function () {
                 console.log("Error al obtener los parámetros desde el servidor.");
