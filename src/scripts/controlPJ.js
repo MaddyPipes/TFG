@@ -10,12 +10,28 @@ $(document).ready(function () {
             data: { id: personajeID },
             success: function (response) {
 
-                console.log(response);
-                
                 let jsonPJ = {
-                    "nombre": response.NOMBRE
+                    "nombre": response.NOMBRE,
+                    "raza": response.RAZA,
+                    "clase": response.CLASE,
+                    "nivel": response.NIVEL,
+                    "ilustracion": response.ILUSTRACION,
+                    "salvaciones": response.SALVACIONES,
+                    "competencias": response.COMPETENCIAS,
+                    "puntosGolpe": response.STAT1,
+                    "claseArmadura": response.STAT2,
+                    "fuerza": response.STAT3,
+                    "constitucion": response.STAT4,
+                    "destreza": response.STAT5,
+                    "inteligencia": response.STAT6,
+                    "sabiduria": response.STAT7,
+                    "carisma": response.STAT8,
+                    "idPersonaje": response.idPERSONAJE
                 }
 
+                let stringPJ = JSON.parse(jsonPJ);
+
+                localStorage.setItem(response.NOMBRE, stringPJ);
 
             },
             error: function () {
