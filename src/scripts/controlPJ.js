@@ -10,11 +10,12 @@ $(document).ready(function () {
             data: { id: personajeID },
             success: function (response) {
 
+                console.log(response);
+                
                 let jsonPJ = {
                     "nombre": response.NOMBRE
                 }
 
-                console.log(response);
 
             },
             error: function () {
