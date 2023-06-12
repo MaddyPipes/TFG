@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/stylesheet.css">
+    <link rel="stylesheet" href="../styles/dydTablero.css">
     <style>
         input:focus {
             box-shadow: none !important;
@@ -42,9 +43,9 @@
                 <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column page" id="page1">
 
                     <div class="row">
-                        <div class="col-4 d-flex justify-content-center" style="background-image: url(../rsc/caIcon.png); background-position:center; background-size:cover; background-repeat:no-repeat;">
+                        <div class="col-4 d-flex justify-content-center stat" style="background-image: url(../rsc/caIcon.png);">
                             <div>CA</div>
-                            <div>16</div>
+                            <div id="ca">16</div>
                         </div>
                         <div class="col-4">
 
