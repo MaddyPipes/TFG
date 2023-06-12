@@ -9,7 +9,6 @@ $(document).ready(function () {
             type: "POST",
             data: { id: personajeID },
             success: function (response) {
-                let personaje = JSON.parse(response);
 
                 console.log(personaje);
             },
