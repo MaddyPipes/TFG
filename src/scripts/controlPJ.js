@@ -10,9 +10,11 @@ $(document).ready(function () {
             data: { id: personajeID },
             success: function (response) {
 
-                console.log(response);
-
-                console.log(response.NOMBRE)
+                console.log(response.NOMBRE);
+                console.log(response.RAZA);
+                console.log(response.CLASE);
+                console.log(response.SALVACIONES);
+                console.log(response.COMPETENCIAS);
             },
             error: function () {
                 console.log("Error al obtener los parámetros desde el servidor.");
