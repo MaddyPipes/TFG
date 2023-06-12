@@ -1,8 +1,27 @@
 $(document).ready(function () {
     $(".seleccionarPJ").click(function () {
         let personajeID = $(this).attr("id");
+        personajeID = personajeID.substring(8);
         $("#listaPJ").addClass("d-none");
         $("#cartaPJ" + personajeID).removeClass("d-none");
+
+        $.ajax({
+            url: "../controller/borrarPersonaje.php",
+            type: "POST",
+            data: { id: personajeID },
+            success: function (response) {
+                if (response === "success") {
+                    $("#listaPJ").removeClass("d-none");
+                    $("#cartaPJ" + personajeID).addClass("d-none");
+                    $("#recuadroPJ" + personajeID).addClass("d-none");
+                } else {
+                    alert("Hubo un error al eliminar el elemento." + personajeID + response);
+                }
+            },
+            error: function () {
+                alert("Hubo un error en la comunicación con el servidor.");
+            }
+        });
     });
 
     $(".deseleccionar").click(function () {
