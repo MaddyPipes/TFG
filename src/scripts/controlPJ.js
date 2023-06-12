@@ -10,7 +10,7 @@ $(document).ready(function () {
             data: { id: personajeID },
             success: function (response) {
 
-                console.log(personaje);
+                console.log(response);
             },
             error: function () {
                 console.log("Error al obtener los parámetros desde el servidor.");
