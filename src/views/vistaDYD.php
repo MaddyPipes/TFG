@@ -45,7 +45,7 @@
                     <div class="row flex-column align-items-center justify-content-center">
                         <div class="col-4 stat" style="background-image: url(../rsc/pgIcon.png);">
                             <div>PG</div>
-                            <div id="hp" class="statNumber">64</div>
+                            <div id="hp" class="statNumber"></div>
                         </div>
                     </div>
 
@@ -63,7 +63,7 @@
     <!-- jQuery Validation Additional Methods -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
 
-    </script>
+    <script src="../scripts/controlDYD.js"></script>
 
 </body>
 
