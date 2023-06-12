@@ -231,7 +231,7 @@
                 <a class="btn p-0 seleccionarPJ" id="botonDYD">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Dungeon & Dragons 5a Edición</h5>
+                            <h6 class="card-title">Dungeon & Dragons 5a Edición</h6>
                             <div class="row justify-content-center">
                                 <div class="col-12"><img src="../rsc/DnD-Logo.png" alt="" class="img-fluid"></div>
                             </div>
