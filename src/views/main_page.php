@@ -226,7 +226,7 @@
             <h5 id="offcanvaSalasLabel">Juegos</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="align-items-center d-flex justify-content-center offcanvas-body">
             <div class="col-md-6 margin-bottom_16">
                 <a class="btn p-0 seleccionarPJ" id="botonDYD">
                     <div class="card">
