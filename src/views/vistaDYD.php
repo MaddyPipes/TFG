@@ -15,15 +15,24 @@
     <link rel="stylesheet" href="../styles/stylesheet.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
 
+    <header class="container margin-top_48">
+        <div class="row justify-content-center margin-bottom_16 margin-top_16">
+            <div class="col-12 banner">
+                <img src="../rsc/banner.png" alt="banner principal" class="banner_img">
+            </div>
+        </div>
+    </header>
     <main class="container d-flex align-items-center">
         <div class="row">
             <div class="col-12">
-                kjsdrhgkja
+
             </div>
         </div>
     </main>
 
 </body>
+
 </html>
