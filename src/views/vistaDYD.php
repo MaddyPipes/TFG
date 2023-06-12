@@ -42,7 +42,7 @@
                 <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column page" id="page1">
 
                     <div class="row">
-                        <div class="col-4 d-flex justify-content-center" style="background-image: url(../rsc/caIcon.png);">
+                        <div class="col-4 d-flex justify-content-center" style="background-image: url(../rsc/caIcon.png); background-position:center; background-size:cover; background-repeat:no-repeat;">
                             <div>CA</div>
                             <div>16</div>
                         </div>
