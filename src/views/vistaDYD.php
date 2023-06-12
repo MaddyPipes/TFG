@@ -7,8 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo var_dump($personaje) ?>
-    <?php echo var_dump($personaje) ?>
-    <?php echo var_dump($_SESSION['idPJ']) ?>
+
+    <main class="container d-flex align-items-center">
+        <div class="row">
+            <div class="col-12">
+                kjsdrhgkja
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
