@@ -1,5 +1,6 @@
 .stat {
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 3em;
 }
