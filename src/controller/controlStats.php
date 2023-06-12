@@ -16,7 +16,8 @@ $conexPDO = Utils::conectar();
 
 if (isset($_POST["id"])) {
     try {
-        $personaje = $gestorPersonaje->getPersonaje(intval($_POST["id"]), $conexPDO);
+        $idPersonaje = intval($_POST["id"]);
+        $personaje = $gestorPersonaje->getPersonaje($idPersonaje, $conexPDO);
         if ($personaje) {
             $personaje["SALVACIONES"] = unserialize($personaje["SALVACIONES"]);
             $personaje["COMPETENCIAS"] = unserialize($personaje["COMPETENCIAS"]);
