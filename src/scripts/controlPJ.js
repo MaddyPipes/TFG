@@ -11,6 +11,8 @@ $(document).ready(function () {
             success: function (response) {
 
                 console.log(response);
+
+                console.log(response.NOMBRE)
             },
             error: function () {
                 console.log("Error al obtener los parámetros desde el servidor.");
