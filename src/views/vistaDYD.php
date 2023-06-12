@@ -43,13 +43,14 @@
                 <div class="align-items-center col-lg-9 col-sm-9 d-flex flex-column page" id="page1">
 
                     <div class="row">
+                        <div class="col-4 d-flex flex-column align-items-center justify-content-center w-50 stat" style="background-image: url(../rsc/pgIcon.png);">
+                            <div>PG</div>
+                            <div id="hp" class="statNumber">64</div>
+                        </div>                      
                         <div class="col-4 d-flex flex-column align-items-center justify-content-center w-50 stat" style="background-image: url(../rsc/caIcon.png);">
                             <div>CA</div>
                             <div id="ca" class="statNumber">16</div>
-                        </div>
-                        <div class="col-4">
-
-                        </div>
+                        </div>                      
                         <div class="col-4">
 
                         </div>
