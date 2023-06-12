@@ -10,7 +10,7 @@ $(document).ready(function () {
             type: "POST",
             data: { id: personajeID },
             success: function (response) {
-                console.log(response[0]);
+                console.log(response.NOMBRE);
                 let personaje = response;
             },
             error: function () {
