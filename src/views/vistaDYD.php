@@ -43,15 +43,15 @@
                 <div class="align-items-center col-9">
 
                     <div class="row">
-                        <div class="col-4 d-flex flex-column align-items-center justify-content-center w-50 stat" style="background-image: url(../rsc/pgIcon.png);">
+                        <div class="col-4 d-flex flex-column align-items-center justify-content-center stat" style="background-image: url(../rsc/pgIcon.png);">
                             <div>PG</div>
                             <div id="hp" class="statNumber">64</div>
                         </div>                      
-                        <div class="col-4 d-flex flex-column align-items-center justify-content-center w-50 stat" style="background-image: url(../rsc/caIcon.png);">
+                        <div class="col-4 d-flex flex-column align-items-center justify-content-center stat" style="background-image: url(../rsc/caIcon.png);">
                             <div>IP</div>
                             <div id="ip" class="statNumber">1</div>
                         </div>                      
-                        <div class="col-4 d-flex flex-column align-items-center justify-content-center w-50 stat" style="background-image: url(../rsc/caIcon.png);">
+                        <div class="col-4 d-flex flex-column align-items-center justify-content-center stat" style="background-image: url(../rsc/caIcon.png);">
                             <div>CA</div>
                             <div id="ca" class="statNumber">16</div>
                         </div>                      
