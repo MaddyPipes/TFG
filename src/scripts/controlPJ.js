@@ -1,25 +1,20 @@
 $(document).ready(function () {
     $(".seleccionarPJ").click(function () {
         let personajeID = $(this).attr("id");
-        personajeID = personajeID.substring(8);
+        personajeID = personajeID.substring(13);
         $("#listaPJ").addClass("d-none");
         $("#cartaPJ" + personajeID).removeClass("d-none");
 
         $.ajax({
-            url: "../controller/borrarPersonaje.php",
+            url: "../controller/controlStats.php",
             type: "POST",
             data: { id: personajeID },
             success: function (response) {
-                if (response === "success") {
-                    $("#listaPJ").removeClass("d-none");
-                    $("#cartaPJ" + personajeID).addClass("d-none");
-                    $("#recuadroPJ" + personajeID).addClass("d-none");
-                } else {
-                    alert("Hubo un error al eliminar el elemento." + personajeID + response);
-                }
+                console.log(response);
+                let personaje = response;
             },
             error: function () {
-                alert("Hubo un error en la comunicación con el servidor.");
+                console.log("Error al obtener los parámetros desde el servidor.");
             }
         });
     });
@@ -55,22 +50,4 @@ $(document).ready(function () {
         });
     })
 
-    $(".seleccionarPJ").click(function () { 
-        let personajeID = $(this).attr("id");
-        personajeID = personajeID.substring(13);
-
-        $.ajax({
-            url: "../controller/controlStats.php",
-            type: "POST",
-            data: { id: personajeID },
-            success: function (response) {
-                console.log(response);
-
-            },
-            error: function () {
-
-                console.log("Error al obtener los parámetros desde el servidor.");
-            }
-        });
-    });
 });
