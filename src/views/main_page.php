@@ -228,8 +228,8 @@
         </div>
         <div class="align-items-center d-flex justify-content-center offcanvas-body">
             <div class="col-md-6 margin-bottom_16">
-                <form class="p-0" action="" method="POST">
-                    <button class="btn p-0 seleccionarPJ" id="botonDYD">
+                <form class="p-0" action="../controller/tableroDYD.php" method="POST">
+                    <button class="btn p-0 seleccionarPJ" id="botonDYD" name="botonDYD" value="<?= $_SESSION["idPJ"] ?>">
                         <div class="card">
                             <div class="card-body">
                                 <h6 class="card-title">Dungeon & Dragons 5a Edición</h6>
