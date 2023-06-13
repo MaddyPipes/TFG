@@ -62,9 +62,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 d-flex justify-content-evenly margin-bottom_16 margin-top_16">
-                        <button class="btn"><img src="../rsc/portIcon.png" class="margin-bottom_16 margin-top_16" alt="Icono retrato" style="max-width: 70px;"></button>
-                        <button class="btn"><img src="../rsc/wizIcon.png" class="margin-bottom_16 margin-top_16" alt="icono magia" style="max-width: 70px;"></button>
+                    <div class="col-12 d-flex d-lg-none justify-content-evenly margin-bottom_16 margin-top_16 border border-2 rounded-2">
+                        <button class="btn"><img src="../rsc/portIcon.png" class="margin-bottom_16 margin-top_16" alt="Icono retrato" style="max-width: 50px;"></button>
+                        <button class="btn"><img src="../rsc/wizIcon.png" class="margin-bottom_16 margin-top_16" alt="icono magia" style="max-width: 50px;"></button>
                     </div>
                     <div class="col-lg-4 col-12 d-none d-lg-flex border border-2 rounded-2 align-items-center justify-content-center flex-column">
                         <img src="../rsc/portIcon.png" class="col-3 margin-bottom_16" alt="Icono retrato">
