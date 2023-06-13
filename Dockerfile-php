@@ -9,3 +9,13 @@ RUN echo "hostname" > /etc/mail/local-host-names
 
 # Reinicia el servicio sendmail
 RUN service sendmail restart
+
+# Instala Node.js y npm
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN apt-get install -y nodejs
+
+# Copia el archivo package.json y package-lock.json al contenedor
+COPY package*.json /var/www/html/
+
+# Instala las dependencias de Node.js
+RUN npm install

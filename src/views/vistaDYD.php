@@ -82,6 +82,29 @@
                                     <option value="salvacionInteligencia">Salvación Inteligencia</option>
                                     <option value="salvacionSabiduria">Salvación Sabiduría</option>
                                     <option value="salvacionCarisma">Salvación Carisma</option>
+                                    <option value="dmgFue">Daño Fuerza</option>
+                                    <option value="dmgDes">Daño Destreza</option>
+                                    <option value="dmgInt">Daño Inteligencia</option>
+                                    <option value="dmgSab">Daño Sabiduría</option>
+                                    <option value="dmgCar">Daño Carisma</option>
+                                    <option value="acrobacia">Acrobacia</option>
+                                    <option value="arcano">Arcano</option>
+                                    <option value="atletismo">Atletismo</option>
+                                    <option value="engaño">Engaño</option>
+                                    <option value="historia">Historia</option>
+                                    <option value="interpretacion">Interpretación</option>
+                                    <option value="intimidacion">Intimidación</option>
+                                    <option value="investigacion">Investigación</option>
+                                    <option value="prestidigitacion">Prestidigitación</option>
+                                    <option value="medicina">Medicina</option>
+                                    <option value="naturaleza">Naturaleza</option>
+                                    <option value="percepcion">Percepcion</option>
+                                    <option value="perspicacia">Perspicacia</option>
+                                    <option value="persuasion">Persuasión</option>
+                                    <option value="religion">Religión</option>
+                                    <option value="sigilo">Sigilo</option>
+                                    <option value="supervivencia">Supervivencia</option>
+                                    <option value="tratoAnimal">Trato Animal</option>                                    
                                 </select>
                             </div>
                             <div class="margin-bottom_48 margin-top_8 d-flex justify-content-evenly align-items-center">
@@ -251,9 +274,8 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
+                <div class="row border border-2 rounded-2 margin-top_24 margin-bottom_48" id="logs" style="height: 33%;"></div>
             </div>
         </div>
     </div>
