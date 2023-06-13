@@ -46,8 +46,8 @@
                     <div class="row flex-column align-items-center justify-content-center">
                         <div class="col-4 stat" style="background-image: url(../rsc/pgIcon.png);">
                             <div>PG</div>
-                            <div>
-                                <input type="text" value="" id="actualHP">/<span id="hp" class="statNumber"></span>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <input type="text" value="" id="actualHP"> / <span id="hp" class="statNumber"></span>
                             </div>
                         </div>
                     </div>
