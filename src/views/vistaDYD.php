@@ -76,6 +76,7 @@
                                     <option selected>¡Tiradas!</option>
                                     <option value="ataqueArmado">Ataque Armado</option>
                                     <option value="ataqueSutil">Ataque Sutil</option>
+                                    <option value="ataqueDistancia">Ataque Distancia</option>
                                     <option value="salvacionFuerza">Salvación Fuerza</option>
                                     <option value="salvacionDestreza">Salvación Destreza</option>
                                     <option value="salvacionConstitucion">Salvación Constitución</option>
