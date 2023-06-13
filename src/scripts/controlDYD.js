@@ -21,7 +21,7 @@ $(document).ready(function(){
 
     //Inspiración
     $("#insp").on("click", ()=>{
-        if($("#insp").val() == 1){
+        if($("#insp").text() == 1){
             $("#insp").text(0);
         }else{
             $("#insp").text(1);
