@@ -39,7 +39,7 @@
 
             <div class="align-items-center col-9">
 
-                <div class="row align-items-center justify-content-center">
+                <div class="align-items-center border border-2 justify-content-center rounded-2 margin-bottom_24 row">
                     <div class="col-3 stat" style="background-image: url(../rsc/pgIcon.png);">
                         <div>Puntos de Golpe</div>
                         <div class="d-flex align-items-center justify-content-center">
