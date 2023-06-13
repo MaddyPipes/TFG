@@ -24,7 +24,7 @@ $(document).ready(function(){
         if($("#insp").val() == 1){
             $("#insp").text() = 0
         }else{
-            $("#insp").text() = 1
+            $("#insp").text(1);
         }
     })
 })
