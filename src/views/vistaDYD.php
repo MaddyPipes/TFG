@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-12 border border-2 rounded-2 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-4 col-12 border border-2 rounded-2 d-flex align-items-center justify-content-center flex-column">
                     <img src="../rsc/portIcon.png" class="col-3 margin-bottom_16" alt="Icono retrato">
                         <img src="" class="img-fluid" alt="Ilustración personaje" id="ilust">
                     </div>
