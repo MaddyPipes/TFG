@@ -42,7 +42,7 @@
                 <div class="border border-2 rounded-2 margin-bottom_24 row p-3">
                     <div class="col-3 stat" style="background-image: url(../rsc/pgIcon.png);">
                         <div>PG</div>
-                        <div class="d-flex align-items-center justify-content-center">                          
+                        <div class="d-flex align-items-center justify-content-center">
                             <input type="text" value="" id="actualHP"> / <span id="hp" class="statNumber"></span>
                         </div>
                     </div>
@@ -62,14 +62,18 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-12 border border-2 rounded-2 d-flex align-items-center justify-content-center flex-column">
-                    <img src="../rsc/portIcon.png" class="col-3 margin-bottom_16" alt="Icono retrato">
+                    <div class="col-12 d-flex justify-content-evenly margin-bottom_16 margin-top_16">
+                        <button class="btn"><img src="../rsc/portIcon.png" class="margin-bottom_16 margin-top_16" alt="Icono retrato"></button>
+                        <button class="btn"><img src="../rsc/wizIcon.png" class="margin-bottom_16 margin-top_16" alt="icono magia"></button>
+                    </div>
+                    <div class="col-lg-4 col-12 d-none d-lg-flex border border-2 rounded-2 align-items-center justify-content-center flex-column">
+                        <img src="../rsc/portIcon.png" class="col-3 margin-bottom_16" alt="Icono retrato">
                         <img src="" class="img-fluid" alt="Ilustración personaje" id="ilust">
                     </div>
                     <div class="col-lg-4 col-12 border border-2 rounded-2 d-flex align-items-center justify-content-center">
 
                     </div>
-                    <div class="col-lg-4 col-12 border border-2 rounded-2 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-4 col-12 d-none d-lg-flex border border-2 rounded-2 align-items-center justify-content-center">
                         <div class="row justify-content-center">
                             <img src="../rsc/wizIcon.png" class="col-3 margin-bottom_16 margin-top_16" alt="icono magia">
                             <div class="col-12">
