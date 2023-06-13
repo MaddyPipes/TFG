@@ -70,6 +70,12 @@
                     </div>
                     <div class="col-lg-4 col-12 border border-2 rounded-2 d-flex align-items-center justify-content-center">
                         <div class="row">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                             <img src="../rsc/whited20.png" alt="logoD20" style="max-width: 5em;">
                         </div>
                     </div>
