@@ -77,6 +77,7 @@ $(document).ready(function () {
     //Ilustración
 
     $("#ilust").attr("src", pj.ilustracion);
+    $("#ilust2").attr("src", pj.ilustracion);
 
     //
 })

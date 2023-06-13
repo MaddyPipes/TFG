@@ -225,7 +225,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <img src="" class="img-fluid" alt="Ilustración personaje" id="ilust">
+                <img src="" class="img-fluid" alt="Ilustración personaje" id="ilust2">
                 </div>
                 <div class="modal-footer">
                 </div>
@@ -238,7 +238,7 @@
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="background-color: #212529;">
                 <div class="row justify-content-center">
                             <div class="col-12">
                                 <h6 class="text-center">Nivel 1</h6>
