@@ -4,5 +4,8 @@ $(document).ready(function(){
 
     pj = JSON.parse(pj);
     console.log(pj);
+
+    //HP
     $("#hp").text(pj.puntosGolpe);
+    $("#actualHP").val(pj.puntosGolpe);
 })
