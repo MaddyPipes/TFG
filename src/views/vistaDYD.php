@@ -35,7 +35,7 @@
 
             <div class="col-7 d-flex justify-content-center"><img class="img-fluid col-5" src="../rsc/DnD-Logo.png" alt="logoDYD"></div>
 
-            <div class="align-items-center col-9">
+            <div class="align-items-center col-9 margin-bottom_48">
 
                 <div class="border border-2 rounded-2 margin-bottom_24 row p-3">
                     <div class="col-3 stat" style="background-image: url(../rsc/pgIcon.png);">
