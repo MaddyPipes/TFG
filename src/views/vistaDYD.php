@@ -39,9 +39,9 @@
 
             <div class="align-items-center col-9">
 
-                <div class="align-items-center border border-2 justify-content-center rounded-2 margin-bottom_24 row">
+                <div class="border border-2 rounded-2 margin-bottom_24 row p-3">
                     <div class="col-3 stat" style="background-image: url(../rsc/pgIcon.png);">
-                        <div>Puntos de Golpe</div>
+                        <div>PG</div>
                         <div class="d-flex align-items-center justify-content-center">
                             <input type="text" value="" id="actualHP"> / <span id="hp" class="statNumber"></span>
                         </div>
@@ -55,7 +55,7 @@
                         <div id="comp"></div>
                     </div>
                     <div class="col-3 stat" style="background-image: url(../rsc/caIcon.png);">
-                        <div>Clase de Armadura</div>
+                        <div>CA</div>
                         <div class="d-flex align-items-center justify-content-center">
                             <span id="ca" class="statNumber"></span>
                         </div>
