@@ -34,7 +34,7 @@ $(document).ready(function () {
 
     let comp;
 
-    switch (pj.nivel) {
+    switch (parseInt(pj.nivel)) {
         case 1:
         case 2:
         case 3:
