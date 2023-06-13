@@ -43,6 +43,7 @@
                     <div class="col-3 stat" style="background-image: url(../rsc/pgIcon.png);">
                         <div>PG</div>
                         <div class="d-flex align-items-center justify-content-center">
+                            <img src="../rsc/portIcon.png" class="col-3" alt="Icono retrato">
                             <input type="text" value="" id="actualHP"> / <span id="hp" class="statNumber"></span>
                         </div>
                     </div>
@@ -70,11 +71,11 @@
                     </div>
                     <div class="col-md-4 border border-2 rounded-2 d-flex align-items-center justify-content-center">
                         <div class="row justify-content-center">
-                            <img src="../rsc/wizIcon.png" class="col-5 margin-bottom_16 margin-top_16" alt="icono magia">
+                            <img src="../rsc/wizIcon.png" class="col-3 margin-bottom_16 margin-top_16" alt="icono magia">
                             <div class="col-12">
                                 <h6 class="text-center">Nivel 1</h6>
                             </div>
-                            <div class="col-12 d-flex">
+                            <div class="col-12 d-flex justify-content-center">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
                                     <label class="form-check-label"></label>
@@ -95,7 +96,7 @@
                             <div class="col-12">
                                 <h6 class="text-center">Nivel 2</h6>
                             </div>
-                            <div class="col-12 d-flex">
+                            <div class="col-12 d-flex justify-content-center">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
                                     <label class="form-check-label"></label>
@@ -112,7 +113,7 @@
                             <div class="col-12">
                                 <h6 class="text-center">Nivel 3</h6>
                             </div>
-                            <div class="col-12 d-flex">
+                            <div class="col-12 d-flex justify-content-center">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
                                     <label class="form-check-label"></label>
@@ -129,7 +130,7 @@
                             <div class="col-12">
                                 <h6 class="text-center">Nivel 4</h6>
                             </div>
-                            <div class="col-12 d-flex">
+                            <div class="col-12 d-flex justify-content-center">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
                                     <label class="form-check-label"></label>
@@ -146,7 +147,7 @@
                             <div class="col-12">
                                 <h6 class="text-center">Nivel 5</h6>
                             </div>
-                            <div class="col-12 d-flex">
+                            <div class="col-12 d-flex justify-content-center">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
                                     <label class="form-check-label"></label>
@@ -163,7 +164,7 @@
                             <div class="col-12">
                                 <h6 class="text-center">Nivel 6</h6>
                             </div>
-                            <div class="col-12 d-flex">
+                            <div class="col-12 d-flex justify-content-center">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
                                     <label class="form-check-label"></label>
@@ -176,7 +177,7 @@
                             <div class="col-12">
                                 <h6 class="text-center">Nivel 7</h6>
                             </div>
-                            <div class="col-12 d-flex">
+                            <div class="col-12 d-flex justify-content-center">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
                                     <label class="form-check-label"></label>
@@ -189,7 +190,7 @@
                             <div class="col-12">
                                 <h6 class="text-center">Nivel 8</h6>
                             </div>
-                            <div class="col-12 d-flex">
+                            <div class="col-12 d-flex justify-content-center">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
                                     <label class="form-check-label"></label>
@@ -198,7 +199,7 @@
                             <div class="col-12">
                                 <h6 class="text-center">Nivel 9</h6>
                             </div>
-                            <div class="col-12 d-flex">
+                            <div class="col-12 d-flex justify-content-center">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
                                     <label class="form-check-label"></label>
