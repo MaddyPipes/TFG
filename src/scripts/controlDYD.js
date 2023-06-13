@@ -3,6 +3,6 @@ $(document).ready(function(){
     let pj = localStorage.getItem(activePJ);
 
     pj = JSON.parse(pj);
-
+    console.log(pj);
     $("#hp").text(pj.puntosGolpe);
 })
