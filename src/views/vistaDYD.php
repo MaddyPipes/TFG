@@ -71,22 +71,22 @@
                     <div class="col-lg-4 col-12 border border-2 rounded-2 d-flex align-items-center justify-content-center">
                         <div class="row justify-content-center">
                             <img src="../rsc/swordIcon.png" alt="logoD20" style="max-width: 5em;" class="margin-bottom_48 margin-top_16">
-                            <div>
-                                <select class="form-select margin-bottom_8 margin-top_48" aria-label="Default select example">
+                            <div class="margin-bottom_8 margin-top_48">
+                                <select class="form-select" aria-label="Default select example">
                                     <option selected>¡Tiradas!</option>
                                     <option value="ataque">One</option>
                                     <option value="salvaciones">Two</option>
                                     <option value="3">Three</option>
                                 </select>
                             </div>
-                            <div>
-                                <select class="form-select margin-bottom_48 margin-top_8" aria-label="Default select example">
+                            <div class="margin-bottom_48 margin-top_8">
+                                <select class="form-select margin-bottom_8" aria-label="Default select example">
                                     <option selected>¡Tiradas!</option>
                                     <option value="ataque">One</option>
                                     <option value="salvaciones">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                                <select class="form-select margin-bottom_48 margin-top_8" aria-label="Default select example">
+                                <select class="form-select margin-top_8" aria-label="Default select example">
                                     <option selected>¡Tiradas!</option>
                                     <option value="ataque">One</option>
                                     <option value="salvaciones">Two</option>
