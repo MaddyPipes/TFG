@@ -79,7 +79,7 @@
                                     <option value="3">Three</option>
                                 </select>
                             </div>
-                            <div class="margin-bottom_48 margin-top_8 d-flex">
+                            <div class="margin-bottom_48 margin-top_8 d-flex justify-content-evenly align-items-center">
                                 <select class="form-select" aria-label="Default select example" style="width: 33%;">
                                     <option selected>¡Tiradas!</option>
                                     <option value="ataque">One</option>
