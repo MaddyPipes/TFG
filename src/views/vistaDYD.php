@@ -43,7 +43,7 @@
 
                 <div class="align-items-center col-9">
 
-                    <div class="row flex-column align-items-center justify-content-center">
+                    <div class="row align-items-center justify-content-center">
                         <div class="col-4 stat" style="background-image: url(../rsc/pgIcon.png);">
                             <div>PG</div>
                             <div class="d-flex align-items-center justify-content-center">
