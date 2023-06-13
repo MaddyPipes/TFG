@@ -50,8 +50,9 @@
                                 <input type="text" value="" id="actualHP"> / <span id="hp" class="statNumber"></span>
                             </div>
                         </div>
-                        <div class="col-4 stat" style="background-image: url(../rsc/pgIcon.png);">
-                            
+                        <div class="col-4 stat" style="background-image: url(../rsc/inspiIcon.png);">
+                            <div>INS</div>
+                            <div id="insp">1</div>
                         </div>
                         <div class="col-4 stat" style="background-image: url(../rsc/caIcon.png);">
                             <div>CA</div>
