@@ -61,6 +61,153 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-4 border border-2 rounded-2 d-flex align-items-center justify-content-center">
+                        <img src="" alt="Ilustración personaje" id="ilust">
+                    </div>
+                    <div class="col-md-4 border border-2 rounded-2 d-flex align-items-center justify-content-center">
+
+                    </div>
+                    <div class="col-md-4 border border-2 rounded-2 d-flex align-items-center justify-content-center">
+                        <div class="row justify-content-center">
+                            <img src="../rsc/wizIcon.png" alt="icono magia">
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 1</h6>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 2</h6>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 3</h6>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 4</h6>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 5</h6>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 6</h6>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 7</h6>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 8</h6>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 9</h6>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
         </div>

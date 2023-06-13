@@ -7,14 +7,16 @@ $(document).ready(function () {
 
     //HP
     $("#hp").text(pj.puntosGolpe);
-    if (localStorage.getItem("actualHP")) {
-        $("#actualHP").val(localStorage.getItem("actualHP"));
+    if (pj.actualHP) {
+        $("#actualHP").val(pj.actualHP);
     } else {
         $("#actualHP").val(pj.puntosGolpe);
     }
     $("#actualHP").on("change", () => {
         {
-            localStorage.setItem("actualHP", $("#actualHP").val());
+            pj.actualHP = $("#actualHP").val();
+            JSON.stringify(pj);
+            localStorage.setItem(activePJ, pj);
         }
     })
 
@@ -71,4 +73,8 @@ $(document).ready(function () {
     }
 
     $("#comp").text(comp);
+
+    //Ilustración
+
+    $("#ilust").attr("src", pj.ilustracion);
 })
