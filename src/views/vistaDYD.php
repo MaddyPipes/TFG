@@ -40,17 +40,21 @@
             <div class="align-items-center col-9">
 
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-4 stat" style="background-image: url(../rsc/pgIcon.png);">
+                    <div class="col-3 stat" style="background-image: url(../rsc/pgIcon.png);">
                         <div>PG</div>
                         <div class="d-flex align-items-center justify-content-center">
                             <input type="text" value="" id="actualHP"> / <span id="hp" class="statNumber"></span>
                         </div>
                     </div>
-                    <div class="col-4 stat" style="background-image: url(../rsc/inspiIcon.png);">
+                    <div class="col-3 stat" style="background-image: url(../rsc/inspiIcon.png);">
                         <div>INS</div>
                         <div id="insp">1</div>
                     </div>
-                    <div class="col-4 stat" style="background-image: url(../rsc/caIcon.png);">
+                    <div class="col-3 stat" style="background-image: url(../rsc/compIcon.png);">
+                        <div>COMP</div>
+                        <div id="comp"></div>
+                    </div>
+                    <div class="col-3 stat" style="background-image: url(../rsc/caIcon.png);">
                         <div>CA</div>
                         <div class="d-flex align-items-center justify-content-center">
                             <span id="ca" class="statNumber"></span>
