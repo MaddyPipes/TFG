@@ -63,8 +63,8 @@
                 </div>
                 <div class="row">
                     <div class="col-12 d-flex d-lg-none justify-content-evenly margin-bottom_16 margin-top_16 border border-2 rounded-2">
-                        <button class="btn"><img src="../rsc/portIcon.png" class="margin-bottom_16 margin-top_16" alt="Icono retrato" style="max-width: 50px;"></button>
-                        <button class="btn"><img src="../rsc/wizIcon.png" class="margin-bottom_16 margin-top_16" alt="icono magia" style="max-width: 50px;"></button>
+                        <button class="btn p-0" tabindex="1" data-bs-toggle="modal" data-bs-target="#modalIlust"><img src="../rsc/portIcon.png" class="margin-bottom_16 margin-top_16" alt="Icono retrato" style="max-width: 50px;"></button>
+                        <button class="btn p-0" tabindex="1" data-bs-toggle="modal" data-bs-target="#modalMagia"><img src="../rsc/wizIcon.png" class="margin-bottom_16 margin-top_16" alt="icono magia" style="max-width: 50px;"></button>
                     </div>
                     <div class="col-lg-4 col-12 d-none d-lg-flex border border-2 rounded-2 align-items-center justify-content-center flex-column">
                         <img src="../rsc/portIcon.png" class="col-3 margin-bottom_16" alt="Icono retrato">
@@ -214,6 +214,169 @@
 
                 </div>
 
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalIlust" tabindex="-1" aria-labelledby="modalIlustLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <img src="" class="img-fluid" alt="Ilustración personaje" id="ilust">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalMagia" tabindex="-1" aria-labelledby="modalMagiaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <div class="row justify-content-center">
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 1</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 2</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 3</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 4</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 5</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 6</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 7</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 8</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="text-center">Nivel 9</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"></label>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                </div>
             </div>
         </div>
     </div>
