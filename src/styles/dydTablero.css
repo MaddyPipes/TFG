@@ -24,3 +24,7 @@
 .statNumber {
     font-size: 10px;
 }
+
+#insp:hover {
+    cursor: pointer;
+}
