@@ -42,8 +42,7 @@
                 <div class="border border-2 rounded-2 margin-bottom_24 row p-3">
                     <div class="col-3 stat" style="background-image: url(../rsc/pgIcon.png);">
                         <div>PG</div>
-                        <div class="d-flex align-items-center justify-content-center">
-                            <img src="../rsc/portIcon.png" class="col-3" alt="Icono retrato">
+                        <div class="d-flex align-items-center justify-content-center">                          
                             <input type="text" value="" id="actualHP"> / <span id="hp" class="statNumber"></span>
                         </div>
                     </div>
@@ -64,6 +63,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-4 border border-2 rounded-2 d-flex align-items-center justify-content-center">
+                    <img src="../rsc/portIcon.png" class="col-3" alt="Icono retrato">
                         <img src="" class="img-fluid" alt="Ilustración personaje" id="ilust">
                     </div>
                     <div class="col-md-4 border border-2 rounded-2 d-flex align-items-center justify-content-center">
