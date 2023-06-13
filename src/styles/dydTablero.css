@@ -6,13 +6,13 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    font-size: 15px;
 }
 
 .stat input {
     color: white;
     background-color: transparent;
     border: none;
-    font-size: 10px;
     width: 15px;
 }
 .stat input:focus {
