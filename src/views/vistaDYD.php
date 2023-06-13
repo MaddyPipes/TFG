@@ -80,18 +80,26 @@
                                 </select>
                             </div>
                             <div class="margin-bottom_48 margin-top_8 d-flex justify-content-evenly align-items-center">
-                                <select class="form-select" aria-label="Default select example" style="width: 33%;">
-                                    <option selected>¡Tiradas!</option>
-                                    <option value="ataque">One</option>
-                                    <option value="salvaciones">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="form-select" aria-label="Default select example" style="width: 33%;" id="dadoNum">
+                                    <option value="1" selected>1</option>
+                                    <option value="2" selected>2</option>
+                                    <option value="3" selected>3</option>
+                                    <option value="4" selected>4</option>
+                                    <option value="5" selected>5</option>
+                                    <option value="6" selected>6</option>
+                                    <option value="7" selected>7</option>
+                                    <option value="8" selected>8</option>
+                                    <option value="9" selected>9</option>
+                                    <option value="10" selected>10</option>
                                 </select>
                                 <span>D</span>
-                                <select class="form-select" aria-label="Default select example" style="width: 33%;">
-                                    <option selected>¡Tiradas!</option>
-                                    <option value="ataque">One</option>
-                                    <option value="salvaciones">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="form-select" aria-label="Default select example" style="width: 33%;" id="dadoSize">
+                                    <option value="4" selected>4</option>
+                                    <option value="6" selected>6</option>
+                                    <option value="8" selected>8</option>
+                                    <option value="10" selected>10</option>
+                                    <option value="12" selected>12</option>
+                                    <option value="20" selected>20</option>
                                 </select>
                             </div>
                             <img src="../rsc/whited20.png" alt="logoD20" style="max-width: 5em;" class="margin-top_48 margin-bottom_16">
