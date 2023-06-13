@@ -9,6 +9,17 @@
     height: 3em;
 }
 
+.stat input {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 10px;
+}
+.stat input:focus {
+    background-color: transparent;
+    border: none;
+}
+
 .statNumber {
     font-size: 10px;
 }
