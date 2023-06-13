@@ -80,13 +80,14 @@
                                 </select>
                             </div>
                             <div class="margin-bottom_48 margin-top_8">
-                                <select class="form-select margin-bottom_8" aria-label="Default select example">
+                                <select class="form-select margin-bottom_8 col-4" aria-label="Default select example">
                                     <option selected>¡Tiradas!</option>
                                     <option value="ataque">One</option>
                                     <option value="salvaciones">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                                <select class="form-select margin-top_8" aria-label="Default select example">
+                                <span>D</span>
+                                <select class="form-select margin-top_8 col-4" aria-label="Default select example">
                                     <option selected>¡Tiradas!</option>
                                     <option value="ataque">One</option>
                                     <option value="salvaciones">Two</option>
