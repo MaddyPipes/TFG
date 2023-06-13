@@ -7,5 +7,17 @@ $(document).ready(function(){
 
     //HP
     $("#hp").text(pj.puntosGolpe);
-    $("#actualHP").val(pj.puntosGolpe);
+    if(localStorage.getItem("actualHP")){
+        $("#actualHP").val(localStorage.getItem("actualHP"));
+    }else{
+        $("#actualHP").val(pj.puntosGolpe);
+    }
+    $("#actualHP").on("change", () =>{{
+        localStorage.setItem("actualHP", $("#actualHP").val());
+    }})
+
+    //CA
+    $("#ca").text(pj.claseArmadura);
+
+    //Inspiración
 })

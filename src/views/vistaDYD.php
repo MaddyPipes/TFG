@@ -37,9 +37,9 @@
 
             <div class="row justify-content-center">
 
-                <div class="col-7 d-flex justify-content-center"><img src="../rsc/whited20.png" alt=""></div>
+                <div class="col-7 d-flex justify-content-center"><img src="../rsc/whited20.png" alt="logoD20" style="max-width: 5em;"></div>
 
-                <div class="col-7 d-flex justify-content-center"><img class="img-fluid col-5" src="../rsc/DnD-Logo.png" alt=""></div>
+                <div class="col-7 d-flex justify-content-center"><img class="img-fluid col-5" src="../rsc/DnD-Logo.png" alt="logoDYD"></div>
 
                 <div class="align-items-center col-9">
 
@@ -48,6 +48,15 @@
                             <div>PG</div>
                             <div class="d-flex align-items-center justify-content-center">
                                 <input type="text" value="" id="actualHP"> / <span id="hp" class="statNumber"></span>
+                            </div>
+                        </div>
+                        <div class="col-4 stat" style="background-image: url(../rsc/pgIcon.png);">
+                            
+                        </div>
+                        <div class="col-4 stat" style="background-image: url(../rsc/caIcon.png);">
+                            <div>CA</div>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span id="ca" class="statNumber"></span>
                             </div>
                         </div>
                     </div>
