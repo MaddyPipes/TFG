@@ -6,7 +6,6 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 3em;
 }
 
 .stat input {
@@ -25,6 +24,6 @@
     font-size: 10px;
 }
 
-#insp:hover {
+#insp {
     cursor: pointer;
 }
