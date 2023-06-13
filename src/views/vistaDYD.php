@@ -69,15 +69,15 @@
                         <img src="" class="img-fluid" alt="Ilustración personaje" id="ilust">
                     </div>
                     <div class="col-lg-4 col-12 border border-2 rounded-2 d-flex align-items-center justify-content-center">
-                        <div class="row">
-                            <img src="../rsc/swordIcon.png" alt="logoD20" style="max-width: 5em;">
-                            <select class="form-select" aria-label="Default select example">
+                        <div class="row justify-content-center">
+                            <img src="../rsc/swordIcon.png" alt="logoD20" style="max-width: 5em;" class="margin-bottom_48">
+                            <select class="form-select margin-bottom_48 margin-top_48" aria-label="Default select example">
                                 <option selected>Open this select menu</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
-                            <img src="../rsc/whited20.png" alt="logoD20" style="max-width: 5em;">
+                            <img src="../rsc/whited20.png" alt="logoD20" style="max-width: 5em;" class="margin-top_48">
                         </div>
                     </div>
                     <div class="col-lg-4 col-12 d-none d-lg-flex border border-2 rounded-2 align-items-center justify-content-center">
