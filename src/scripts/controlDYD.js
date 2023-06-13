@@ -79,7 +79,13 @@ $(document).ready(function () {
     $("#ilust").attr("src", pj.ilustracion);
     $("#ilust2").attr("src", pj.ilustracion);
 
-    //
+    //Tiradas
+
+    let bonusStat, bonusPB;
+
+    $("#tipoTirada").on("change", () =>{
+        if
+    })
 })
 
 import DiceBox from "https://unpkg.com/@3d-dice/dice-box@1.0.8/dist/dice-box.es.min.js";

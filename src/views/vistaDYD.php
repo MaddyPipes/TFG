@@ -72,7 +72,7 @@
                         <div class="row justify-content-center">
                             <img src="../rsc/swordIcon.png" alt="logoD20" style="max-width: 5em;" class="margin-bottom_48 margin-top_16">
                             <div class="margin-bottom_8 margin-top_48">
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" id="tipoTirada">
                                     <option selected>¡Tiradas!</option>
                                     <option value="ataqueArmado">Ataque Armado</option>
                                     <option value="ataqueSutil">Ataque Sutil</option>
