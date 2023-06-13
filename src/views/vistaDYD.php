@@ -29,7 +29,7 @@
 
 <body style="background-image:url(../rsc/wp2227193-dungeons-dragons-wallpapers.jpg); background-position:center; background-size:cover; background-repeat:no-repeat;">
 
-    <div class="container margin-top_48 margin-bottom_48 border border-2" style="background-color: #353535;">
+    <div class="container margin-top_48 margin-bottom_48 border border-2" style="background-color: #353535;" id="dice-box">
 
         <div class="row justify-content-center">
 
@@ -74,9 +74,14 @@
                             <div class="margin-bottom_8 margin-top_48">
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>¡Tiradas!</option>
-                                    <option value="ataque">One</option>
-                                    <option value="salvaciones">Two</option>
-                                    <option value="3">Three</option>
+                                    <option value="ataqueArmado">Ataque Armado</option>
+                                    <option value="ataqueSutil">Ataque Sutil</option>
+                                    <option value="salvacionFuerza">Salvación Fuerza</option>
+                                    <option value="salvacionDestreza">Salvación Destreza</option>
+                                    <option value="salvacionConstitucion">Salvación Constitución</option>
+                                    <option value="salvacionInteligencia">Salvación Inteligencia</option>
+                                    <option value="salvacionSabiduria">Salvación Sabiduría</option>
+                                    <option value="salvacionCarisma">Salvación Carisma</option>
                                 </select>
                             </div>
                             <div class="margin-bottom_48 margin-top_8 d-flex justify-content-evenly align-items-center">
@@ -102,7 +107,9 @@
                                     <option value="20">20</option>
                                 </select>
                             </div>
-                            <img src="../rsc/whited20.png" alt="logoD20" style="max-width: 5em;" class="margin-top_48 margin-bottom_8">
+                            <button class="btn p-0" id="rollem">
+                                <img src="../rsc/whited20.png" alt="logoD20" style="max-width: 5em;" class="margin-top_48 margin-bottom_8">
+                            </button>
                             <div class="text-center">¡Lanzar!</div>
                         </div>
                     </div>
