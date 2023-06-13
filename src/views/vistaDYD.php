@@ -103,7 +103,7 @@
                                 </select>
                             </div>
                             <img src="../rsc/whited20.png" alt="logoD20" style="max-width: 5em;" class="margin-top_48 margin-bottom_8">
-                            <div>¡Lanzar!</div>
+                            <div class="text-center">¡Lanzar!</div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-12 d-none d-lg-flex border border-2 rounded-2 align-items-center justify-content-center">
