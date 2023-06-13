@@ -26,13 +26,6 @@
 
 <body style="background-image:url(../rsc/wp2227193-dungeons-dragons-wallpapers.jpg); background-position:center; background-size:cover; background-repeat:no-repeat;">
 
-    <?php
-    //Definimos el destino de el formulario
-    $url_destino = "../controller/registroUsuarioController.php";
-    ?>
-
-    <form method="POST" action="../controller/crearPersonajeModelo.php" id="registroUsuario">
-
         <div class="container margin-top_48 margin-bottom_48 border border-2" style="background-color: #353535;">
 
             <div class="row justify-content-center">
@@ -65,7 +58,6 @@
                 </div>
             </div>
         </div>
-    </form>
 
     <script src="../scripts/controlDYD.js"></script>
 
