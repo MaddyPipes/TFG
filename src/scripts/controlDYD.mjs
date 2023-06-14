@@ -371,7 +371,7 @@ $(document).ready(function () {
                 $("#bonusStat").text(bonusStat);
                 let totalDice = 0;
                 for(let i = 0; i < rolls.length; i++){
-                    for(let j = 0; j < rolls[i]["rolls"]; j++){
+                    for(let j = 0; j < rolls[i]["rolls"].length; j++){
                         totalDice += rolls[i]["rolls"][j]["value"];
                     }
                 }
