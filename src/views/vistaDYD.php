@@ -445,7 +445,7 @@
         </div>
     </div>
 
-    <script type="module" src="../scripts/controlDYD.js"></script>
+    <script type="module" src="../scripts/controlDYD.mjs"></script>
 
 </body>
 
