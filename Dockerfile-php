@@ -7,6 +7,9 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN apt-get update && apt-get install -y sendmail
 RUN echo "hostname" > /etc/mail/local-host-names
 
+# Instala Nano
+RUN apt-get install -y nano
+
 # Reinicia el servicio sendmail
 RUN service sendmail restart
 
