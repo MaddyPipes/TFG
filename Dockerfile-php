@@ -19,3 +19,14 @@ COPY package*.json /var/www/html/
 
 # Instala las dependencias de Node.js
 RUN npm install
+
+# Agrega la configuración de CORS al archivo de configuración de Apache
+RUN echo '<IfModule mod_headers.c>\n\
+    Header set Access-Control-Allow-Origin "*"\n\
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"\n\
+    Header set Access-Control-Allow-Headers "Content-Type"\n\
+</IfModule>' > /etc/apache2/conf-available/cors.conf
+RUN a2enconf cors
+
+# Reinicia el servicio Apache
+RUN service apache2 restart
