@@ -21,6 +21,23 @@
     <main>
 
 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top sticky-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-3 my-2">
+                            <form action="../controller/sesion.php" method="POST">
+                                <button class="btn btn-danger" type="submit">Cerrar Sesión</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <header class="container">
             <div class="row justify-content-center margin-bottom_16 margin-top_16">
                 <div class="col-12 banner">
