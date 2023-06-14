@@ -449,7 +449,7 @@
         </div>
     </div>
 
-    <script type="module" src="../scripts/controlDYD.mjs"></script>
+    <script type="module" src="../scripts/controlDYD.mjs" crossorigin="anonymous"></script>
 
 </body>
 
