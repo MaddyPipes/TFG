@@ -323,6 +323,9 @@ $(document).ready(function () {
                 }
                 bonusStat = sabiduriaBonif;
                 break;
+            default:
+                bonusPB = 0;
+                bonusStat = 0;
         }
 
     })
