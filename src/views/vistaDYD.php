@@ -278,7 +278,7 @@
                     </div>
                 </div>
                 <div id="dice-box" class="margin-top_16" style="background-image: url(https://www.etc.cmu.edu/projects/surfacescapes/background.gif);">
-                    <h2 class="text-center p-4 d-none" id="sign"><span id="diceResult"></span> + <span id="bonusStat"></span> + <span id="bonusPB"></span> = <span id="totalResult"></span></h2>
+                    <h2 class="text-center p-4" id="sign"><span id="resultados" class="d-none"><span id="diceResult"></span> + <span id="bonusStat"></span> + <span id="bonusPB"></span> = <span id="totalResult"></span></span></h2>
                 </div>
                 <div class="row overflow-auto border border-2 rounded-2 margin-top_24 margin-bottom_48" style="height: 10em;">
                     <ul id="logs">

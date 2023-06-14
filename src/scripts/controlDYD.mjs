@@ -354,8 +354,8 @@ $(document).ready(function () {
 
         roll = $("#dadoNum").val()+"d"+$("#dadoSize").val();
 
-        if(!$("#sign").hasClass("d-none")){
-            $("#sign").addClass("d-none");
+        if(!$("#resultados").hasClass("d-none")){
+            $("#resultados").addClass("d-none");
         }
 
         Box.roll([roll], {
@@ -375,8 +375,8 @@ $(document).ready(function () {
                 let totalResult = totalDice + bonusPB + bonusStat;
                 $("#totalResult").text(totalResult);
 
-                $("#sign").removeClass("d-none");
-            },5000);
+                $("#resultados").removeClass("d-none");
+            },2000);
         }
     });
 })
