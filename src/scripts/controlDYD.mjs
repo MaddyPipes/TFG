@@ -327,12 +327,13 @@ $(document).ready(function () {
     })
 
     let Box = new DiceBox("#dice-box", {
+        id: "dice-box",
         assetPath: "assets/",
         origin: "https://unpkg.com/@3d-dice/dice-box@1.0.8/dist/",
         theme: "default",
         themeColor: "#feea03",
-        offscreen: true,
-        scale: 16
+        offscreen: false,
+        scale: 9
     });
 
     Box.init();
