@@ -1,4 +1,4 @@
-import DiceBox from "https://unpkg.com/@3d-dice/dice-box@1.0.8/dist/dice-box.es.min.js";
+import DiceBox from "@3d-dice/dice-box";
 
 $(document).ready(function () {
 
