@@ -1,4 +1,4 @@
-import DiceBox from "/@3d-dice/dice-box";
+import DiceBox from "../node_modules/@3d-dice/dice-box";
 
 $(document).ready(function () {
 
