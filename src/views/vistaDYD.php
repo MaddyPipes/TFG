@@ -280,9 +280,11 @@
                     <h2 class="text-center p-4" id="sign" style="height: 6rem;"><span id="resultados" class="d-none"><span id="diceResult"></span> + <span id="bonusStat"></span> + <span id="bonusPB"></span> = <span id="totalResult"></span></span></h2>
                 </div>
                 <div class="row overflow-auto border border-2 rounded-2 margin-top_24 margin-bottom_48" style="height: 10em;">
-                    <ul id="logs">
+                    <div class="col-12">
+                        <ul id="logs">
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

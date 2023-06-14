@@ -382,10 +382,10 @@ $(document).ready(function () {
                 $("#resultados").removeClass("d-none");
 
                 // let nuevoLog ="<li>" + pj.nombre + " ha sacado un " + totalDice + " en su tirada de " + $("#tipoTirada").val() + "sacando un total de " + totalResult + "." + "</li>";               
-
+                $("logs").append("<li>" + pj.nombre + " ha sacado un " + totalDice + " en su tirada de " + $("#tipoTirada").val() + "sacando un total de " + totalResult + "." + "</li>");
+                
             },2000);
 
-            $("logs").append("<li>" + pj.nombre + " ha sacado un " + totalDice + " en su tirada de " + $("#tipoTirada").val() + "sacando un total de " + totalResult + "." + "</li>");
         }
     });
 })
