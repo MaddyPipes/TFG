@@ -351,9 +351,29 @@ $(document).ready(function () {
 
         roll = $("#dadoNum").val()+"d"+$("#dadoSize").val();
 
+        if(!$("#sign").hasClass("d-none")){
+            $("#sign").addClass("d-none");
+        }
+
         Box.roll([roll], {
             themeColor: get_random(colors)
         });
+
+        Box.onRollComplete = (rollResult) => {
+            setTimeout((rollResult) => {
+                $("#bonusPB").text(bonusPB);
+                $("#bonusStat").text(bonusStat);
+                let totalDice = 0;
+                for(let i = 0; i < rollResult.length; i++){
+                    totalDice += rollResult[i]["qty"];
+                }
+                $("#diceResult").text(totalDice);
+                let totalResult = totalDice + bonusPB + bonusStat;
+                $("#totalResult").text(totalResult);
+
+                $("#sign").removeClass("d-none");
+            },5000);
+        }
     });
 })
 
