@@ -360,7 +360,8 @@ $(document).ready(function () {
         });
 
         Box.onRollComplete = (rollResult) => {
-            setTimeout((rollResult) => {
+            let rollResult = rollResult;
+            setTimeout(() => {
                 $("#bonusPB").text(bonusPB);
                 $("#bonusStat").text(bonusStat);
                 let totalDice = 0;
