@@ -277,7 +277,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row border border-2 rounded-2 margin-top_24 margin-bottom_48" id="logs" style="height: 33%;"></div>
+                <div class="row border border-2 rounded-2 margin-top_24 margin-bottom_48" id="logs" style="height: 10em;"></div>
             </div>
         </div>
     </div>
