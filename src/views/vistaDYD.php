@@ -277,7 +277,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="row border border-2 rounded-2 margin-top_24 margin-bottom_48" id="logs" style="height: 10em;"></div>
+                <div class="row overflow-auto border border-2 rounded-2 margin-top_24 margin-bottom_48" style="height: 10em;">
+                    <ul id="logs">
+
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
