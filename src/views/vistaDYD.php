@@ -277,6 +277,7 @@
                         </div>
                     </div>
                 </div>
+                <div id="dice-box"></div>
                 <div class="row overflow-auto border border-2 rounded-2 margin-top_24 margin-bottom_48" style="height: 10em;">
                     <ul id="logs">
 
@@ -448,7 +449,6 @@
             </div>
         </div>
     </div>
-    <div id="dice-box"></div>
     <script type="module" src="../scripts/controlDYD.mjs" crossorigin="anonymous"></script>
 
 </body>
