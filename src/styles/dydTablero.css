@@ -3,26 +3,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    font-size: 12px;
+}
+
+.stat img {
+    max-width: 3em;
 }
 
 .stat input {
     color: white;
     background-color: transparent;
     border: none;
-    width: 15px;
+    width: 2em;
 }
 
 .stat input:focus {
     background-color: transparent;
     border: none;
-}
-
-.statNumber {
-    font-size: 10px;
 }
 
 #insp {

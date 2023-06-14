@@ -68,15 +68,18 @@
                             <input type="text" value="" id="actualHP"> / <span id="hp" class="statNumber"></span>
                         </div>
                     </div>
-                    <div class="col-3 stat" style="background-image: url(../rsc/inspiIcon.png);">
+                    <div class="col-3 stat">
+                        <img src="../rsc/inspiIcon.png" class="img-fluid" alt="">
                         <div>Inspiración</div>
                         <div id="insp">1</div>
                     </div>
-                    <div class="col-3 stat" style="background-image: url(../rsc/compIcon.png);">
+                    <div class="col-3 stat">
+                        <img src="../rsc/compIcon.png" alt="">
                         <div>Competencia</div>
                         <div id="comp"></div>
                     </div>
-                    <div class="col-3 stat" style="background-image: url(../rsc/caIcon.png);">
+                    <div class="col-3 stat">
+                        <img src="../rsc/caIcon.png" alt="">
                         <div>CA</div>
                         <div class="d-flex align-items-center justify-content-center">
                             <span id="ca" class="statNumber"></span>
