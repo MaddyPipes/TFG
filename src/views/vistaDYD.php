@@ -74,8 +74,7 @@
                             <img src="../rsc/swordIcon.png" alt="logoD20" style="max-width: 5em;" class="margin-bottom_48 margin-top_16">
                             <div class="margin-bottom_8 margin-top_48">
                                 <select class="form-select" aria-label="Default select example" id="tipoTirada">
-                                    <option selected>¡Tiradas!</option>
-                                    <option value="ataqueArmado">Ataque Armado</option>
+                                    <option value="ataqueArmado" selected>Ataque Armado</option>
                                     <option value="ataqueSutil">Ataque Sutil</option>
                                     <option value="ataqueDistancia">Ataque Distancia</option>
                                     <option value="salvacionFuerza">Salvación Fuerza</option>
@@ -278,7 +277,7 @@
                     </div>
                 </div>
                 <div id="dice-box" class="margin-top_16" style="background-image: url(https://www.etc.cmu.edu/projects/surfacescapes/background.gif);">
-                    <h2 class="text-center p-4" id="sign"><span id="resultados" class="d-none"><span id="diceResult"></span> + <span id="bonusStat"></span> + <span id="bonusPB"></span> = <span id="totalResult"></span></span></h2>
+                    <h2 class="text-center p-4" id="sign" style="height: 6rem;"><span id="resultados" class="d-none"><span id="diceResult"></span> + <span id="bonusStat"></span> + <span id="bonusPB"></span> = <span id="totalResult"></span></span></h2>
                 </div>
                 <div class="row overflow-auto border border-2 rounded-2 margin-top_24 margin-bottom_48" style="height: 10em;">
                     <ul id="logs">
