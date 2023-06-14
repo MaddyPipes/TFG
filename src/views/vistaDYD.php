@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../styles/stylesheet.css">
     <link rel="stylesheet" href="../styles/dydTablero.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <style>
         input:focus {
             box-shadow: none !important;
@@ -105,7 +106,7 @@
                                     <option value="religion">Religión</option>
                                     <option value="sigilo">Sigilo</option>
                                     <option value="supervivencia">Supervivencia</option>
-                                    <option value="tratoAnimal">Trato Animal</option>                                    
+                                    <option value="tratoAnimal">Trato Animal</option>
                                 </select>
                             </div>
                             <div class="margin-bottom_48 margin-top_8 d-flex justify-content-evenly align-items-center">
@@ -444,7 +445,7 @@
         </div>
     </div>
 
-    <script src="../scripts/controlDYD.js"></script>
+    <script type="module" src="../scripts/controlDYD.js"></script>
 
 </body>
 
