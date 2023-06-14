@@ -346,12 +346,9 @@ $(document).ready(function () {
     }
 
     button.addEventListener("click", (e) => {
-        Box.roll([$("#dadoNum")+"d"+$("#dadoSize")], {
+        Box.roll(["4d20", "4d12", "4d10", "4d8", "4d6", "4d4"], {
             themeColor: get_random(colors)
         });
-        setTimeout(function () {
-            Box.clear();
-        }, 10000);
     });
 })
 
