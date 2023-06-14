@@ -97,7 +97,7 @@ $(document).ready(function () {
 
     let bonusStat = fuerzaBonif;
     let bonusPB = comp;
-    let roll;
+    let roll, totalDice, totalResult;
 
     $("#tipoTirada").on("change", () => {
         switch ($("#tipoTirada").val()) {
@@ -369,17 +369,22 @@ $(document).ready(function () {
             setTimeout(() => {
                 $("#bonusPB").text(bonusPB);
                 $("#bonusStat").text(bonusStat);
-                let totalDice = 0;
+                totalDice = 0;
                 for(let i = 0; i < rolls.length; i++){
                     for(let j = 0; j < rolls[i]["rolls"].length; j++){
                         totalDice += rolls[i]["rolls"][j]["value"];
                     }
                 }
                 $("#diceResult").text(totalDice);
-                let totalResult = totalDice + bonusPB + bonusStat;
+                totalResult = totalDice + bonusPB + bonusStat;
                 $("#totalResult").text(totalResult);
 
                 $("#resultados").removeClass("d-none");
+
+                let nuevoLog ="<li>" + pj.nombre + " ha sacado un " + totalDice + " en su tirada de " + $("#tipoTirada").val() + "sacando un total de " + totalResult + "." + "</li>";
+
+                $("logs").append(nuevoLog);
+
             },2000);
         }
     });
