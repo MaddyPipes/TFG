@@ -95,7 +95,9 @@ $(document).ready(function () {
 
     //Tiradas
 
-    let bonusStat, bonusPB, roll;
+    let bonusStat = fuerzaBonif;
+    let bonusPB = comp;
+    let roll;
 
     $("#tipoTirada").on("change", () => {
         switch ($("#tipoTirada").val()) {
