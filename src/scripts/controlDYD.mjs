@@ -332,7 +332,7 @@ $(document).ready(function () {
         theme: "default",
         themeColor: "#feea03",
         offscreen: true,
-        scale: 6
+        scale: 16
     });
 
     Box.init();
