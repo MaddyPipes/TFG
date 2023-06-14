@@ -61,7 +61,8 @@
             <div class="align-items-center col-9 margin-bottom_48">
 
                 <div class="border border-2 rounded-2 margin-bottom_24 row p-3">
-                    <div class="col-3 stat" style="background-image: url(../rsc/pgIcon.png);">
+                    <div class="col-3 stat">
+                        <img src="../rsc/pgIcon.png" class="img-fluid" alt="">
                         <div>PG</div>
                         <div class="d-flex align-items-center justify-content-center">
                             <input type="text" value="" id="actualHP"> / <span id="hp" class="statNumber"></span>
