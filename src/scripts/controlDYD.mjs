@@ -326,7 +326,7 @@ $(document).ready(function () {
         }
     })
 
-    let Box = new DiceBox("#dice-box", {
+    let Box = new DiceBox("#logs", {
         assetPath: "assets/",
         origin: "https://unpkg.com/@3d-dice/dice-box@1.0.8/dist/",
         theme: "default",
