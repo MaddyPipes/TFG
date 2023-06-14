@@ -277,7 +277,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="dice-box"></div>
+                <div id="dice-box" style="background-image: url(https://www.etc.cmu.edu/projects/surfacescapes/background.gif);"></div>
                 <div class="row overflow-auto border border-2 rounded-2 margin-top_24 margin-bottom_48" style="height: 10em;">
                     <ul id="logs">
 
