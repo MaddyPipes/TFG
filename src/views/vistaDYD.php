@@ -124,12 +124,12 @@
                                 </select>
                                 <span>D</span>
                                 <select class="form-select" aria-label="Default select example" style="width: 33%;" id="dadoSize">
-                                    <option value="4" selected>4</option>
+                                    <option value="4">4</option>
                                     <option value="6">6</option>
                                     <option value="8">8</option>
                                     <option value="10">10</option>
                                     <option value="12">12</option>
-                                    <option value="20">20</option>
+                                    <option value="20" selected>20</option>
                                 </select>
                             </div>
                             <button class="btn p-0" id="rollem">
@@ -277,7 +277,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="dice-box" style="background-image: url(https://www.etc.cmu.edu/projects/surfacescapes/background.gif);"></div>
+                <div id="dice-box" class="margin-top_16" style="background-image: url(https://www.etc.cmu.edu/projects/surfacescapes/background.gif);"></div>
                 <div class="row overflow-auto border border-2 rounded-2 margin-top_24 margin-bottom_48" style="height: 10em;">
                     <ul id="logs">
 

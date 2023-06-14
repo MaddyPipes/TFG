@@ -95,7 +95,7 @@ $(document).ready(function () {
 
     //Tiradas
 
-    let bonusStat, bonusPB;
+    let bonusStat, bonusPB, roll;
 
     $("#tipoTirada").on("change", () => {
         switch ($("#tipoTirada").val()) {
@@ -324,6 +324,7 @@ $(document).ready(function () {
                 bonusStat = sabiduriaBonif;
                 break;
         }
+
     })
 
     let Box = new DiceBox("#dice-box", {
@@ -345,8 +346,12 @@ $(document).ready(function () {
         return list[Math.floor(Math.random() * list.length)];
     }
 
+
     button.addEventListener("click", (e) => {
-        Box.roll(["4d20", "4d12", "4d10", "4d8", "4d6", "4d4"], {
+
+        roll = $("#dadoNum").val()+"d"+$("#dadoSize").val();
+
+        Box.roll([roll], {
             themeColor: get_random(colors)
         });
     });
