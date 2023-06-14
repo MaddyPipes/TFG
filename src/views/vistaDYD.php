@@ -30,9 +30,9 @@
 
 <body style="background-image:url(../rsc/wp2227193-dungeons-dragons-wallpapers.jpg); background-position:center; background-size:cover; background-repeat:no-repeat;">
 
-    <div class="container margin-top_48 margin-bottom_48 border border-2" style="background-color: #353535;" id="dice-box">
+    <div class="container margin-top_48 margin-bottom_48 border border-2" style="background-color: #353535;">
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center"  id="dice-box">
 
             <div class="col-7 d-flex justify-content-center"><img class="img-fluid col-5" src="../rsc/DnD-Logo.png" alt="logoDYD"></div>
 
