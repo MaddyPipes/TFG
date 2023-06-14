@@ -35,14 +35,14 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse mx-3 my-2" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <form action="../controller/sesion.php" method="POST">
                             <button class="btn btn-danger" type="submit">Cerrar Sesión</button>
                         </form>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-3 my-2">
                         <form action="../index.php" method="POST">
                             <button class="btn btn-primary" type="submit">Volver al Menú Principal</button>
                         </form>
@@ -130,7 +130,7 @@
                                     <option value="tratoAnimal">Trato Animal</option>
                                 </select>
                             </div>
-                            <div class="margin-bottom_48 margin-top_8 d-flex justify-content-evenly align-items-center">
+                            <div class="margin-bottom_48--lg margin-top_8 d-flex justify-content-evenly align-items-center">
                                 <select class="form-select" aria-label="Default select example" style="width: 33%;" id="dadoNum">
                                     <option value="1" selected>1</option>
                                     <option value="2">2</option>

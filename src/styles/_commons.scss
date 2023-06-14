@@ -14,42 +14,66 @@ label {
 
 .margin-top_8 {
     margin-top: 8px;
-    &--sm{
-        @media (max-width: 767px){
+
+    &--sm {
+        @media (max-width: 767px) {
             margin-top: 8px;
         }
     }
 }
+
 .margin-top_16 {
     margin-top: 16px;
 }
+
 .margin-top_24 {
     margin-top: 24px;
 }
+
 .margin-top_32 {
     margin-top: 32px;
 }
+
 .margin-top_40 {
     margin-top: 40px;
 }
+
 .margin-top_48 {
     margin-top: 48px;
+
+    &--lg {
+        @media (min-width: 767px) {
+            margin-top: 8px;
+        }
+    }
 }
+
 .margin-bottom_8 {
     margin-bottom: 8px;
 }
+
 .margin-bottom_16 {
     margin-bottom: 16px;
 }
+
 .margin-bottom_24 {
     margin-bottom: 24px;
 }
+
 .margin-bottom_32 {
     margin-bottom: 32px;
 }
+
 .margin-bottom_40 {
     margin-bottom: 40px;
 }
+
 .margin-bottom_48 {
     margin-bottom: 48px;
+
+    &--lg {
+        @media (min-width: 767px) {
+            margin-bottom: 8px;
+        }
+    }
 }

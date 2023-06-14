@@ -38,6 +38,11 @@ label {
 .margin-top_48 {
   margin-top: 48px;
 }
+@media (min-width: 767px) {
+  .margin-top_48--lg {
+    margin-top: 8px;
+  }
+}
 
 .margin-bottom_8 {
   margin-bottom: 8px;
@@ -61,6 +66,11 @@ label {
 
 .margin-bottom_48 {
   margin-bottom: 48px;
+}
+@media (min-width: 767px) {
+  .margin-bottom_48--lg {
+    margin-bottom: 8px;
+  }
 }
 
 .banner {
